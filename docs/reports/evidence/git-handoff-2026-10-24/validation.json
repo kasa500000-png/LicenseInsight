@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-24T19:17:27.153247+09:00",
+  "scope": "Git publication + handoff + pnpm auto-cache CI bootstrap fix only",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "step08 source119 unchanged",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "handoff local Markdown links",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "publication evidence JSON parse",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "new changes whitespace",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "CI change limited to disable auto cache two lines",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tracked changes only workflow plus handoff state",
+      "status": "PASS",
+      "detail": [
+        ".github/workflows/ci.yml",
+        "state/APPROVALS.md",
+        "state/EVIDENCE_INDEX.md",
+        "state/PROJECT_STATUS.md"
+      ]
+    },
+    {
+      "check": "tracked secret and path scan no hits",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "initial push verified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "fresh clone492 and source119 match",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "independent handoff review completed",
+      "status": "PASS",
+      "detail": "Read-only reviewer: instructions match package/env/Playwright; no required changes"
+    }
+  ],
+  "initial_remote_ci": "FAILED before pnpm install; evidence retained; fixed config requires remote re-run",
+  "local_functional_test_rerun": "NOT_RUN",
+  "api_production_db_deploy": "NOT_RUN"
+}

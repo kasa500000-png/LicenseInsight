@@ -1,0 +1,27 @@
+{
+  "started_at": "2026-10-24T19:13:19.682810+09:00",
+  "finished_at": "2026-10-24T19:13:21.391681+09:00",
+  "command": [
+    "git",
+    "clone",
+    "--branch",
+    "main",
+    "--single-branch",
+    "--depth",
+    "1",
+    "https://github.com/kasa500000-png/LicenseInsight.git",
+    "/workspace/scratch/licenseinsight-clone-check-hbxoyw6w/LicenseInsight"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "Cloning into '/workspace/scratch/licenseinsight-clone-check-hbxoyw6w/LicenseInsight'...\n",
+  "verified_commit": "a55b9f8615489fd67be0af8f6a54b7644b865d27",
+  "fresh_clone_path": "/workspace/scratch/licenseinsight-clone-check-hbxoyw6w/LicenseInsight",
+  "all_snapshot_files_checked": 492,
+  "snapshot_byte_mismatches": [],
+  "step08_source_hashes_checked": 119,
+  "source_hash_mismatches": [],
+  "worktree_clean": true,
+  "actual_user_computer": "NOT_RUN",
+  "dependency_install_or_browser_tests_in_clone": "NOT_RUN"
+}

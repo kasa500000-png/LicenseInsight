@@ -2,7 +2,7 @@
 
 기준: 패키지 v2.0 / 구현 근거2026-10-21, Git 인수인계2026-10-24
 현재 단계: STEP-08 한 종목 상세·일정·통계 DONE(분리된 합성 상세 범위). STEP-02 및 live 연결은 BLOCKED 유지.
-작업 루트: `/workspace/licenseinsight`, repo `kasa500000-png/LicenseInsight`, 현재 branch `main`(최초 게시 준비). STEP-08 당시 branch는 `audit/m0-task-001`·unborn이었으며 기존 보고서는 당시 기록으로 보존한다. 실제 최신 commit은 `git log -1`로 확인한다.
+작업 루트: `/workspace/licenseinsight`, repo `kasa500000-png/LicenseInsight`, 현재 branch `main`(origin/main 추적). 최초 스냅샷 `a55b9f8615489fd67be0af8f6a54b7644b865d27`을 GitHub에 게시·clone 검증했다. 후속 인수인계 문서 포함 최신 commit은 `git log -1`로 확인한다. STEP-08 당시 `audit/m0-task-001`·unborn 기록은 그대로 보존한다.
 현재 배포: 없음. 웹·로컬 DB·오프라인 수집/게시·순수 계산·공통 UI와 분리된 합성 상세를 구현했다. STEP-08 전체539 테스트·브라우저48·로컬4모드 접근40 PASS, 최종 캡처55장 중 새 상세17장을 직접 검수했다. `/detail-demo/synthetic-electrical`은 local/test 전용이며 실제 종목 공개 페이지가 아니다. 일정/비교/내 준비는 준비 중 셸이다. 앱 DB 연결·실제 API·계획 저장/복원은 미구현/미실행이다. 새 slug SQL은 mock 계약만 검증했고 STEP-05 SQL410/Node17은 재실행하지 않았다. 광고·분석은 OFF다.
 문서 패키지 생성과 앱 구현 완료를 혼동하지 않는다.
 
@@ -42,7 +42,7 @@ STEP-02는 여전히 미완료다. 키·공식 명세·실제 승인·쿼터가 
 
 ## Git 인수인계 — 2026-10-24
 
-사용자 지시에 따라 현재 누적 결과의 최초 main 게시와 새 컴퓨터용 [clone·Codex 프롬프트](../prompts/LOCAL_CODEX_HANDOFF.md)를 준비했다. 원격은 기존 refs 없는 빈 저장소였으며 source119 SHA가 STEP-08 실행 근거와 일치함을 확인했다. 이번에는 STEP-09 구현을 시작하거나 기존 단위/브라우저/DB 검증을 재실행하지 않았다. 실제 게시·clone 확인 결과는 후속 인수인계 보고서와 Git refs를 따른다.
+사용자 지시에 따라 현재 누적 결과를 main에 최초 게시했고 새 컴퓨터용 [clone·Codex 프롬프트](../prompts/LOCAL_CODEX_HANDOFF.md)를 작성했다. GitHub의 별도 fresh clone에서 최초492개 파일 byte 일치·실행 source119 SHA·clean status를 확인했다. [Git 인수인계 보고서](../docs/reports/GIT_HANDOFF-2026-10-24.md)와 Git refs를 따른다. 이번에는 STEP-09 구현·기존 로컬 단위/브라우저/DB 검증을 재실행하지 않았다. 최초 원격 CI는 pnpm 설치 전 자동 캐시 조회로 실패했다. setup-node의 자동 캐시를2곳에서 끄는 설정만 보완했으며 원격 재실행 결과를 확인하기 전에는 통과로 표시하지 않는다.
 
 ## 기록 규칙
 상태 열은 실제 선행조건/수용기준으로 업데이트한다. 개별 검증은 PASS/FAIL/NOT_RUN/N_A(사유필수).

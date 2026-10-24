@@ -32,3 +32,7 @@ Git push/PR 대상은 식별됐으나 승인 상태는 **NOT_APPROVED**다. 실�
 위 M0 절은 당시 기록이다. 이번 사용자는 누적 작업의 Git 업로드와 새 컴퓨터용 clone/이어하기 프롬프트 작성을 명시적으로 요청했다. 원격 조회에서 이 저장소는 public·default main·기존 refs 없음이고 현재 연결은 push 권한을 갖는 것으로 확인했다. 빈 main에 최초 스냅샷을 게시하며 기존 원격 이력을 덮지 않는다. force push/기존 branch 삭제/PR/배포/DB·호스팅 변경/유료 구매/광고는 포함하지 않는다.
 
 비밀키·실제 .env·인증 상태·node_modules·.next·test-results·로컬 DB는 올리지 않는다. 과거 보고서·합성 fixture·검증용 캡처·lockfile과 새 프롬프트는 포함한다. 이 문서의 승인은 사용자 지시를 기록한 것이며 문서만으로 승인을 새로 만든 것이 아니다. 실제 게시 결과와 commit은 별도 Git 인수인계 보고서 및 Git refs로 확인한다.
+
+실행 확인: 2026-10-24 19:12:49 KST 최초 `a55b9f8615489fd67be0af8f6a54b7644b865d27`의 main push exit0. 이후 GitHub fresh clone492개 파일·source119 SHA 일치와 clean 상태를 확인했다. 동일 승인 범위에서 게시 확인 보고서·증거·상태의 후속 문서 커밋을 게시한다. [보고서](../docs/reports/GIT_HANDOFF-2026-10-24.md). PR·후속 STEP push·DB/배포·유료 작업은 승인 범위에 추가하지 않았다.
+
+게시 검증 중 최초 CI의 pnpm 자동 캐시 부트스트랩 실패를 발견해 setup-node의 자동 캐시를 끄는2줄 설정과 원격 재검증을 보완한다. 이는 이번 게시를 검증하기 위한 수정이며 STEP-09 앱 구현·의존성 버전 변경·배포로 범위를 넓히지 않는다.

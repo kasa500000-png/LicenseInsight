@@ -1,0 +1,16 @@
+{
+  "command": [
+    "git",
+    "push",
+    "--set-upstream",
+    "origin",
+    "main"
+  ],
+  "started_at": "2026-10-24T19:12:47.755377+09:00",
+  "finished_at": "2026-10-24T19:12:49.965513+09:00",
+  "elapsed_seconds": 2.21,
+  "exit_code": 0,
+  "stdout": "branch 'main' set up to track 'origin/main'.\n",
+  "stderr": "To https://github.com/kasa500000-png/LicenseInsight.git\n * [new branch]      main -> main\n",
+  "snapshot_commit": "a55b9f8615489fd67be0af8f6a54b7644b865d27"
+}

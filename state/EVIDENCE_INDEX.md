@@ -1,5 +1,7 @@
 # 구현·점검 증거 인덱스
 
+현재 Git 게시·새 컴퓨터 인수인계는 [2026-10-24 보고서](../docs/reports/GIT_HANDOFF-2026-10-24.md)를 따른다. 아래 과거 절의 unborn/미배포/당시 push 미실행은 해당 단계 시점의 기록이다.
+
 기준: 2026-10-21. M0·STEP-02~07 절은 당시 증거다. STEP-05는 실제 로컬 PostgreSQL 수집/게시·Node driver, STEP-06은 순수 계산, STEP-07은 공통 UI·셸 근거다. 최신 STEP-08에는 분리된 합성 상세의 repository 계약→domain→SSR→브라우저·격리 근거가 있다. 실제 공공 API 인증·Supabase Auth/PostgREST·원격 DB·배포 증거는 없다. 새 slug SQL은 mock 계약만 검증했다. 원본 PACKAGE_VALIDATION은 과거 패키지 기준선이다.
 
 | 범위 | 근거 | 실제 확인 | 미실행 |
@@ -96,3 +98,11 @@ Git commit: 없음(unborn branch). remote push/PR: NOT_RUN. 문서 기준선 외
 | 로컬 모드별 격리 | [접근40](../docs/reports/evidence/step-08/detail-isolation.json), [명령](../docs/reports/evidence/step-08/detail-isolation-command.json) | 4모드×10경로, preview/production404·합성HTML0·서버4개 종료·no-store/noindex | 원격 배포/preview 인증·전체 outbound 감시 아님 |
 | 정적·build·보존 | [lint](../docs/reports/evidence/step-08/lint-final-command.json), [타입](../docs/reports/evidence/step-08/typecheck-command.json), [최종build](../docs/reports/evidence/step-08/build-command.json), [client](../docs/reports/evidence/step-08/client-boundary-command.json), [실행SHA](../docs/reports/evidence/step-08/executed-source-hashes.json), [validation](../docs/reports/evidence/step-08/validation.json) | 최종 build·소스·문서 정합성·이전 증거/승인/마이그레이션/lockfile 보존 | 비밀 패턴 검사는 한정적; 원격 CI/배포 미실행 |
 | 초기 실패·검토 | [처음41/46](../docs/reports/evidence/step-08/browser-tests-initial.json), [실패 근거](../docs/reports/evidence/step-08/initial-browser-failures/), [독립 검토](../docs/reports/evidence/step-08/independent-review.json) | root loading/label/selector/test 기대 수정, 상태미확인·부분연도 오류 회귀 추가 후48PASS | 로컬 합성 범위의 수정·검토 |
+
+## Git 게시·새 컴퓨터 인수인계 — 2026-10-24
+
+| 범위 | 근거 | 실제 확인 | 제한 |
+|---|---|---|---|
+| 사용자 승인·원격·검사 | [APPROVALS](APPROVALS.md), [preflight](../docs/reports/evidence/git-handoff-2026-10-24/preflight.json), [tracked 검사](../docs/reports/evidence/git-handoff-2026-10-24/staging.json) | 이번 스냅샷 main push 승인, 빈 원격·권한·source119 SHA·알려진 비밀패턴0 | 포괄적인 배포/원격 DB/후속 STEP 게시 승인 아님 |
+| 최초 게시·fresh clone | [push](../docs/reports/evidence/git-handoff-2026-10-24/push-snapshot.json), [clone](../docs/reports/evidence/git-handoff-2026-10-24/clone-snapshot.json) | a55b9f8 main push exit0, 원격 clone492개 파일 byte/119SHA 일치·clean | 관리 환경의 별도 폴더, 실제 사용자 컴퓨터에서 설치·브라우저 실행 아님 |
+| 프롬프트·인수인계 | [로컬 Codex 안내](../prompts/LOCAL_CODEX_HANDOFF.md), [보고서](../docs/reports/GIT_HANDOFF-2026-10-24.md), [최종 검사](../docs/reports/evidence/git-handoff-2026-10-24/validation.json) | clone/버전/키 없는 설정·STEP09만 진행·차단/개인정보/실행근거 보존 | 기존539/48/40/29는 과거 실행, 이번 로컬 기능 검사 재실행 없음 |

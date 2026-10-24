@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-24T19:12:28.738341+09:00",
+  "local_snapshot_commit": "a55b9f8615489fd67be0af8f6a54b7644b865d27",
+  "tracked_files": 492,
+  "forbidden_secret_or_generated_paths": [],
+  "known_secret_pattern_hits": [],
+  "source_hashes_matched": 119,
+  "whitespace_check": {
+    "exit_code": 2,
+    "warning_files": [
+      "docs/reports/evidence/step-08/initial-browser-failures/qualification-detail-JS-di-816e8-enance-and-native-selectors-chromium/error-context.md",
+      "docs/reports/evidence/step-08/initial-browser-failures/qualification-detail-detai-0bd48-chart-table-agree-at-1440px-chromium/error-context.md",
+      "docs/reports/evidence/step-08/initial-browser-failures/qualification-detail-detai-13f95--chart-table-agree-at-390px-chromium/error-context.md",
+      "docs/reports/evidence/step-08/initial-browser-failures/qualification-detail-range-fbaeb-ent-a-personal-day-or-hours-chromium/error-context.md",
+      "docs/reports/evidence/step-08/initial-browser-failures/qualification-detail-year--04fd1-al-null-statistics-explicit-chromium/error-context.md",
+      "src/components/data-unavailable.tsx",
+      "tests/database/step05/cases.py",
+      "tests/database/step05/setup.sql"
+    ],
+    "non_evidence_exit_code": 2,
+    "non_evidence_output": "src/components/data-unavailable.tsx:17: new blank line at EOF.\ntests/database/step05/cases.py:510: new blank line at EOF.\ntests/database/step05/setup.sql:31: new blank line at EOF.\n",
+    "reason": "Original diagnostic whitespace and existing source/SQL/Python blank EOF lines preserved byte-for-byte to retain prior executed-source hashes; no semantic failure or new source edit"
+  },
+  "check_sequence_note": "First warning-path assertion was too narrow and did not create the planned staging artifact. The already reviewed snapshot was committed locally; the full tracked-file secret/path/source checks above were then completed before any push.",
+  "functional_tests": "NOT_RERUN: docs/git-only changes; prior STEP08 source119 hashes unchanged"
+}

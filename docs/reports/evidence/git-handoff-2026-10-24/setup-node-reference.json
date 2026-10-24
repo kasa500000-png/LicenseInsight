@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-24T19:16:10.069604+09:00",
+  "source": "https://github.com/actions/setup-node/blob/v5/README.md",
+  "sha256": "6bdd389578afb2b1317fb3349a91e83f769ada17899ab5e3468c63141abd2fd2",
+  "relevant_excerpts": [
+    "\nThe action has a built-in functionality for caching and restoring dependencies. It uses [actions/cache](https://github.com/actions/cache) under the hood for caching global packages data but requires less configuration settings. Supported package managers are `npm`, `yarn`, `pnpm` (v6.10+). The `cache` input is optional.\n\nCaching is turned on by default when a `packageManager` field is detected in the `package.json` file. The `package-manager-cache` input provides control over this automatic caching behavior. By default, `package-manager-cache` is set to `true`, which enables caching when a valid package manager field is detected in the `package.json` file. To disable this automatic caching, set the `package-manager-cache` input to `false`.\n\n```yaml\nsteps:\n- uses: actions/checkout@v4",
+    "- uses: actions/checkout@v4\n- uses: actions/setup-node@v4\n  with:\n    package-manager-cache: false\n- run: npm ci\n```\n> If no valid `packageManager` field is detected in the `package.json` file, caching will remain disabled unless explicitly configured.\n"
+  ]
+}

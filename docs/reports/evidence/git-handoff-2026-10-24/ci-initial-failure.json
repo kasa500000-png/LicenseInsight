@@ -1,0 +1,162 @@
+{
+  "checked_at": "2026-10-24T19:16:56.040123+09:00",
+  "run": {
+    "conclusion": "failure",
+    "head_sha": "a55b9f8615489fd67be0af8f6a54b7644b865d27",
+    "html_url": "https://github.com/kasa500000-png/LicenseInsight/actions/runs/40085018362",
+    "id": 40085018362,
+    "status": "completed"
+  },
+  "jobs": [
+    {
+      "conclusion": "failure",
+      "id": 120846067407,
+      "name": "foundation",
+      "status": "completed",
+      "steps": [
+        {
+          "conclusion": "success",
+          "name": "Set up job",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Check out source without persisted credentials",
+          "status": "completed"
+        },
+        {
+          "conclusion": "failure",
+          "name": "Set up Node",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Set up pnpm",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Install locked dependencies",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Lint",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Typecheck",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Run offline tests",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Build local test application",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Install Chromium for browser checks",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Run browser checks",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Post Set up Node",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Check out source without persisted credentials",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Complete job",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "failure",
+      "id": 120846067517,
+      "name": "database",
+      "status": "completed",
+      "steps": [
+        {
+          "conclusion": "success",
+          "name": "Set up job",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Check out source without persisted credentials",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify isolated PostgreSQL migrations and permissions",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Verify SQL type contract matches catalog",
+          "status": "completed"
+        },
+        {
+          "conclusion": "failure",
+          "name": "Set up Node for PostgreSQL driver integration",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Set up pnpm",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Install locked dependencies",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Verify actual ingestion and public repository through node-postgres",
+          "status": "completed"
+        },
+        {
+          "conclusion": "skipped",
+          "name": "Post Set up Node for PostgreSQL driver integration",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Post Check out source without persisted credentials",
+          "status": "completed"
+        },
+        {
+          "conclusion": "success",
+          "name": "Complete job",
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "relevant_error_lines": [
+    "foundation\tSet up Node\t2026-10-24T10:13:05.2769875Z node: v24.19.0",
+    "foundation\tSet up Node\t2026-10-24T10:13:05.2818283Z ##[error]Unable to locate executable file: pnpm. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also check the file mode to verify the file is executable.",
+    "database\tSet up Node for PostgreSQL driver integration\t2026-10-24T10:13:51.6519396Z node: v24.19.0",
+    "database\tSet up Node for PostgreSQL driver integration\t2026-10-24T10:13:51.6571743Z ##[error]Unable to locate executable file: pnpm. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable. Also check the file mode to verify the file is executable."
+  ],
+  "fix": "Explicit package-manager-cache: false for both setup-node steps; Node/pnpm versions and lockfile preserved",
+  "application_tests_run_locally": "NOT_RUN",
+  "note": "PostgreSQL migration/RLS and type contract CI steps succeeded; Node driver and foundation checks skipped due pnpm bootstrap failure"
+}
