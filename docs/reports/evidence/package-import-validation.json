@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-20T01:40:34.703084+00:00",
+  "source": "user supplied qualification-insight-build-kit-v2.zip",
+  "zip_sha256": "601b490d9cd4f7715f795144fc16fd94a6f4b2a8462a559cb3f054d3be4f9000",
+  "zip_crc": "PASS",
+  "original_file_count": 65,
+  "byte_identical_count": 59,
+  "intentional_changed_files": [
+    "README.md",
+    "state/APPROVALS.md",
+    "state/BLOCKERS.md",
+    "state/DECISIONS.md",
+    "state/EVIDENCE_INDEX.md",
+    "state/PROJECT_STATUS.md"
+  ],
+  "missing": [],
+  "unexpected_changed_files": [],
+  "result": "PASS",
+  "note": "Current working tree compared against original attachment; no app/API tests."
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "pnpm",
+    "check:client-boundary"
+  ],
+  "non_secret_configuration": {},
+  "started_at": "2026-10-20T11:56:58.868364+00:00",
+  "finished_at": "2026-10-20T11:56:59.555154+00:00",
+  "elapsed_seconds": 0.687,
+  "exit_code": 0,
+  "stdout": "{\"status\":\"PASS\",\"sourceFiles\":30,\"clientBundleFiles\":13,\"failures\":[]}\n",
+  "stderr": "$ node scripts/check-client-boundary.mjs\n"
+}

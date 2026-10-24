@@ -1,0 +1,16 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "00",
+      "resultMsg": "SYNTHETIC_NORMAL"
+    },
+    "body": {
+      "items": {
+        "item": null
+      },
+      "totalCount": "0",
+      "pageNo": 1,
+      "numOfRows": 10
+    }
+  }
+}

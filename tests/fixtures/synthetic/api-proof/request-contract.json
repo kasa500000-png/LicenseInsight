@@ -1,0 +1,17 @@
+{
+  "kind": "synthetic_probe_contract",
+  "source_id": "SYNTHETIC-DS",
+  "endpoint": "https://api.example.invalid/fixture",
+  "operation": "fixtureOperation",
+  "service_key_parameter": "serviceKey",
+  "allowed_parameters": [
+    "jmCd",
+    "implYy",
+    "pageNo",
+    "numOfRows"
+  ],
+  "required_parameters": [
+    "jmCd",
+    "implYy"
+  ]
+}

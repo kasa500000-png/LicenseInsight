@@ -1,0 +1,2918 @@
+{
+  "started_at": "2026-10-20T10:56:50.718662+00:00",
+  "target": "local Docker Unix socket",
+  "image": "postgres@sha256:3645570cccdfa447589da9f57dd740faa29b30938e861289a5574b6ca6b03826",
+  "network": "none",
+  "host_ports": [],
+  "data": "synthetic-only",
+  "auth_postgrest": "NOT_RUN",
+  "migrations": [
+    {
+      "file": "supabase/migrations/20261020090856_foundation_schema_rls.sql",
+      "sha256": "6793f5d89e687abaec827597946a3d73b24cf892a08848761839dd7a9b7c004c"
+    },
+    {
+      "file": "supabase/migrations/20261020104213_ingestion_publication.sql",
+      "sha256": "d51b449a086585c4bb996acde2758b8a2ac7a9f7a56ee2b471eb1bcd0d120e7a"
+    }
+  ],
+  "test_sources": [
+    {
+      "file": "tests/database/setup.sql",
+      "sha256": "0ce4009338cd7f8d8b303d3fdc5ebed22a84b600197ee01b32bd0505fad689a2"
+    },
+    {
+      "file": "tests/database/cases.py",
+      "sha256": "62bc5d42eafc0c01f2747f45dea55b3dad70c0ed4d731b5135fc3a83484e1dc8"
+    },
+    {
+      "file": "tests/database/step05/setup.sql",
+      "sha256": "cdade810f79c7252fd2ff5422c19f65692b38497cc88376cbd4f23e44aa30256"
+    },
+    {
+      "file": "tests/database/step05/cases.py",
+      "sha256": "0e41b39fcb3e299466b4daa1cfc74e13df61ec71785814cd0dd04510002e9821"
+    },
+    {
+      "file": "scripts/test-database.py",
+      "sha256": "0460815392b21a36b9e31d7826be5ae2e375544824442e864d1d73350cbce042"
+    },
+    {
+      "file": "supabase/config.toml",
+      "sha256": "615f0f446eec39fcce5ca5d1643b6849530bf09080afb7f35dc48977f1a3a07c"
+    }
+  ],
+  "role_simulation": "SET LOCAL SESSION AUTHORIZATION; no JWT verification",
+  "checks": [
+    {
+      "name": "local config limits exposure and disables seed (static)",
+      "result": "PASS"
+    },
+    {
+      "database": "qi_first",
+      "name": "unrelated table permissions preserved",
+      "result": "PASS"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualifications.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualifications.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualifications.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualifications.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualifications.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_aliases.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_aliases.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_aliases.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_aliases.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_aliases.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.exam_events.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.exam_events.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.exam_events.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.exam_events.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.exam_events.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.pass_statistics.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.pass_statistics.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.pass_statistics.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.pass_statistics.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.pass_statistics.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_details.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_details.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_details.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_details.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.qualification_details.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.dataset_status.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.dataset_status.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.dataset_status.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.dataset_status.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.dataset_status.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.source_registry.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.source_crosswalks.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.sync_runs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.source_snapshots.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.staged_records.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.review_items.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.overrides.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.admin_roles.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.internal.audit_logs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.view.respects_rls",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.view.write_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.private_function.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.set_admin_server_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.set_ingestion_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "anon.public_schema.create_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualifications.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualifications.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualifications.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualifications.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualifications.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_aliases.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_aliases.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_aliases.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_aliases.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_aliases.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.exam_events.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.exam_events.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.exam_events.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.exam_events.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.exam_events.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.pass_statistics.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.pass_statistics.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.pass_statistics.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.pass_statistics.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.pass_statistics.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_details.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_details.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_details.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_details.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.qualification_details.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.dataset_status.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.dataset_status.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.dataset_status.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.dataset_status.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.dataset_status.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.source_registry.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.source_crosswalks.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.sync_runs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.source_snapshots.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.staged_records.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.review_items.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.overrides.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.admin_roles.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.internal.audit_logs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.view.respects_rls",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.view.write_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.private_function.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.set_admin_server_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.set_ingestion_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.public_schema.create_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.forged_admin_claims.no_elevation",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.forged_admin_claims.write_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "authenticated.admin_role.self_grant_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.all_eighteen_tables_rls",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.view_security_invoker",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.no_definer_functions",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.internal_schema_no_browser_usage",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.capability_roles_nologin_no_bypass",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.browser_no_capability_membership",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.helper_execute_only_server",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.future_function_not_public",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.future_private_function_not_public",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.future_private_function_execute_acl",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "metadata.future_table_no_browser_grants",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "codes.leading_zero_preserved",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "codes.leading_zero_distinct_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.natural_key_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.unreviewed_publication_rejected",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.unverified_publication_rejected",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.restrict_history_delete",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23503"
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.invalid_official_host",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.non_https_source",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "qualification.secret_query_parameter_rejected",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.reversed_date_range",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.date_only_invented_time",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.exact_times_required",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.exact_times_reversed",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.timestamp_korean_date_mismatch",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.single_extent_multiday",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.valid_precision_range",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "events.logical_key_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.invalid_stage",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "22P02"
+    },
+    {
+      "database": "qi_first",
+      "name": "events.invalid_child_fk",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23503"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.negative_examinees",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.negative_passed",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.passed_exceeds_examinees",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.published_rate_over_100",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.published_rate_negative",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.published_rate_nan",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.round_requires_round",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.annual_requires_null_round",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.null_denominator_is_not_zero",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.null_numerator_is_not_zero",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.zero_denominator_has_null_rate",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.exact_47_percent",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.generated_rate_not_overridable",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "428C9"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.annual_null_natural_key_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_first",
+      "name": "statistics.annual_and_round_remain_separate",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "aliases.null_period_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_first",
+      "name": "aliases.reversed_valid_period",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "details.null_period_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_first",
+      "name": "details.reversed_valid_period",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_first",
+      "name": "crosswalk.null_period_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_first",
+      "name": "crosswalk.code_remains_text",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.staging_insert_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.source_registry_read_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.public_publication_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.admin_role_read_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.source_mutation_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.audit_append_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.audit_rewrite_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.audit_delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "worker.snapshot_rewrite_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "server.admin_read_and_helper_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "server.unknown_identity_not_admin",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "server.invalid_requested_role_not_admin",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "server.role_revocation_immediate",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "server.direct_publication_capability",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "server.role_self_grant_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "server.history_delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "server.audit_rewrite_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "service_role.no_implicit_project_access",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "STEP05 setup",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.anon.start_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.anon.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.anon.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.authenticated.start_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.authenticated.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.authenticated.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.worker.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.worker.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.review_preserves_last_good",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.publish_requires_review",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.date_correction_updates_stable_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.return_to_published_content_clears_superseded_pending_change",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.failed_run_actual_calls_are_distinct_from_reserved_budget",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.active_scope_override_blocks_prepare",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.expired_logical_override_blocks_prepare",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.active_logical_override_after_approval_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.expired_scope_override_after_approval_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.current_qualification_track_must_match_publish_scope",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.unrelated_override_does_not_block_other_records",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.different_scope_cannot_claim_existing_event",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.statistic_logical_key_cannot_change_natural_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.source_daily_budget_is_shared_and_bounded",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.expired_worker_is_fenced_after_new_lease",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.source_approval_revocation_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.same_response_rerun_is_idempotent",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.stale_expected_revision_preserves_public",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.unknown_actor_cannot_approve",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.review_optimistic_version_checked",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.revoked_publisher_cannot_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.same_scope_second_run_rejected",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.failed_collection_preserves_old_projection",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.empty_collection_never_deletes_last_good",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.ambiguous_mapping_quarantined",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.unreviewed_mapping_quarantined",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.source_code_zero_not_coerced_in_mapping",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.migration_no_browser_executable_functions",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.quarantined_run_cannot_review_or_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.reviewed_staging_payload_tamper_is_rejected",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.worker_cannot_rewrite_staged_records",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_first",
+      "name": "step05.publication_failure_rolls_back_projection_status_and_audit",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "unrelated table permissions preserved",
+      "result": "PASS"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualifications.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualifications.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualifications.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualifications.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualifications.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_aliases.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_aliases.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_aliases.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_aliases.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_aliases.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.exam_events.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.exam_events.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.exam_events.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.exam_events.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.exam_events.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.pass_statistics.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.pass_statistics.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.pass_statistics.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.pass_statistics.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.pass_statistics.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_details.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_details.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_details.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_details.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.qualification_details.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.dataset_status.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.dataset_status.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.dataset_status.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.dataset_status.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.dataset_status.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.source_registry.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.source_crosswalks.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.sync_runs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.source_snapshots.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.staged_records.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.review_items.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.overrides.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.admin_roles.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.internal.audit_logs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.view.respects_rls",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.view.write_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.private_function.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.set_admin_server_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.set_ingestion_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "anon.public_schema.create_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualifications.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualifications.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualifications.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualifications.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualifications.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_aliases.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_aliases.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_aliases.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_aliases.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_aliases.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.exam_events.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.exam_events.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.exam_events.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.exam_events.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.exam_events.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.pass_statistics.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.pass_statistics.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.pass_statistics.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.pass_statistics.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.pass_statistics.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_details.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_details.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_details.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_details.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.qualification_details.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.dataset_status.published_only",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.dataset_status.insert_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.dataset_status.update_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.dataset_status.delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.dataset_status.truncate_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.source_registry.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.source_crosswalks.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.sync_runs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.source_snapshots.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.staged_records.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.review_items.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.overrides.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.admin_roles.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.internal.audit_logs.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.view.respects_rls",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.view.write_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.private_function.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.set_admin_server_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.set_ingestion_role.denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.public_schema.create_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.forged_admin_claims.no_elevation",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.forged_admin_claims.write_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "authenticated.admin_role.self_grant_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.all_eighteen_tables_rls",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.view_security_invoker",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.no_definer_functions",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.internal_schema_no_browser_usage",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.capability_roles_nologin_no_bypass",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.browser_no_capability_membership",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.helper_execute_only_server",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.future_function_not_public",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.future_private_function_not_public",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.future_private_function_execute_acl",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "metadata.future_table_no_browser_grants",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "codes.leading_zero_preserved",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "codes.leading_zero_distinct_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.natural_key_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.unreviewed_publication_rejected",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.unverified_publication_rejected",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.restrict_history_delete",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23503"
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.invalid_official_host",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.non_https_source",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "qualification.secret_query_parameter_rejected",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.reversed_date_range",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.date_only_invented_time",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.exact_times_required",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.exact_times_reversed",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.timestamp_korean_date_mismatch",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.single_extent_multiday",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.valid_precision_range",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.logical_key_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.invalid_stage",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "22P02"
+    },
+    {
+      "database": "qi_replay",
+      "name": "events.invalid_child_fk",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23503"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.negative_examinees",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.negative_passed",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.passed_exceeds_examinees",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.published_rate_over_100",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.published_rate_negative",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.published_rate_nan",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.round_requires_round",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.annual_requires_null_round",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.null_denominator_is_not_zero",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.null_numerator_is_not_zero",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.zero_denominator_has_null_rate",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.exact_47_percent",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.generated_rate_not_overridable",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "428C9"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.annual_null_natural_key_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_replay",
+      "name": "statistics.annual_and_round_remain_separate",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "aliases.null_period_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_replay",
+      "name": "aliases.reversed_valid_period",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "details.null_period_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_replay",
+      "name": "details.reversed_valid_period",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23514"
+    },
+    {
+      "database": "qi_replay",
+      "name": "crosswalk.null_period_duplicate",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "23505"
+    },
+    {
+      "database": "qi_replay",
+      "name": "crosswalk.code_remains_text",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.staging_insert_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.source_registry_read_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.public_publication_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.admin_role_read_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.source_mutation_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.audit_append_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.audit_rewrite_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.audit_delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "worker.snapshot_rewrite_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.admin_read_and_helper_allowed",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.unknown_identity_not_admin",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.invalid_requested_role_not_admin",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.role_revocation_immediate",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.direct_publication_capability",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.role_self_grant_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.history_delete_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "server.audit_rewrite_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "service_role.no_implicit_project_access",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "STEP05 setup",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.anon.start_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.anon.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.anon.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.authenticated.start_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.authenticated.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.authenticated.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.worker.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.worker.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.review_preserves_last_good",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.publish_requires_review",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.date_correction_updates_stable_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.return_to_published_content_clears_superseded_pending_change",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.failed_run_actual_calls_are_distinct_from_reserved_budget",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.active_scope_override_blocks_prepare",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.expired_logical_override_blocks_prepare",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.active_logical_override_after_approval_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.expired_scope_override_after_approval_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.current_qualification_track_must_match_publish_scope",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.unrelated_override_does_not_block_other_records",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.different_scope_cannot_claim_existing_event",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.statistic_logical_key_cannot_change_natural_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.source_daily_budget_is_shared_and_bounded",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.expired_worker_is_fenced_after_new_lease",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.source_approval_revocation_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.same_response_rerun_is_idempotent",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.stale_expected_revision_preserves_public",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.unknown_actor_cannot_approve",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.review_optimistic_version_checked",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.revoked_publisher_cannot_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.same_scope_second_run_rejected",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.failed_collection_preserves_old_projection",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.empty_collection_never_deletes_last_good",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.ambiguous_mapping_quarantined",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.unreviewed_mapping_quarantined",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.source_code_zero_not_coerced_in_mapping",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.migration_no_browser_executable_functions",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.quarantined_run_cannot_review_or_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.reviewed_staging_payload_tamper_is_rejected",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.worker_cannot_rewrite_staged_records",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "database": "qi_replay",
+      "name": "step05.publication_failure_rolls_back_projection_status_and_audit",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "new database schema replay matches",
+      "result": "PASS"
+    }
+  ],
+  "cleanup": "PASS",
+  "postgres_version": "PostgreSQL 17.11 (Debian 17.11-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+  "schema_fingerprints": [
+    "3d1e83167a1d1a691141647d510c57af56a65c0fd812301e4d25898b2eed6cad",
+    "3d1e83167a1d1a691141647d510c57af56a65c0fd812301e4d25898b2eed6cad"
+  ],
+  "finished_at": "2026-10-20T10:57:37.104112+00:00",
+  "passed": 410,
+  "failed": 0,
+  "exit_code": 0
+}

@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-10-20T11:06:45.246838+00:00",
+  "tool": "view_image, each of4 images opened",
+  "screenshots": [
+    {
+      "width": 360,
+      "file": "docs/reports/evidence/step-05/screenshots/foundation-home-360.png",
+      "sha256": "619864713662c5e2285590dad83228e8c87820db56767cdcd8f2d8845d18702f",
+      "direct_view": "PASS",
+      "notes": "legible header/empty-state/official link/caution/footer, no overflow or overlap, no synthetic qualifications visible"
+    },
+    {
+      "width": 390,
+      "file": "docs/reports/evidence/step-05/screenshots/foundation-home-390.png",
+      "sha256": "b775798be453bc0a9bd5bded6ad0813acdefbc9d0d9b2ea540fd5993c410e4d4",
+      "direct_view": "PASS",
+      "notes": "legible header/empty-state/official link/caution/footer, no overflow or overlap, no synthetic qualifications visible"
+    },
+    {
+      "width": 768,
+      "file": "docs/reports/evidence/step-05/screenshots/foundation-home-768.png",
+      "sha256": "be427a0522e00296e9247ec1ba52340c2e640eb9dbdf472b7e391bf298609bf9",
+      "direct_view": "PASS",
+      "notes": "legible header/empty-state/official link/caution/footer, no overflow or overlap, no synthetic qualifications visible"
+    },
+    {
+      "width": 1440,
+      "file": "docs/reports/evidence/step-05/screenshots/foundation-home-1440.png",
+      "sha256": "fb5bc6c1f62ae05c70c569c4dad22a209c49b09a6f28a9e308d68f9882de9840",
+      "direct_view": "PASS",
+      "notes": "legible header/empty-state/official link/caution/footer, no overflow or overlap, no synthetic qualifications visible"
+    }
+  ],
+  "browser_tests": 8,
+  "external_http_attempts": 0,
+  "data": "newbuild empty live-mode home, app not DB connected",
+  "new_admin_ui": "N_A, not thisSTEP"
+}

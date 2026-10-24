@@ -1,0 +1,175 @@
+{
+  "checked_at_utc": "2026-10-20T03:43:20.706452+00:00",
+  "artifact_kind": "STEP-02_offline_document_and_evidence_validation",
+  "checks": [
+    {
+      "check": "previous_work_preserved",
+      "result": "PASS",
+      "detail": {
+        "baseline_file_count": 80,
+        "unchanged_prior_files": 76,
+        "intentional_state_changes": [
+          "state/BLOCKERS.md",
+          "state/PROJECT_STATUS.md",
+          "state/EVIDENCE_INDEX.md",
+          "state/DECISIONS.md"
+        ],
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "check": "predecessor_evidence_read_and_preserved",
+      "result": "PASS",
+      "detail": {
+        "STEP_01": "DONE audit only",
+        "prior_m0_passed": 13,
+        "prior_import": "PASS",
+        "reran_m0_or_live_tests": false
+      }
+    },
+    {
+      "check": "no_secret_file_read",
+      "result": "PASS",
+      "detail": {
+        "excluded_filenames": []
+      }
+    },
+    {
+      "check": "json_evidence_and_fixtures_syntax",
+      "result": "PASS",
+      "detail": {
+        "json_file_count": 17,
+        "invalid": []
+      }
+    },
+    {
+      "check": "relative_links",
+      "result": "PASS",
+      "detail": {
+        "broken": []
+      }
+    },
+    {
+      "check": "public_catalog_observation_integrity",
+      "result": "PASS",
+      "detail": {
+        "public_document_GETs": 5,
+        "authenticated_API_requests": 0,
+        "http_statuses": [
+          503,
+          503,
+          503,
+          503,
+          503
+        ]
+      }
+    },
+    {
+      "check": "unverified_contract_stays_unverified",
+      "result": "PASS",
+      "detail": {
+        "verified_operations": 0,
+        "account_approval": "UNKNOWN",
+        "publication_allowed": false
+      }
+    },
+    {
+      "check": "three_real_targets_keep_nulls",
+      "result": "PASS",
+      "detail": {
+        "real_codes": null,
+        "G0": "BLOCKED",
+        "live_tests": "NOT_RUN"
+      }
+    },
+    {
+      "check": "executed_fixture_tests_evidence",
+      "result": "PASS",
+      "detail": {
+        "executed_tests": 36,
+        "exit_code": 0,
+        "mode": "synthetic_only",
+        "reran_in_this_check": false
+      }
+    },
+    {
+      "check": "screen_validation_not_fabricated",
+      "result": "PASS",
+      "detail": {
+        "screen": "NOT_RUN",
+        "reason": "No own app or route",
+        "screenshots": 0
+      }
+    },
+    {
+      "check": "limited_secret_pattern_scan",
+      "result": "PASS",
+      "detail": {
+        "files_checked": 107,
+        "findings_without_values": [],
+        "limitation": "Known patterns only; synthetic sentinel values are not real credentials."
+      }
+    },
+    {
+      "check": "changed_text_whitespace",
+      "result": "PASS",
+      "detail": {
+        "issues": []
+      }
+    },
+    {
+      "check": "python_syntax",
+      "result": "PASS",
+      "detail": {
+        "files": [
+          "scripts/api_proof_contract.py",
+          "tests/test_api_proof_contract.py"
+        ]
+      }
+    },
+    {
+      "check": "git_diff_and_local_scope",
+      "result": "PASS",
+      "detail": {
+        "diff_check_exit": 0,
+        "all_files_untracked": true,
+        "commit": null,
+        "push_PR": "NOT_RUN"
+      }
+    }
+  ],
+  "passed": 14,
+  "failed": 0,
+  "does_not_rerun_or_replace_fixture_or_live_tests": true,
+  "new_files": [
+    "docs/contracts/README.md",
+    "docs/contracts/public-api-sources.json",
+    "docs/reports/API_VALIDATION.md",
+    "docs/reports/STEP-02.md",
+    "docs/reports/evidence/step-02/catalog/15003003.diagnostic.txt",
+    "docs/reports/evidence/step-02/catalog/15003024.diagnostic.txt",
+    "docs/reports/evidence/step-02/catalog/15003029.diagnostic.txt",
+    "docs/reports/evidence/step-02/catalog/15074408.diagnostic.txt",
+    "docs/reports/evidence/step-02/catalog/15089380.diagnostic.txt",
+    "docs/reports/evidence/step-02/catalog/catalog-recheck.json",
+    "docs/reports/evidence/step-02/fixture-tests.json",
+    "docs/reports/evidence/step-02/preflight.json",
+    "docs/reports/evidence/step-02/prior-work-baseline.json",
+    "docs/reports/evidence/step-02/screen-check.json",
+    "scripts/api_proof_contract.py",
+    "tests/fixtures/synthetic/api-proof/README.md",
+    "tests/fixtures/synthetic/api-proof/auth-error.xml",
+    "tests/fixtures/synthetic/api-proof/empty.json",
+    "tests/fixtures/synthetic/api-proof/manifest.json",
+    "tests/fixtures/synthetic/api-proof/missing-header.json",
+    "tests/fixtures/synthetic/api-proof/request-contract.json",
+    "tests/fixtures/synthetic/api-proof/success-many.json",
+    "tests/fixtures/synthetic/api-proof/success-many.xml",
+    "tests/fixtures/synthetic/api-proof/success-single.json",
+    "tests/fixtures/synthetic/api-proof/success-single.xml",
+    "tests/fixtures/synthetic/api-proof/unsafe-doctype.xml",
+    "tests/test_api_proof_contract.py",
+    "docs/reports/evidence/step-02/validation.json"
+  ]
+}

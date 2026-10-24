@@ -1,0 +1,15 @@
+{
+  "response": {
+    "body": {
+      "items": {
+        "item": {
+          "jmcd": "0007",
+          "jmfldnm": "합성종목A"
+        }
+      },
+      "totalCount": 1,
+      "pageNo": 1,
+      "numOfRows": 10
+    }
+  }
+}

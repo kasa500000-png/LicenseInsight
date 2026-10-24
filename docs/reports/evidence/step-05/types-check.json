@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "scripts/generate-db-types.py",
+    "docs/reports/evidence/step-05/sql-final/qi_first-metadata.json",
+    "--check"
+  ],
+  "started_at": "2026-10-20T10:59:43.504480+00:00",
+  "finished_at": "2026-10-20T10:59:43.536564+00:00",
+  "exit_code": 0,
+  "stdout": "Database type contract matches catalog metadata.\n",
+  "stderr": ""
+}

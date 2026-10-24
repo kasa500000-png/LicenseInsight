@@ -1,0 +1,85 @@
+{
+  "reviewed_at": "2026-10-21T00:54:28.055497+00:00",
+  "tool": "functions tools.view_image",
+  "all_screenshots": 55,
+  "detail_screenshots": 17,
+  "manually_viewed": [
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-details-error-390-unborn.png",
+      "sha256": "ebf2ac264b9816c56942f067c40538d1aa81bfeb19b8c111aab278faf91622ca"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-events-error-390-unborn.png",
+      "sha256": "01b750cbc9ace9722709b1eb8f4110dde8364ba9fde238e4283b16c421c71b04"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-no-js-statistics-unborn.png",
+      "sha256": "9a04d3aeb98a351705b35fa0896b665c73a024309c8851508d17cc524ca42c4b"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-overview-1440-unborn.png",
+      "sha256": "61664190cbb8648c8c9c30606dca68a572413b70ace5c2e206a9ef01e3540be8"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-overview-390-unborn.png",
+      "sha256": "72bed0b12877d7b3e4171e293f25fe37ef2ec7cf3af41249df47ddf7b38f62f5"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-partial-statistics-390-unborn.png",
+      "sha256": "4b6a9c0737126631b42b5b81877dccd2a365e5a51a1e3912ab3be0defb8d34bf"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-pending-390-unborn.png",
+      "sha256": "ca5477290e88e33c7f9100d1064daaa59eafcf143cccecfea7e31e20750956be"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-range-390-unborn.png",
+      "sha256": "ed3569d41fac9bec184b584a721529dc1d0e5fc0a958f2e5aa1ba4ef8a5b34d3"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-schedules-1440-unborn.png",
+      "sha256": "cd60de307839a87657d99a270c90fb9a36d1fcc16f14eb7bd9faabcc3faf0ddf"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-schedules-390-unborn.png",
+      "sha256": "5e81c43d7fb36f0a4b8732ad9b60274dfb3a2f07c03dc3d40af476836632e105"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-stale-390-unborn.png",
+      "sha256": "d86982ec463cbf6263b6da202d60206a76c62af0f03a573493fa90f39ef5ab70"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-statistics-1440-unborn.png",
+      "sha256": "39a497abfcdaf70b5d93605add940fe693a8a61fc5e671cc9631aba4d6acba58"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-statistics-390-unborn.png",
+      "sha256": "c0d9d8edb34cd1288e63c4a7a028fcd093cd4ce916994c7335d9653aa9d6887d"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-stats-error-390-unborn.png",
+      "sha256": "689a859ed9340458bf62ea94162dddbd8b75e15f0f6c9ec45fafca1d80b6e695"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-status-error-390-unborn.png",
+      "sha256": "b4fc031ef143dc1f6c71f175d6ed9c877acc027e2c9b9124a9c67cf2e9b9689a"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-time-unknown-390-unborn.png",
+      "sha256": "f9ee3ac122a726ae8bf39b43112f97529f624a5c128dd08483e5017b72788f2f"
+    },
+    {
+      "file": "docs/reports/evidence/step-08/screenshots/detail-unsupported-unborn.png",
+      "sha256": "f39dc478c1814ff08647a8d040f896e0427cb2946d3e9facd649e94c2e7ba321"
+    }
+  ],
+  "notes": [
+    "390/1440 overview/schedules/statistics reviewed; weighted 470/1000=47.0%, chart20.0/50.0 matches table",
+    "JS-disabled practical50.0% native GET selectors reviewed",
+    "partial year null is not zero; separate statistics/event/details failures; stale/pending/unknown-status; range/time-unknown; unsupported reviewed",
+    "Tall element captures include fixed mobile navigation at the capture viewport position; E2E separately verifies final action scrolls above navigation. No hiding styles applied."
+  ],
+  "real_device": false,
+  "other_browser": false,
+  "full_wcag_audit": false
+}

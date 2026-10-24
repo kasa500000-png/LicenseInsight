@@ -1,0 +1,13 @@
+{
+  "command": [
+    "pnpm",
+    "lint"
+  ],
+  "non_secret_configuration": {},
+  "started_at": "2026-10-20T11:57:51.650146+00:00",
+  "finished_at": "2026-10-20T11:57:53.620116+00:00",
+  "elapsed_seconds": 1.97,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "$ eslint . --max-warnings=0\n"
+}

@@ -1,0 +1,245 @@
+{
+  "checked_at_utc": "2026-10-20T07:51:15.769089+00:00",
+  "artifact_kind": "STEP-03_document_and_evidence_validation",
+  "passed": 14,
+  "failed": 1,
+  "checks": [
+    {
+      "check": "prior_work_preserved",
+      "result": "FAIL",
+      "detail": {
+        "baseline_files": 108,
+        "unchanged": 101,
+        "intentional_changes": [
+          "AGENTS.md",
+          ".env.example",
+          "README.md",
+          "state/BLOCKERS.md",
+          "state/PROJECT_STATUS.md",
+          "state/EVIDENCE_INDEX.md",
+          "state/DECISIONS.md"
+        ],
+        "missing": [],
+        "unexpected": [
+          "AGENTS.md"
+        ]
+      }
+    },
+    {
+      "check": "text_encoding",
+      "result": "PASS",
+      "detail": {
+        "text_files": 162
+      }
+    },
+    {
+      "check": "relative_links",
+      "result": "PASS",
+      "detail": {
+        "broken": []
+      }
+    },
+    {
+      "check": "json_artifacts",
+      "result": "PASS",
+      "detail": {
+        "invalid": []
+      }
+    },
+    {
+      "check": "required_commands_pass",
+      "result": "PASS",
+      "detail": {
+        "lint-final": 0,
+        "typecheck": 0,
+        "clean-typecheck": 0,
+        "tests-final": 0,
+        "build": 0,
+        "client-boundary": 0,
+        "browser-tests": 0
+      }
+    },
+    {
+      "check": "unit_integration_evidence",
+      "result": "PASS",
+      "detail": {
+        "passed": 73,
+        "scope": "environment and CLI, not domain/API/DB"
+      }
+    },
+    {
+      "check": "real_browser_evidence",
+      "result": "PASS",
+      "detail": {
+        "stats": {
+          "startTime": "2026-10-20T07:45:18.466Z",
+          "duration": 5009.473,
+          "expected": 8,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "browser": "system Chromium154",
+        "target": "local Next server"
+      }
+    },
+    {
+      "check": "build_and_runtime_fail_closed",
+      "result": "PASS",
+      "detail": {
+        "negative_build_cases": 3,
+        "production_fixture_start_rejected": true
+      }
+    },
+    {
+      "check": "test_route_hidden_outside_test",
+      "result": "PASS",
+      "detail": {
+        "local_status": 404,
+        "local_production_config_status": 404,
+        "is_deployment": false
+      }
+    },
+    {
+      "check": "screen_artifacts",
+      "result": "PASS",
+      "detail": {
+        "screenshots": [
+          {
+            "path": "docs/reports/evidence/step-03/screenshots/foundation-home-360.png",
+            "width": 360,
+            "height": 1000,
+            "sha256": "619864713662c5e2285590dad83228e8c87820db56767cdcd8f2d8845d18702f"
+          },
+          {
+            "path": "docs/reports/evidence/step-03/screenshots/foundation-home-390.png",
+            "width": 390,
+            "height": 1000,
+            "sha256": "b775798be453bc0a9bd5bded6ad0813acdefbc9d0d9b2ea540fd5993c410e4d4"
+          },
+          {
+            "path": "docs/reports/evidence/step-03/screenshots/foundation-home-768.png",
+            "width": 768,
+            "height": 1000,
+            "sha256": "be427a0522e00296e9247ec1ba52340c2e640eb9dbdf472b7e391bf298609bf9"
+          },
+          {
+            "path": "docs/reports/evidence/step-03/screenshots/foundation-home-1440.png",
+            "width": 1440,
+            "height": 1000,
+            "sha256": "fb5bc6c1f62ae05c70c569c4dad22a209c49b09a6f28a9e308d68f9882de9840"
+          }
+        ],
+        "review": "All widths visually inspected; mobile spacing/font adjustment rechecked on latest 360/390. No claim of full accessibility/performance audit."
+      }
+    },
+    {
+      "check": "reproducible_dependencies",
+      "result": "PASS",
+      "detail": {
+        "exact_versions": true,
+        "clean_frozen_install_exit": 0,
+        "store_reused": true
+      }
+    },
+    {
+      "check": "secretless_ci_draft",
+      "result": "PASS",
+      "detail": {
+        "remote_CI": "NOT_RUN",
+        "configuration_only": true
+      }
+    },
+    {
+      "check": "limited_secret_pattern_scan",
+      "result": "PASS",
+      "detail": {
+        "findings_without_values": [],
+        "secret_files_read": false,
+        "limitation": "Known patterns only; synthetic test sentinels are not credentials."
+      }
+    },
+    {
+      "check": "blocked_live_work_not_promoted",
+      "result": "PASS",
+      "detail": {
+        "key_presence": false,
+        "authenticated_API_calls_this_step": 0,
+        "catalog_retries_this_step": 0,
+        "G0": "BLOCKED"
+      }
+    },
+    {
+      "check": "git_scope",
+      "result": "PASS",
+      "detail": {
+        "diff_check_exit": 0,
+        "untracked_files": 166,
+        "commit": null,
+        "push_PR_deployment": "NOT_RUN",
+        "untracked_content_checked_by_hashes": true
+      }
+    }
+  ],
+  "new_files": [
+    ".github/workflows/ci.yml",
+    ".npmrc",
+    ".nvmrc",
+    "docs/reports/STEP-03.md",
+    "docs/reports/STEP-03_DEPENDENCIES.md",
+    "docs/reports/evidence/step-03/browser-tests-first.json",
+    "docs/reports/evidence/step-03/browser-tests.json",
+    "docs/reports/evidence/step-03/build-first.json",
+    "docs/reports/evidence/step-03/build.json",
+    "docs/reports/evidence/step-03/clean-typecheck.json",
+    "docs/reports/evidence/step-03/client-boundary.json",
+    "docs/reports/evidence/step-03/dependency-research.json",
+    "docs/reports/evidence/step-03/dev-smoke-first.json",
+    "docs/reports/evidence/step-03/dev-smoke.json",
+    "docs/reports/evidence/step-03/installation.json",
+    "docs/reports/evidence/step-03/lint-final.json",
+    "docs/reports/evidence/step-03/lint.json",
+    "docs/reports/evidence/step-03/negative-builds.json",
+    "docs/reports/evidence/step-03/prior-work-baseline.json",
+    "docs/reports/evidence/step-03/runtime-fixture-rejected.json",
+    "docs/reports/evidence/step-03/runtime-production.json",
+    "docs/reports/evidence/step-03/screenshots/foundation-home-1440.png",
+    "docs/reports/evidence/step-03/screenshots/foundation-home-360.png",
+    "docs/reports/evidence/step-03/screenshots/foundation-home-390.png",
+    "docs/reports/evidence/step-03/screenshots/foundation-home-768.png",
+    "docs/reports/evidence/step-03/tests-final.json",
+    "docs/reports/evidence/step-03/tests.json",
+    "docs/reports/evidence/step-03/typecheck-first.json",
+    "docs/reports/evidence/step-03/typecheck.json",
+    "eslint.config.mjs",
+    "next-env.d.ts",
+    "next.config.ts",
+    "package.json",
+    "playwright.config.ts",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "scripts/check-client-boundary.mjs",
+    "scripts/check-env.ts",
+    "src/app/error.tsx",
+    "src/app/foundation-check/error/page.tsx",
+    "src/app/foundation-check/error/trigger.tsx",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/app/loading.tsx",
+    "src/app/not-found.tsx",
+    "src/app/page.tsx",
+    "src/components/data-unavailable.tsx",
+    "src/config/env.ts",
+    "src/data/README.md",
+    "src/domain/README.md",
+    "src/features/README.md",
+    "src/proxy.ts",
+    "src/server/env.ts",
+    "tests/e2e/foundation.spec.ts",
+    "tests/integration/env-cli.test.ts",
+    "tests/unit/env.test.ts",
+    "tsconfig.json",
+    "vitest.config.mts",
+    "docs/reports/evidence/step-03/validation.json"
+  ]
+}

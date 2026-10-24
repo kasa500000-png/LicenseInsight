@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "test",
+    "--reporter=dot"
+  ],
+  "started_at_utc": "2026-10-20T07:38:53.167414+00:00",
+  "finished_at_utc": "2026-10-20T07:38:55.022561+00:00",
+  "exit_code": 0,
+  "stdout": "\n RUN  v5.0.5 /workspace/licenseinsight\n\n·········································································\n\n Test Files  2 passed (2)\n      Tests  73 passed (73)\n   Start at  07:38:54\n   Duration  969ms (tests 92%, transform 5%, import 3%, worker 1%)\n\n",
+  "stderr": "$ vitest run --reporter=dot\n"
+}

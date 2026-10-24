@@ -1,0 +1,185 @@
+{
+  "checked_at_utc": "2026-10-20T01:35:11.077796+00:00",
+  "checked_at_seoul": "2026-10-20T10:35:11.077796+09:00",
+  "os": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "workspace": "/workspace/licenseinsight",
+  "shell": "bash",
+  "repository": {
+    "remote": "https://github.com/kasa500000-png/LicenseInsight.git",
+    "branch": "audit/m0-task-001",
+    "commit": null,
+    "initial_state": "empty remote; no local project files or previous changes",
+    "ls_remote_heads_count": 0,
+    "remote_writes": "NOT_RUN"
+  },
+  "tools": [
+    {
+      "tool": "git",
+      "installed": true,
+      "version": "git version 2.52.0",
+      "version_exit_code": 0,
+      "functional_validation": "PASS: repository read/clone"
+    },
+    {
+      "tool": "gh",
+      "installed": true,
+      "version": "gh version 2.46.0 (2025-01-13 Debian 2.46.0-3)",
+      "version_exit_code": 0,
+      "functional_validation": "PASS: repository read/clone"
+    },
+    {
+      "tool": "node",
+      "installed": true,
+      "version": "v24.19.0",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "npm",
+      "installed": true,
+      "version": "11.9.0",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "pnpm",
+      "installed": true,
+      "version": "11.25.0",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "yarn",
+      "installed": false,
+      "version": null,
+      "version_exit_code": null,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "corepack",
+      "installed": true,
+      "version": "0.34.6",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "python",
+      "installed": true,
+      "version": "Python 3.12.14",
+      "version_exit_code": 0,
+      "functional_validation": "PASS: local document audit commands"
+    },
+    {
+      "tool": "codex",
+      "installed": true,
+      "version": "codex-cli 0.163.0",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "curl",
+      "installed": true,
+      "version": "curl 8.14.1 (x86_64-pc-linux-gnu) libcurl/8.14.1 OpenSSL/3.5.7 zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.64.0 nghttp3/1.8.0 librtmp/2.3 OpenLDAP/2.6.10",
+      "version_exit_code": 0,
+      "functional_validation": "EXECUTED: public catalog returned HTTP503; no API authentication"
+    },
+    {
+      "tool": "rg",
+      "installed": true,
+      "version": "ripgrep 15.2.0 (rev e89fff89ac)",
+      "version_exit_code": 0,
+      "functional_validation": "PASS: local document audit commands"
+    },
+    {
+      "tool": "playwright",
+      "installed": true,
+      "version": "Version 1.62.0",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "chromium",
+      "installed": true,
+      "version": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "google-chrome",
+      "installed": false,
+      "version": null,
+      "version_exit_code": null,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "docker",
+      "installed": true,
+      "version": "Docker version 28.4.0, build d8eb465",
+      "version_exit_code": 0,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "supabase",
+      "installed": false,
+      "version": null,
+      "version_exit_code": null,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "psql",
+      "installed": false,
+      "version": null,
+      "version_exit_code": null,
+      "functional_validation": "NOT_RUN"
+    },
+    {
+      "tool": "vercel",
+      "installed": false,
+      "version": null,
+      "version_exit_code": null,
+      "functional_validation": "NOT_RUN"
+    }
+  ],
+  "server_env_presence": {
+    "DATA_GO_KR_SERVICE_KEY": false,
+    "SUPABASE_URL": false,
+    "SUPABASE_PUBLISHABLE_KEY": false,
+    "SUPABASE_SECRET_KEY": false,
+    "CRON_SECRET": false,
+    "APP_ENV": false,
+    "DATA_MODE": false,
+    "ADS_ENABLED": false,
+    "ANALYTICS_ENABLED": false,
+    "PUBLIC_SITE_URL": false
+  },
+  "existing_env_file_names": [],
+  "package_and_lockfiles": [],
+  "instructions": {
+    "ancestor_files_found": [],
+    "root_agents": "AGENTS.md imported from user kit"
+  },
+  "network": {
+    "observations_current": true,
+    "state": "enforced",
+    "mode": "unrestricted",
+    "vpn_configured": false,
+    "configured_secrets_count": 0,
+    "configured_runtime_variables_count": 0,
+    "configured_outbound_identities_count": 0
+  },
+  "connectors": {
+    "github": "read-only search verified; GH CLI clone verified",
+    "cloud_environment": "environment_status verified",
+    "supabase_vercel_neon": "tools exposed; account/project/DB readiness NOT_VERIFIED"
+  },
+  "application_validation": {
+    "lint": "NOT_RUN: no package.json",
+    "typecheck": "NOT_RUN: no app",
+    "build": "NOT_RUN: no app",
+    "unit_integration": "NOT_RUN: prepared only",
+    "browser_ui": "NOT_RUN: no app",
+    "database_rls": "NOT_RUN: no target DB",
+    "authenticated_public_api": "NOT_RUN: key absent; approvals unknown",
+    "deploy": "NOT_RUN"
+  }
+}

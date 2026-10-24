@@ -1,0 +1,79 @@
+{
+  "artifact_kind": "step02_preflight_not_live",
+  "generated_at_utc": "2026-10-20T03:37:07.207252+00:00",
+  "seoul_date": "2026-10-20",
+  "timezone": "Asia/Seoul",
+  "credential": {
+    "variable": "DATA_GO_KR_SERVICE_KEY",
+    "present": false,
+    "value_recorded": false
+  },
+  "source_ids": [
+    "DS-01",
+    "DS-02",
+    "DS-03",
+    "DS-04",
+    "DS-05"
+  ],
+  "account_development_approval": "UNKNOWN",
+  "account_production_approval": "UNKNOWN",
+  "authenticated_requests_executed": 0,
+  "live_transport_implemented": false,
+  "candidate_schedule_years": [
+    2026,
+    2027
+  ],
+  "candidate_completed_statistic_years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "candidate_years_verified": false,
+  "targets": [
+    {
+      "requested_name": "전기기사",
+      "official_name": null,
+      "official_code": null,
+      "source_grade": null,
+      "statistics_crosswalk": null,
+      "code_status": "NOT_RUN",
+      "schedule_status": "NOT_RUN",
+      "statistics_status": "NOT_RUN",
+      "official_comparison": "NOT_RUN",
+      "public_support": "UNVERIFIED"
+    },
+    {
+      "requested_name": "전기산업기사",
+      "official_name": null,
+      "official_code": null,
+      "source_grade": null,
+      "statistics_crosswalk": null,
+      "code_status": "NOT_RUN",
+      "schedule_status": "NOT_RUN",
+      "statistics_status": "NOT_RUN",
+      "official_comparison": "NOT_RUN",
+      "public_support": "UNVERIFIED"
+    },
+    {
+      "requested_name": "전기기능사",
+      "official_name": null,
+      "official_code": null,
+      "source_grade": null,
+      "statistics_crosswalk": null,
+      "code_status": "NOT_RUN",
+      "schedule_status": "NOT_RUN",
+      "statistics_status": "NOT_RUN",
+      "official_comparison": "NOT_RUN",
+      "public_support": "UNVERIFIED"
+    }
+  ],
+  "blockers": [
+    "CREDENTIAL_ABSENT",
+    "ACCOUNT_APPROVAL_UNKNOWN",
+    "OFFICIAL_CONTRACT_UNCONFIRMED"
+  ],
+  "publication_allowed": false,
+  "G0": "BLOCKED"
+}

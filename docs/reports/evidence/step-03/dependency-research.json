@@ -1,0 +1,645 @@
+{
+  "artifact_kind": "STEP-03_dependency_official_metadata_research",
+  "checked_at_utc": "2026-10-20T07:33:30.431618+00:00",
+  "executor_observed": {
+    "node": "24.19.0",
+    "pnpm": "11.25.0"
+  },
+  "network_policy": {
+    "http": "unrestricted/enforced",
+    "observations_current": true,
+    "vpn_configured": false,
+    "proxy_and_TLS_preserved": true
+  },
+  "documents": [
+    {
+      "id": "next-installation",
+      "url": "https://nextjs.org/docs/app/getting-started/installation",
+      "checked_at_utc": "2026-10-20T07:31:16.224379+00:00",
+      "status": 200,
+      "final_url": "https://nextjs.org/docs/app/getting-started/installation",
+      "body_sha256": "789e3ded64c88b911ac4ba55db465a150cfed96823b35b06c9ad5ec1df8567ee",
+      "content_type": "text/markdown",
+      "snippets": [
+        "e sure your development environment meets the following requirements: - Minimum Node.js version: [20.9](https://nodejs.org/) - Operating systems: macOS, Windows (including WSL), and Linux. ## Supported browsers Next.js supports modern br",
+        "pment environment meets the following requirements: - Minimum Node.js version: [20.9](https://nodejs.org/) - Operating systems: macOS, Windows (including WSL), and Linux. ## Supported browsers Next.js supports modern browsers with zer",
+        " to create a new Next.js application with the `create-next-app` CLI, and set up TypeScript, ESLint, and Module Path Aliases.\" url: \"https://nextjs.org/docs/app/getting-started/installation\" docs_index: /docs/llms.txt lastUpdated: 2026-10-02",
+        "s` skips prompts using saved preferences or defaults. The default setup enables TypeScript, Tailwind CSS, ESLint, App Router, and Turbopack, with import alias `@/*`, and includes `AGENTS.md` to guide coding agents to write up-to-date Next.j",
+        "u like to use the recommended Next.js defaults? Yes, use recommended defaults - TypeScript, ESLint, No React Compiler, Tailwind CSS, No src/ directory, App Router, Cache Components, AGENTS.md No, reuse previous settings No, customize settin",
+        "ed result in your browser. ## Set up TypeScript > Minimum TypeScript version: `v5.1.0` Next.js comes with built-in TypeScript support. To add TypeScript to your project, rename a file to `.ts` / `.tsx` and run `next dev`. Next.js wil"
+      ]
+    },
+    {
+      "id": "node-releases",
+      "url": "https://nodejs.org/en/about/previous-releases",
+      "checked_at_utc": "2026-10-20T07:31:16.224904+00:00",
+      "status": 200,
+      "final_url": "https://nodejs.org/en/about/previous-releases",
+      "body_sha256": "e7c6c1a648f66040709d3c0e4c2f0aa56d826439e1f48c851630ace8cc8e47a2",
+      "content_type": "text/html; charset=utf-8",
+      "snippets": [
+        " Node.js — Node.js Releases ((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=[\"light\",\"dark\"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{le",
+        " Node.js — Node.js Releases ((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=[\"light\",\"dark\"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c=\"class",
+        "n About Download Blog Docs Beta Docs Contribute Start typing... ⌘ K Change page Node.js Releases .select-R4pbsnpivb { display: none!important; } Change page Node.js Releases About Node.js About Node.js® Node.js Releases Security Reportin",
+        "\":\\\"10.1.0\\\",\\\"releaseDate\\\":\\\"2023-10-24\\\",\\\"v8\\\":\\\"11.3.244.8\\\",\\\"version\\\":\\\"20.9.0\\\",\\\"versionWithPrefix\\\":\\\"v20.9.0\\\"},{\\\"modules\\\":\\\"115\\\",\\\"npm\\\":\\\"10.1.0\\\",\\\"releaseDate\\\":\\\"2023-10-13\\\",\\\"v8\\\":\\\"11.3.244.8\\\",\\\"version\\\":\\\"20.",
+        "3-10-24\\\",\\\"v8\\\":\\\"11.3.244.8\\\",\\\"version\\\":\\\"20.9.0\\\",\\\"versionWithPrefix\\\":\\\"v20.9.0\\\"},{\\\"modules\\\":\\\"115\\\",\\\"npm\\\":\\\"10.1.0\\\",\\\"releaseDate\\\":\\\"2023-10-13\\\",\\\"v8\\\":\\\"11.3.244.8\\\",\\\"version\\\":\\\"20.8.1\\\",\\\"versionWithPrefix\\\":\\\"v20.",
+        "ext/static/immutable/chunks/0mwavp2a5ceaj.js\\\"],\\\"default\\\"]\\n10b:T4b0,M10 1.25C5.16562 1.25 1.25 5.16562 1.25 10C1.25 13.8719 3.75469 17.1422 7.23281 18.3016C7.67031 18.3781 7.83437 18.1156 7.83437 17.8859C7.83437 17.6781 7.82344 16",
+        "le/chunks/0mwavp2a5ceaj.js\\\"],\\\"default\\\"]\\n10b:T4b0,M10 1.25C5.16562 1.25 1.25 5.16562 1.25 10C1.25 13.8719 3.75469 17.1422 7.23281 18.3016C7.67031 18.3781 7.83437 18.1156 7.83437 17.8859C7.83437 17.6781 7.82344 16.9891 7.82344 16.2",
+        " 3.98438 13.9922C3.67812 13.8281 3.24063 13.4234 3.97344 13.4125C4.6625 13.4016 5.15469 14.0469 5.31875 14.3094C6.10625 15.6328 7.36406 15.2609 7.86719 15.0312C7.94375 14.4625 8.17344 14.0797 8.425 13.8609C6.47813 13.6422 4.44375 12.",
+        "026 Oct 14, 2026 Current Details v 25 - Oct 15, 2025 Mar 31, 2026 EOL Details v 24 Krypton May 06, 2025 Oct 14, 2026 LTS Details v 23 - Oct 16, 2024 May 14, 2025 EOL Details v 22 Jod Apr 24, 2024 Sep 23, 2026 LTS Details v 21 - Oct ",
+        "EOL Details v 24 Krypton May 06, 2025 Oct 14, 2026 LTS Details v 23 - Oct 16, 2024 May 14, 2025 EOL Details v 22 Jod Apr 24, 2024 Sep 23, 2026 LTS Details v 21 - Oct 17, 2023 Apr 10, 2024 EOL Details v 20 Iron Apr 17, 2023 Mar 24, 2",
+        " 14, 2026 LTS Details v 23 - Oct 16, 2024 May 14, 2025 EOL Details v 22 Jod Apr 24, 2024 Sep 23, 2026 LTS Details v 21 - Oct 17, 2023 Apr 10, 2024 EOL Details v 20 Iron Apr 17, 2023 Mar 24, 2026 EOL Details v 19 - Oct 17, 2022 Apr 1",
+        "f Conduct Node.js Releases Commercial support for versions past the Maintenance LTS phase is available through our OpenJS Ecosystem Sustainability Program partners Major Node.js versions enter Current release status for six months, w",
+        "rted after six months, and even-numbered releases (10, 12, etc.) move to Active LTS status and are ready for general use. Starting with Node.js 27, the release cycle will be annual and every major version will move to LTS status afte",
+        "de.js 27, the release cycle will be annual and every major version will move to LTS status after its six-month Current phase (and six additional months of Alpha phase). LTS release status is &quot;long-term support&quot;, which typic"
+      ]
+    },
+    {
+      "id": "node-release-schedule",
+      "url": "https://raw.githubusercontent.com/nodejs/Release/main/schedule.json",
+      "checked_at_utc": "2026-10-20T07:31:16.225595+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/nodejs/Release/main/schedule.json",
+      "body_sha256": "1cf0432ceb9dfde7f1fd4cce43206519942cfdfad5a26039c2f4bb20fde8549c",
+      "content_type": "text/plain; charset=utf-8",
+      "node24": {
+        "start": "2025-05-06",
+        "lts": "2025-10-28",
+        "maintenance": "2026-10-20",
+        "end": "2028-04-30",
+        "codename": "Krypton"
+      }
+    },
+    {
+      "id": "types-node-24",
+      "url": "https://registry.npmjs.org/@types/node",
+      "checked_at_utc": "2026-10-20T07:31:16.226424+00:00",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/@types/node",
+      "body_sha256": "ca6bd5e530819935a1ada29877fc227e3869367e433dd33460fa00d9355890f4",
+      "content_type": "application/json",
+      "version": "24.19.2",
+      "license": "MIT",
+      "engines": null
+    },
+    {
+      "id": "next",
+      "url": "https://registry.npmjs.org/next/16.4.2",
+      "checked_at_utc": "2026-10-20T07:31:16.226855+00:00",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/next/16.4.2",
+      "body_sha256": "e47d24a73b3696f2c42f995b7879cf3cc54cae563c5123e6481d6210fc1c4aec",
+      "content_type": "application/json",
+      "version": "16.4.2",
+      "peerDependencies": {
+        "sass": "^1.3.0",
+        "react": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+        "react-dom": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+        "@playwright/test": "^1.51.1",
+        "@opentelemetry/api": "^1.1.0",
+        "babel-plugin-react-compiler": "*"
+      },
+      "dependencies": {
+        "postcss": "8.5.23",
+        "@next/env": "16.4.2",
+        "styled-jsx": "5.1.6",
+        "@swc/helpers": "0.5.23",
+        "caniuse-lite": "^1.0.30001579",
+        "baseline-browser-mapping": "^2.9.19"
+      },
+      "engines": {
+        "node": ">=20.9.0"
+      }
+    },
+    {
+      "id": "eslint-config-next",
+      "url": "https://registry.npmjs.org/eslint-config-next/16.4.2",
+      "checked_at_utc": "2026-10-20T07:31:16.227795+00:00",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/eslint-config-next/16.4.2",
+      "body_sha256": "6bb1b92527bdcb34b6a4ffd51055d052717679b63f02e418df53f269fdb1e203",
+      "content_type": "application/json",
+      "version": "16.4.2",
+      "peerDependencies": {
+        "eslint": ">=9.0.0",
+        "typescript": ">=3.3.1"
+      },
+      "dependencies": {
+        "globals": "16.4.0",
+        "typescript-eslint": "^8.56.0",
+        "eslint-plugin-react": "^7.37.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-jsx-a11y": "^6.10.0",
+        "@next/eslint-plugin-next": "16.4.2",
+        "eslint-plugin-react-hooks": "^7.1.0",
+        "eslint-import-resolver-node": "^0.3.6",
+        "eslint-import-resolver-typescript": "^3.5.2"
+      },
+      "engines": null
+    },
+    {
+      "id": "react-dom",
+      "url": "https://registry.npmjs.org/react-dom/19.3.1",
+      "checked_at_utc": "2026-10-20T07:31:16.228577+00:00",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/react-dom/19.3.1",
+      "body_sha256": "2d72d7d33a8b0fea5614e1b415d06470877efa8eebbdf638cee04e5b83c2c7a5",
+      "content_type": "application/json",
+      "version": "19.3.1",
+      "peerDependencies": {
+        "react": "^19.3.1"
+      },
+      "dependencies": {
+        "scheduler": "^0.28.0"
+      },
+      "engines": null
+    },
+    {
+      "id": "vitest",
+      "url": "https://registry.npmjs.org/vitest/5.0.5",
+      "checked_at_utc": "2026-10-20T07:31:16.235852+00:00",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/vitest/5.0.5",
+      "body_sha256": "161da05d413b8aca31ebb7763625d66086cb47057057f00d24d69147a343ef62",
+      "content_type": "application/json",
+      "version": "5.0.5",
+      "peerDependencies": {
+        "vite": "^6.4.0 || ^7.0.0 || ^8.0.0",
+        "jsdom": "*",
+        "happy-dom": "*",
+        "@vitest/ui": "5.0.5",
+        "@types/node": "^22.0.0 || >=24.0.0",
+        "@edge-runtime/vm": "*",
+        "@opentelemetry/api": "^1.9.0",
+        "@vitest/coverage-v8": "5.0.5",
+        "@vitest/browser-preview": "5.0.5",
+        "@vitest/coverage-istanbul": "5.0.5",
+        "@vitest/browser-playwright": "5.0.5",
+        "@vitest/browser-webdriverio": "^5.0.0-beta.5 || >=5.0.0"
+      },
+      "dependencies": {
+        "chai": "^6.3.0",
+        "obug": "^3.0.0",
+        "std-env": "^4.3.0",
+        "tinyexec": "^1.3.1",
+        "picomatch": "^4.0.7",
+        "tinybench": "^6.2.2",
+        "tinyglobby": "^0.2.17",
+        "@types/chai": "^5.2.2",
+        "expect-type": "^1.4.0",
+        "magic-string": "^1.4.3",
+        "@vitest/mocker": "5.0.5",
+        "es-module-lexer": "^2.3.2",
+        "why-is-node-running": "3.2.1"
+      },
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      }
+    }
+  ],
+  "latest_dist_tag_observations": [
+    {
+      "name": "next",
+      "version": "16.4.2",
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/next/latest"
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/react/latest"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/react-dom/latest"
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "license": "Apache-2.0",
+      "url": "https://registry.npmjs.org/typescript/latest"
+    },
+    {
+      "name": "eslint",
+      "version": "10.13.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/eslint/latest"
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "16.4.2",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/eslint-config-next/latest"
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.5",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/vitest/latest"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.64.1",
+      "engines": {
+        "node": ">=20"
+      },
+      "license": "Apache-2.0",
+      "url": "https://registry.npmjs.org/@playwright/test/latest"
+    },
+    {
+      "name": "server-only",
+      "version": "0.0.1",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/server-only/latest"
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.15",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/tsx/latest"
+    },
+    {
+      "name": "@types/node",
+      "version": "26.6.5",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/@types/node/latest"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/@types/react/latest"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/@types/react-dom/latest"
+    }
+  ],
+  "compatibility_observations": [
+    {
+      "name": "eslint-plugin-react",
+      "latest": "7.37.5",
+      "peers": {
+        "eslint": "^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7"
+      },
+      "engines": {
+        "node": ">=4"
+      }
+    },
+    {
+      "name": "eslint-plugin-import",
+      "latest": "2.32.0",
+      "peers": {
+        "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9"
+      },
+      "engines": {
+        "node": ">=4"
+      }
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y",
+      "latest": "6.10.2",
+      "peers": {
+        "eslint": "^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9"
+      },
+      "engines": {
+        "node": ">=4.0"
+      }
+    },
+    {
+      "name": "typescript-eslint",
+      "latest": "8.72.0",
+      "peers": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      }
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "latest": "8.72.0",
+      "peers": {
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      }
+    },
+    {
+      "name": "eslint",
+      "latest": "10.13.0",
+      "peers": {
+        "jiti": "*"
+      },
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "latest9": "9.39.5"
+    },
+    {
+      "name": "typescript",
+      "latest": "7.0.2",
+      "peers": null,
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "latest5": "5.9.3",
+      "latest6": "6.0.3"
+    }
+  ],
+  "recommended_packages": [
+    {
+      "name": "next",
+      "version": "16.4.2",
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/next/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "react",
+      "version": "19.3.1",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/react/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.1",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/react-dom/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "typescript",
+      "version": "6.0.3",
+      "url": "https://registry.npmjs.org/typescript/6.0.3",
+      "checked_at_utc": "2026-10-20T07:31:51.963138+00:00",
+      "status": 200,
+      "body_sha256": "c3b095f0ba61c854843c4965598d3d1de8eb8e3d41cfec93c5ffbfd8bde537cc",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "license": "Apache-2.0",
+      "peerDependencies": null,
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "eslint",
+      "version": "10.13.0",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/eslint/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.5",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/vitest/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.64.1",
+      "engines": {
+        "node": ">=20"
+      },
+      "license": "Apache-2.0",
+      "url": "https://registry.npmjs.org/@playwright/test/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "server-only",
+      "version": "0.0.1",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/server-only/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.15",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/tsx/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "@types/node",
+      "version": "24.19.2",
+      "url": "https://registry.npmjs.org/@types/node/24.19.2",
+      "checked_at_utc": "2026-10-20T07:31:52.061702+00:00",
+      "status": 200,
+      "body_sha256": "208f2b8105302901160a596229d995f8cd53044cb6c32ff98f271dba50677f09",
+      "engines": null,
+      "license": "MIT",
+      "peerDependencies": {},
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/@types/react/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "engines": null,
+      "license": "MIT",
+      "url": "https://registry.npmjs.org/@types/react-dom/latest",
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.72.0",
+      "url": "https://registry.npmjs.org/typescript-eslint/8.72.0",
+      "checked_at_utc": "2026-10-20T07:32:18.237061+00:00",
+      "status": 200,
+      "body_sha256": "3af26e40360030187a06edddfacfdaecc33e32c1d6185658a37b01518fdbd376",
+      "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+      },
+      "license": "MIT",
+      "peerDependencies": {
+        "eslint": "^8.57.0 || ^9.0.0 || ^10.0.0",
+        "typescript": ">=4.8.4 <6.1.0"
+      },
+      "dependencies": {
+        "@typescript-eslint/utils": "8.72.0",
+        "@typescript-eslint/parser": "8.72.0",
+        "@typescript-eslint/eslint-plugin": "8.72.0",
+        "@typescript-eslint/typescript-estree": "8.72.0"
+      },
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "version": "16.4.2",
+      "url": "https://registry.npmjs.org/@next/eslint-plugin-next/16.4.2",
+      "checked_at_utc": "2026-10-20T07:32:18.451548+00:00",
+      "status": 200,
+      "body_sha256": "e3ba3805e34497dd219ed543d1e315032eeed6fd60f791b2f1e4cf7d71e3e4d5",
+      "engines": null,
+      "license": "MIT",
+      "peerDependencies": null,
+      "dependencies": {
+        "fast-glob": "3.3.1",
+        "@eslint-community/eslint-utils": "4.9.1"
+      },
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "url": "https://registry.npmjs.org/@eslint/js/latest",
+      "checked_at_utc": "2026-10-20T07:32:18.040489+00:00",
+      "status": 200,
+      "body_sha256": "75eeba3862a04516865e8797781aaed448dec1815f3cd37ac871284079b768ff",
+      "engines": {
+        "node": "^20.19.0 || ^22.13.0 || >=24"
+      },
+      "license": "MIT",
+      "peerDependencies": {
+        "eslint": "^10.0.0"
+      },
+      "dependencies": null,
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.4",
+      "url": "https://registry.npmjs.org/vite/latest",
+      "checked_at_utc": "2026-10-20T07:31:52.061020+00:00",
+      "status": 200,
+      "body_sha256": "ae9186d2b69f66661dcc272f4b9a02e1eb858b92f63061af16ed981b29da2596",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "license": "MIT",
+      "peerDependencies": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1"
+      },
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    },
+    {
+      "name": "pnpm",
+      "version": "11.25.0",
+      "url": "https://registry.npmjs.org/pnpm/11.25.0",
+      "checked_at_utc": "2026-10-20T07:31:51.940448+00:00",
+      "status": 200,
+      "body_sha256": "d5025007aa1ee1c20398fdf8f7e8c59c7eef47d79a038b2e9a431d5a5e77e617",
+      "engines": {
+        "node": ">=22.13"
+      },
+      "license": "MIT",
+      "peerDependencies": null,
+      "deprecated": null,
+      "selection": "recommended_exact_pin"
+    }
+  ],
+  "excluded_latest_choices": [
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "reason": "typescript-eslint8.72.0 peer is >=4.8.4 <6.1.0; TS7 outside declared support"
+    },
+    {
+      "name": "eslint",
+      "version": "9.39.5",
+      "reason": "Exact npm metadata marks this version deprecated/no longer supported"
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "16.4.2",
+      "reason": "Bundled react/import/jsx-a11y plugin peer ranges exclude ESLint10; use typescript-eslint and Next plugin directly"
+    }
+  ],
+  "runtime_support": {
+    "node24": {
+      "source": "https://raw.githubusercontent.com/nodejs/Release/main/schedule.json",
+      "lts": "2025-10-28",
+      "maintenance": "2026-10-20",
+      "end": "2028-04-30",
+      "conclusion": "Node24 remains supported in maintenance at audit date"
+    },
+    "next_minimum_node": "20.9.0",
+    "next_minimum_typescript": "5.1.0",
+    "react_next_peer_match": true,
+    "vitest_node24_peer_match": true,
+    "vite8_node24_engine_match": true,
+    "pnpm_node24_engine_match": true
+  },
+  "limits": [
+    "This evidence is public documentation/metadata inspection, not installation, lint, build or browser-test evidence.",
+    "Next ESLint plugin declares no ESLint peer range; actual lint execution must establish practical compatibility.",
+    "Full eslint-config-next React/hooks/a11y preset is excluded; keyboard/labels/accessibility need separate browser checks.",
+    "No package installed, no lockfile or application source changed by research subtask.",
+    "@eslint/js and vite are available exact candidates; root decides whether explicit dependency is needed."
+  ],
+  "remote_mutations": false
+}

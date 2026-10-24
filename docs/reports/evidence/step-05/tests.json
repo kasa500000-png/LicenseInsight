@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "test"
+  ],
+  "started_at": "2026-10-20T10:59:47.781113+00:00",
+  "finished_at": "2026-10-20T10:59:49.499927+00:00",
+  "exit_code": 0,
+  "stdout": "\n RUN  v5.0.5 /workspace/licenseinsight\n\n\n Test Files  6 passed (6)\n      Tests  202 passed (202)\n   Start at  10:59:48\n   Duration  962ms (tests 77%, import 12%, transform 8%, worker 2%)\n\n",
+  "stderr": "$ vitest run\n"
+}

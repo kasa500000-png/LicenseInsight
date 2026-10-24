@@ -1,0 +1,20 @@
+{
+  "command": [
+    "pnpm",
+    "build"
+  ],
+  "non_secret_configuration": {
+    "APP_ENV": "test",
+    "DATA_MODE": "live",
+    "PUBLIC_SITE_URL": "http://127.0.0.1:3103",
+    "ADS_ENABLED": "false",
+    "ANALYTICS_ENABLED": "false",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "started_at": "2026-10-21T00:52:21.536105+00:00",
+  "finished_at": "2026-10-21T00:52:27.931420+00:00",
+  "elapsed_seconds": 6.395,
+  "exit_code": 0,
+  "stdout": "▲ Next.js 16.4.2 (Turbopack)\n✓ Running next.config.ts took 23ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 170ms\n  Running TypeScript ...\n  Finished TypeScript in 1710ms ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/5) ...\n  Generating static pages using 4 workers (1/5) \n  Generating static pages using 4 workers (2/5) \n  Generating static pages using 4 workers (3/5) \n✓ Generating static pages using 4 workers (5/5) in 180ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ƒ /\n├ ○ /_not-found\n├ ○ /calendar\n├ ○ /compare\n├ ƒ /detail-demo/[slug]\n├ ƒ /foundation-check/error\n├ ○ /my-plan\n└ ƒ /ui-gallery\n\n\nƒ Proxy (Middleware)\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n",
+  "stderr": "$ next build\n"
+}

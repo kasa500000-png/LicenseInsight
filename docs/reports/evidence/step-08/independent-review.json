@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-10-21T00:57:54.533160+00:00",
+  "reviewer": "/root/step08_contract_review",
+  "mode": "read-only static review; no independent test or API/DB execution",
+  "findings": [
+    {
+      "issue": "Dataset statuses failure/empty used Array.every and hid global unknown status warning",
+      "resolution": "Require available/complete/type coverage; render unverified notice; status-error E2E passes"
+    },
+    {
+      "issue": "Selected year read failure could be shown as empty when another year loaded",
+      "resolution": "Missing group plus incomplete pagination is error; stats-partial-error E2E passes"
+    }
+  ],
+  "remaining_material_findings": [],
+  "reviewed_boundaries": [
+    "exact official HTTPS hosts and sensitive nested query names",
+    "explicit public DTO projection, request-local raw memo, fresh clock evaluation, null/error retry",
+    "bounded pagination and partial sections",
+    "synthetic group/revision evidence binding; synthetic evidence rejected in live",
+    "local/test slug proxy and server guards; no registered public live detail route"
+  ],
+  "not_verified": [
+    "actual PostgreSQL execution of new slug method",
+    "public API/official crosscheck",
+    "remote deployment/cache/access protection"
+  ]
+}

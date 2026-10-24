@@ -1,0 +1,25 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "00",
+      "resultMsg": "SYNTHETIC_NORMAL"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "jmcd": "0007",
+            "jmfldnm": "합성종목A"
+          },
+          {
+            "jmcd": "0012",
+            "jmfldnm": "합성종목B"
+          }
+        ]
+      },
+      "totalCount": "2",
+      "pageNo": 1,
+      "numOfRows": 10
+    }
+  }
+}

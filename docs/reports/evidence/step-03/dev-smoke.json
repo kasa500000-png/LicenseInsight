@@ -1,0 +1,19 @@
+{
+  "command": [
+    "pnpm",
+    "dev",
+    "--port",
+    "3104"
+  ],
+  "app_env": "local",
+  "data_mode": "live",
+  "started_at_utc": "2026-10-20T07:41:41.736028+00:00",
+  "is_deployment": false,
+  "site_origin_is_configuration_shape_test_only": true,
+  "home_status": 200,
+  "server_rendered_text": true,
+  "test_only_route_status": 404,
+  "finished_at_utc": "2026-10-20T07:41:45.513917+00:00",
+  "stdout": "$ next dev --hostname 127.0.0.1 --port 3104\n▲ Next.js 16.4.2 (Turbopack)\n- Local:         http://127.0.0.1:3104\n- Network:       http://127.0.0.1:3104\n✓ Ready in 324ms\n✓ Running next.config.ts took 31ms\n\n GET / 200 in 420ms (next.js: 188ms, application-code: 233ms)\n[ELIFECYCLE] Command failed.\n",
+  "passed": true
+}

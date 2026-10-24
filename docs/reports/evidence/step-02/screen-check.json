@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-20T03:38:57.669239+00:00",
+  "phase": "screen_verification_after_fixture_tests",
+  "scope": "STEP-02 offline API proof",
+  "ui_changed": false,
+  "package_files": [],
+  "web_routes": [],
+  "own_app_screen_validation": "NOT_RUN",
+  "reason": "No web application, route or running site exists in this STEP; no screen to inspect. No UI scaffold is required by STEP-02.",
+  "browser_launched": false,
+  "screenshot": null,
+  "responsive_viewports_checked": [],
+  "external_catalog_http_checks_are_not_ui_tests": true,
+  "cli_preflight_executed": true,
+  "cli_preflight_result": "BLOCKED"
+}

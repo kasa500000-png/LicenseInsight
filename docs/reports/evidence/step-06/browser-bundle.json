@@ -1,0 +1,7 @@
+{
+  "compiler_version": "0.28.2",
+  "bytes": 58517,
+  "sha256": "f0c035afb24afd8c8df1a7664a9ac77f59fd1bac12c047d834e6641acf28cf51",
+  "target": "browser-es2022",
+  "test_only": true
+}

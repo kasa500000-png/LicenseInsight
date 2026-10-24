@@ -1,0 +1,17 @@
+{
+  "command": [
+    "pnpm",
+    "test:e2e"
+  ],
+  "non_secret_configuration": {
+    "PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH": "/usr/bin/chromium",
+    "SCREENSHOT_DIR": "docs/reports/evidence/step-06/screenshots",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "started_at": "2026-10-20T11:56:58.858117+00:00",
+  "finished_at": "2026-10-20T11:57:01.401319+00:00",
+  "elapsed_seconds": 2.543,
+  "exit_code": 1,
+  "stdout": "SyntaxError: Cannot use 'import.meta' outside a module\n\n   at domain.spec.ts:4\n\n  2 | import path from \"node:path\";\n  3 | import { expect, test, type Page } from \"@playwright/test\";\n> 4 | import { domainBrowserBundle } from \"../../scripts/domain-browser-bundle.mjs\";\n    | ^\n  5 | import { domainOracleExpected } from \"../support/domain-oracle\";\n  6 |\n  7 | declare global {\n    at Object.<anonymous> (/workspace/licenseinsight/tests/e2e/domain.spec.ts:4:1)\n\n[ELIFECYCLE] Command failed with exit code 1.\n",
+  "stderr": "$ playwright test\n[WebServer] (node:53381) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n[WebServer] $ next start --hostname 127.0.0.1 --port 3103\n[WebServer] (node:53396) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:53351) Warning: Failed to load the ES module: /workspace/licenseinsight/scripts/domain-browser-bundle.mjs. Make sure to set \"type\": \"module\" in the nearest package.json file or use the .mjs extension.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+}

@@ -1,0 +1,59 @@
+{
+  "artifact_kind": "synthetic_fixture_manifest",
+  "source": "authored_for_offline_contract_tests",
+  "is_official_data": false,
+  "is_recorded_api_response": false,
+  "publication_allowed": false,
+  "network_requests_used_to_create": 0,
+  "official_operations_verified": false,
+  "scope": "STEP-02 offline probe contract only; not production ingestion or statistics engine",
+  "codes_notice": "0007 and 0012 are fictional sentinel strings, not verified qualification codes",
+  "business_codes_notice": "00/30/22 are synthetic case labels, not confirmed source-specific error mappings",
+  "files": [
+    {
+      "path": "auth-error.xml",
+      "sha256": "b98742de02ecd1bde1c98e028031948c5e17201080108a2ad7a9e145ac6424f8",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "empty.json",
+      "sha256": "27b17990bb6db773c31b0e03d6ef79f361362a33c023785250f76241bc88b62e",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "missing-header.json",
+      "sha256": "ea8e00ed9df1f940a426e838c0685a63f88f4dfa5e84f4d74c4ce2c2a66e5825",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "request-contract.json",
+      "sha256": "0a22fc78fc7b100410974b3ad9afb2aa09d62e4f651cbbada20bc348ffbe1443",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "success-many.json",
+      "sha256": "455f12b9f19e6af2bf38be90a31dcfb9967068a1662929a5e945827d3c31fd18",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "success-many.xml",
+      "sha256": "4d78076cfae38d84bab783fd91a962bd1cad1d82fdbd0a52dc0d110df039fcd1",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "success-single.json",
+      "sha256": "bf65db48a113eb69b1e7e9c9f0d03c0d4027c59eaeead3b6cb3441f5acc72347",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "success-single.xml",
+      "sha256": "ee8f5427a29b41a26f90361072571d8354994722219cc8ee0581772f3a2a23c3",
+      "provenance": "synthetic"
+    },
+    {
+      "path": "unsafe-doctype.xml",
+      "sha256": "aff7f402cb17fe1492db5578dea3310b1386bbc7dbc291ba6f4a99ddcfb2b1cd",
+      "provenance": "synthetic"
+    }
+  ]
+}

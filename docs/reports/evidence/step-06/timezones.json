@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "timezone": "UTC",
+      "status": "PASS",
+      "result_sha256": "cc84e29e0a426923a90761922dd15bbc27840638067d723ecb5da559a8ca0cc6"
+    },
+    {
+      "timezone": "Asia/Seoul",
+      "status": "PASS",
+      "result_sha256": "cc84e29e0a426923a90761922dd15bbc27840638067d723ecb5da559a8ca0cc6"
+    },
+    {
+      "timezone": "America/Los_Angeles",
+      "status": "PASS",
+      "result_sha256": "cc84e29e0a426923a90761922dd15bbc27840638067d723ecb5da559a8ca0cc6"
+    },
+    {
+      "timezone": "Pacific/Honolulu",
+      "status": "PASS",
+      "result_sha256": "cc84e29e0a426923a90761922dd15bbc27840638067d723ecb5da559a8ca0cc6"
+    },
+    {
+      "timezone": "Pacific/Kiritimati",
+      "status": "PASS",
+      "result_sha256": "cc84e29e0a426923a90761922dd15bbc27840638067d723ecb5da559a8ca0cc6"
+    }
+  ],
+  "result": {
+    "beforeMidnight": 1,
+    "afterMidnight": 0,
+    "leapDays": 2,
+    "rate": "47.0",
+    "examinees": "1000",
+    "passed": "470",
+    "weekMinutes": 660,
+    "excludedMinutes": 600,
+    "lastStudyDate": "2026-10-25",
+    "targetExcluded": true,
+    "officialRequiredHours": null
+  },
+  "official_data": false
+}

@@ -1,0 +1,42 @@
+{
+  "checked_at_utc": "2026-10-20T07:38:53.923964+00:00",
+  "results": [
+    {
+      "case": "missing-required",
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "expected": "reject before compilation",
+      "exit_code": 1,
+      "passed": true,
+      "stdout": "▲ Next.js 16.4.2 (Turbopack)\n[ELIFECYCLE] Command failed with exit code 1.\n",
+      "stderr": "$ next build\n⨯ Failed to load next.config.ts, see more info here https://nextjs.org/docs/messages/next-config-error\n\n> Build error occurred\nError [EnvironmentError]: Invalid environment: APP_ENV, DATA_MODE\n    at parseEnvironment (src/config/env.ts:125:15)\n    at Object.<anonymous> (next.config.compiled.js:13:27) {\n  variables: [ 'APP_ENV', 'DATA_MODE' ]\n}\n"
+    },
+    {
+      "case": "production-fixture",
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "expected": "reject before compilation",
+      "exit_code": 1,
+      "passed": true,
+      "stdout": "▲ Next.js 16.4.2 (Turbopack)\n[ELIFECYCLE] Command failed with exit code 1.\n",
+      "stderr": "$ next build\n⨯ Failed to load next.config.ts, see more info here https://nextjs.org/docs/messages/next-config-error\n\n> Build error occurred\nError [EnvironmentError]: Invalid environment: DATA_MODE\n    at parseEnvironment (src/config/env.ts:125:15)\n    at Object.<anonymous> (next.config.compiled.js:13:27) {\n  variables: [ 'DATA_MODE' ]\n}\n"
+    },
+    {
+      "case": "bad-production-url",
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "expected": "reject before compilation",
+      "exit_code": 1,
+      "passed": true,
+      "stdout": "▲ Next.js 16.4.2 (Turbopack)\n[ELIFECYCLE] Command failed with exit code 1.\n",
+      "stderr": "$ next build\n⨯ Failed to load next.config.ts, see more info here https://nextjs.org/docs/messages/next-config-error\n\n> Build error occurred\nError [EnvironmentError]: Invalid environment: PUBLIC_SITE_URL\n    at parseEnvironment (src/config/env.ts:125:15)\n    at Object.<anonymous> (next.config.compiled.js:13:27) {\n  variables: [ 'PUBLIC_SITE_URL' ]\n}\n"
+    }
+  ],
+  "network_credentials_used": false
+}

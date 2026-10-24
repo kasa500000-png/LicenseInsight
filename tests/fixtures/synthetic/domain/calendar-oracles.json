@@ -1,0 +1,296 @@
+{
+  "artifact": "SYNTHETIC domain-only expected oracles, no official qualifications",
+  "generator": "Python standard-library datetime.date (Gregorian) 3.12.14",
+  "calendar": [
+    {
+      "start": "0001-01-01",
+      "end": "0001-01-02",
+      "days": 1,
+      "startWeekday": 1,
+      "endWeekday": 2
+    },
+    {
+      "start": "0099-12-31",
+      "end": "0100-01-01",
+      "days": 1,
+      "startWeekday": 4,
+      "endWeekday": 5
+    },
+    {
+      "start": "0100-02-28",
+      "end": "0100-03-01",
+      "days": 1,
+      "startWeekday": 7,
+      "endWeekday": 1
+    },
+    {
+      "start": "0400-02-28",
+      "end": "0400-03-01",
+      "days": 2,
+      "startWeekday": 1,
+      "endWeekday": 3
+    },
+    {
+      "start": "1582-10-04",
+      "end": "1582-10-15",
+      "days": 11,
+      "startWeekday": 1,
+      "endWeekday": 5
+    },
+    {
+      "start": "1900-02-28",
+      "end": "1900-03-01",
+      "days": 1,
+      "startWeekday": 3,
+      "endWeekday": 4
+    },
+    {
+      "start": "2000-02-28",
+      "end": "2000-03-01",
+      "days": 2,
+      "startWeekday": 1,
+      "endWeekday": 3
+    },
+    {
+      "start": "2026-10-20",
+      "end": "2026-10-21",
+      "days": 1,
+      "startWeekday": 2,
+      "endWeekday": 3
+    },
+    {
+      "start": "2026-12-31",
+      "end": "2027-01-01",
+      "days": 1,
+      "startWeekday": 4,
+      "endWeekday": 5
+    },
+    {
+      "start": "2027-02-28",
+      "end": "2027-03-01",
+      "days": 1,
+      "startWeekday": 7,
+      "endWeekday": 1
+    },
+    {
+      "start": "2028-02-28",
+      "end": "2028-03-01",
+      "days": 2,
+      "startWeekday": 1,
+      "endWeekday": 3
+    },
+    {
+      "start": "2100-02-28",
+      "end": "2100-03-01",
+      "days": 1,
+      "startWeekday": 7,
+      "endWeekday": 1
+    },
+    {
+      "start": "2400-02-28",
+      "end": "2400-03-01",
+      "days": 2,
+      "startWeekday": 1,
+      "endWeekday": 3
+    },
+    {
+      "start": "9999-12-30",
+      "end": "9999-12-31",
+      "days": 1,
+      "startWeekday": 4,
+      "endWeekday": 5
+    }
+  ],
+  "plannerCapacity": [
+    {
+      "startDate": "2026-10-19",
+      "targetDate": "2026-10-26",
+      "excludedDates": [],
+      "totalCapacity": 660,
+      "days": [
+        {
+          "date": "2026-10-19",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-20",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-21",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-22",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-23",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-24",
+          "capacity": 180
+        },
+        {
+          "date": "2026-10-25",
+          "capacity": 180
+        }
+      ]
+    },
+    {
+      "startDate": "2026-10-19",
+      "targetDate": "2026-10-26",
+      "excludedDates": [
+        "2026-10-21"
+      ],
+      "totalCapacity": 600,
+      "days": [
+        {
+          "date": "2026-10-19",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-20",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-21",
+          "capacity": 0
+        },
+        {
+          "date": "2026-10-22",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-23",
+          "capacity": 60
+        },
+        {
+          "date": "2026-10-24",
+          "capacity": 180
+        },
+        {
+          "date": "2026-10-25",
+          "capacity": 180
+        }
+      ]
+    },
+    {
+      "startDate": "2026-12-28",
+      "targetDate": "2027-01-05",
+      "excludedDates": [
+        "2027-01-01"
+      ],
+      "totalCapacity": 660,
+      "days": [
+        {
+          "date": "2026-12-28",
+          "capacity": 60
+        },
+        {
+          "date": "2026-12-29",
+          "capacity": 60
+        },
+        {
+          "date": "2026-12-30",
+          "capacity": 60
+        },
+        {
+          "date": "2026-12-31",
+          "capacity": 60
+        },
+        {
+          "date": "2027-01-01",
+          "capacity": 0
+        },
+        {
+          "date": "2027-01-02",
+          "capacity": 180
+        },
+        {
+          "date": "2027-01-03",
+          "capacity": 180
+        },
+        {
+          "date": "2027-01-04",
+          "capacity": 60
+        }
+      ]
+    },
+    {
+      "startDate": "2028-02-26",
+      "targetDate": "2028-03-03",
+      "excludedDates": [
+        "2028-02-29"
+      ],
+      "totalCapacity": 540,
+      "days": [
+        {
+          "date": "2028-02-26",
+          "capacity": 180
+        },
+        {
+          "date": "2028-02-27",
+          "capacity": 180
+        },
+        {
+          "date": "2028-02-28",
+          "capacity": 60
+        },
+        {
+          "date": "2028-02-29",
+          "capacity": 0
+        },
+        {
+          "date": "2028-03-01",
+          "capacity": 60
+        },
+        {
+          "date": "2028-03-02",
+          "capacity": 60
+        }
+      ]
+    },
+    {
+      "startDate": "2027-02-26",
+      "targetDate": "2027-03-03",
+      "excludedDates": [],
+      "totalCapacity": 540,
+      "days": [
+        {
+          "date": "2027-02-26",
+          "capacity": 60
+        },
+        {
+          "date": "2027-02-27",
+          "capacity": 180
+        },
+        {
+          "date": "2027-02-28",
+          "capacity": 180
+        },
+        {
+          "date": "2027-03-01",
+          "capacity": 60
+        },
+        {
+          "date": "2027-03-02",
+          "capacity": 60
+        }
+      ]
+    }
+  ],
+  "invalidDates": [
+    "0000-01-01",
+    "2027-02-29",
+    "1900-02-29",
+    "2100-02-29",
+    "2026-04-31",
+    "2026-00-20",
+    "2026-10-00",
+    "2026-10-32",
+    "2026-1-01",
+    "10000-01-01"
+  ]
+}

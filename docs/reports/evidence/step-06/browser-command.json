@@ -1,0 +1,17 @@
+{
+  "command": [
+    "pnpm",
+    "test:e2e"
+  ],
+  "non_secret_configuration": {
+    "PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH": "/usr/bin/chromium",
+    "SCREENSHOT_DIR": "docs/reports/evidence/step-06/screenshots",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "started_at": "2026-10-20T11:57:51.649766+00:00",
+  "finished_at": "2026-10-20T11:58:00.111656+00:00",
+  "elapsed_seconds": 8.462,
+  "exit_code": 0,
+  "stdout": "\nRunning 14 tests using 2 workers\n\n  ✓   2 [chromium] › tests/e2e/domain.spec.ts:45:7 › pure domain engine renders fixed oracles at 360px in Seoul (758ms)\n  ✓   1 [chromium] › tests/e2e/domain.spec.ts:45:7 › pure domain engine renders fixed oracles at 390px in Seoul (800ms)\n  ✓   3 [chromium] › tests/e2e/domain.spec.ts:45:7 › pure domain engine renders fixed oracles at 768px in Seoul (570ms)\n  ✓   4 [chromium] › tests/e2e/domain.spec.ts:45:7 › pure domain engine renders fixed oracles at 1440px in Seoul (638ms)\n  ✓   5 [chromium] › tests/e2e/domain.spec.ts:62:7 › browser timezone America/Los_Angeles preserves the complete domain oracle (604ms)\n  ✓   6 [chromium] › tests/e2e/domain.spec.ts:62:7 › browser timezone Pacific/Honolulu preserves the complete domain oracle (549ms)\n  ✓   8 [chromium] › tests/e2e/foundation.spec.ts:44:5 › home content is available with JavaScript disabled (639ms)\n  ✓   7 [chromium] › tests/e2e/foundation.spec.ts:23:5 › home provides an honest empty state, official link and keyboard entry without external requests (1.1s)\n  ✓   9 [chromium] › tests/e2e/foundation.spec.ts:60:7 › home is readable without page overflow at 360px (615ms)\n  ✓  10 [chromium] › tests/e2e/foundation.spec.ts:60:7 › home is readable without page overflow at 390px (708ms)\n  ✓  11 [chromium] › tests/e2e/foundation.spec.ts:60:7 › home is readable without page overflow at 768px (822ms)\n  ✓  12 [chromium] › tests/e2e/foundation.spec.ts:60:7 › home is readable without page overflow at 1440px (727ms)\n  ✓  13 [chromium] › tests/e2e/foundation.spec.ts:80:5 › a synthetic render failure reaches the error boundary (788ms)\n  ✓  14 [chromium] › tests/e2e/foundation.spec.ts:90:5 › an unknown route returns a real 404 page (580ms)\n\n  14 passed (7.4s)\n",
+  "stderr": "$ playwright test\n[WebServer] (node:53499) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n[WebServer] $ next start --hostname 127.0.0.1 --port 3103\n[WebServer] (node:53514) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)\n(node:53536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:53535) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+}

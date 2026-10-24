@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "typecheck"
+  ],
+  "started_at_utc": "2026-10-20T07:37:17.753684+00:00",
+  "finished_at_utc": "2026-10-20T07:37:20.501281+00:00",
+  "exit_code": 2,
+  "stdout": "tests/integration/env-cli.test.ts(8,5): error TS2769: No overload matches this call.\n  Overload 3 of 8, '(command: string, args?: readonly string[] | undefined, options?: SpawnSyncOptions | undefined): SpawnSyncReturns<string | NonSharedBuffer>', gave the following error.\n    Property 'NODE_ENV' is missing in type '{ PATH: string | undefined; }' but required in type 'ProcessEnv'.\n[ELIFECYCLE] Command failed with exit code 2.\n",
+  "stderr": "$ tsc --noEmit\n"
+}

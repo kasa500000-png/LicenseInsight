@@ -1,0 +1,195 @@
+{
+  "checked_at": "2026-10-21T00:59:09.039678+00:00",
+  "step": "STEP-08",
+  "passed": 29,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "only planned existing7 files changed",
+      "status": "PASS",
+      "detail": [
+        "README.md",
+        "src/data/repositories/public-repository.ts",
+        "src/proxy.ts",
+        "state/BLOCKERS.md",
+        "state/EVIDENCE_INDEX.md",
+        "state/PROJECT_STATUS.md",
+        "tests/unit/public-repository.test.ts"
+      ]
+    },
+    {
+      "check": "only root loading relocated",
+      "status": "PASS",
+      "detail": [
+        "src/app/loading.tsx"
+      ]
+    },
+    {
+      "check": "all previous reports and evidence byte preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "domain ingestion config migrations contracts approval dependencies preserved",
+      "status": "PASS",
+      "detail": 28
+    },
+    {
+      "check": "all prior tests unchanged except planned repository test extension",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "executed119 source hashes match final",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "lint-final command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "typecheck command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "tests command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "build command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "client-boundary command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "browser command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "detail-isolation command exit0",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "unit integration539 pass",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "browser48 pass no skip or flaky",
+      "status": "PASS",
+      "detail": {
+        "startTime": "2026-10-21T00:52:28.851Z",
+        "duration": 25859.222999999998,
+        "expected": 48,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "check": "isolation40 pass",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "preview production404 no fixture/private error",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "owned isolation4 servers stopped",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "playwright owned port3103 closed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all detail17 manually viewed hashes match",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "SSR core/provenance/rate exists private error absent",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "static client JS contains no detail fixture/private marker",
+      "status": "PASS",
+      "detail": {
+        "files": 16,
+        "matching_files": []
+      }
+    },
+    {
+      "check": "public live detail route remains unregistered",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "all repository JSON parse excluding generated tools",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "known secret patterns absent in scoped text",
+      "status": "PASS",
+      "detail": {
+        "scanned_files": 348,
+        "matching_files": [],
+        "limitation": "Known patterns only; no secret file or auth-state contents read"
+      }
+    },
+    {
+      "check": "changed Markdown6 local links resolve",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "initial failures and initial isolation retained",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "status/report agree step08 synthetic done live blocked next09",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "branch preserved unborn no commit",
+      "status": "PASS",
+      "detail": {
+        "branch": "audit/m0-task-001",
+        "commit": null
+      }
+    }
+  ],
+  "public_api_calls": 0,
+  "catalog_calls": 0,
+  "actual_db_tests": "NOT_RUN",
+  "deployment": "NOT_RUN",
+  "git_push_pr": "NOT_RUN",
+  "live_status": "BLOCKED",
+  "source_files": 119,
+  "screenshots": 55,
+  "manually_viewed": 17,
+  "final_recheck": {
+    "markdown_local_links": "PASS",
+    "executed_source_hashes": "PASS",
+    "all_step08_json_parse": "PASS",
+    "initial_validation_note": "One self-referencing validation link was checked before the artifact existed; original28/29 retained in validation-initial.json. Link rechecked after artifact creation."
+  }
+}

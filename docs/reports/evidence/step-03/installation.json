@@ -1,0 +1,40 @@
+{
+  "documented_at_utc": "2026-10-20T07:46:15.814796+00:00",
+  "initial_install": {
+    "command": [
+      "pnpm",
+      "install"
+    ],
+    "exit_code": 1,
+    "reason": "ERR_PNPM_IGNORED_BUILDS: esbuild postinstall was not yet allowlisted"
+  },
+  "remediation": {
+    "command": [
+      "pnpm",
+      "approve-builds",
+      "esbuild"
+    ],
+    "exit_code": 0,
+    "allowed_dependency_only": "esbuild"
+  },
+  "clean_install": {
+    "command": [
+      "pnpm",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "exit_code": 0,
+    "node_modules_absent_at_start": true,
+    "previous_generated_modules_preserved_in_scratch": true,
+    "packages_added": 174,
+    "store_reused": 174,
+    "downloaded_in_clean_install": 0
+  },
+  "runtime": {
+    "node": "24.19.0",
+    "pnpm": "11.25.0"
+  },
+  "lockfile_sha256": "0a30844feb3d78400b54eb4b6817933a340da9baa52ca2d4ab0510dc48c62dc2",
+  "workspace_policy": "esbuild allowed explicitly; exact typescript-eslint releases automatically listed by pnpm minimumReleaseAgeExclude; no blanket build-script allow",
+  "is_deployment": false
+}

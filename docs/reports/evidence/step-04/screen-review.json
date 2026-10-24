@@ -1,0 +1,45 @@
+{
+  "reviewed_at": "2026-10-20T09:23:23.176001+00:00",
+  "tool": "view_image, four screenshot images opened",
+  "route": "http://127.0.0.1:3103/",
+  "data_mode": "live empty state; no DB connected",
+  "app_runtime_sources_unchanged": true,
+  "new_db_ui": "N_A, not part of STEP04",
+  "screenshots": [
+    {
+      "width": 360,
+      "height": 1000,
+      "file": "docs/reports/evidence/step-04/screenshots/foundation-home-360.png",
+      "sha256": "619864713662c5e2285590dad83228e8c87820db56767cdcd8f2d8845d18702f",
+      "direct_visual_review": "PASS",
+      "observations": "heading, empty-state, official link, caution and footer legible; no overlap or horizontal overflow; no synthetic qualification data visible"
+    },
+    {
+      "width": 390,
+      "height": 1000,
+      "file": "docs/reports/evidence/step-04/screenshots/foundation-home-390.png",
+      "sha256": "b775798be453bc0a9bd5bded6ad0813acdefbc9d0d9b2ea540fd5993c410e4d4",
+      "direct_visual_review": "PASS",
+      "observations": "heading, empty-state, official link, caution and footer legible; no overlap or horizontal overflow; no synthetic qualification data visible"
+    },
+    {
+      "width": 768,
+      "height": 1000,
+      "file": "docs/reports/evidence/step-04/screenshots/foundation-home-768.png",
+      "sha256": "be427a0522e00296e9247ec1ba52340c2e640eb9dbdf472b7e391bf298609bf9",
+      "direct_visual_review": "PASS",
+      "observations": "heading, empty-state, official link, caution and footer legible; no overlap or horizontal overflow; no synthetic qualification data visible"
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "file": "docs/reports/evidence/step-04/screenshots/foundation-home-1440.png",
+      "sha256": "fb5bc6c1f62ae05c70c569c4dad22a209c49b09a6f28a9e308d68f9882de9840",
+      "direct_visual_review": "PASS",
+      "observations": "heading, empty-state, official link, caution and footer legible; no overlap or horizontal overflow; no synthetic qualification data visible"
+    }
+  ],
+  "browser_tests": 6,
+  "external_http_attempts": 0,
+  "scope": "home regression only, not SQL/API connection proof"
+}

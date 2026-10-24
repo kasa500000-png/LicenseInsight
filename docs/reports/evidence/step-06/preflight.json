@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-10-20T11:40:24.875713+00:00",
+  "previous_evidence": [
+    {
+      "file": "docs/reports/evidence/step-05/validation.json",
+      "sha256": "d9209f963be929b3c1c09b12606c1574c63a070c8239a7cac5a0011212a49dd4",
+      "exit_code": null,
+      "passed": 29,
+      "failed": 0,
+      "stats": null,
+      "node_passed": null,
+      "node_failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-05/tests.json",
+      "sha256": "daf529a45c54ba172a8e8b7f1530b8ee5513b035093d513dcabfce5f6763f714",
+      "exit_code": 0,
+      "passed": null,
+      "failed": null,
+      "stats": null,
+      "node_passed": null,
+      "node_failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-05/build.json",
+      "sha256": "a84940639162ddccf07f3aaae33174107cb605f806fbb7de847269c2af1616f2",
+      "exit_code": 0,
+      "passed": null,
+      "failed": null,
+      "stats": null,
+      "node_passed": null,
+      "node_failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-05/browser-tests.json",
+      "sha256": "68f90b88f35b4e09f5d74f422ba731dc9e35be946158f6517869cd9d240ef511",
+      "exit_code": 0,
+      "passed": null,
+      "failed": null,
+      "stats": {
+        "startTime": "2026-10-20T11:01:28.679Z",
+        "duration": 5070.402,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "node_passed": null,
+      "node_failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-05/sql-final/database-tests.json",
+      "sha256": "4436f258c40e23bb8b68b024631b6742fdf57764149e4f81b486e2d5e63c99e4",
+      "exit_code": 0,
+      "passed": 410,
+      "failed": 0,
+      "stats": null,
+      "node_passed": null,
+      "node_failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-05/node-final/ingestion-db.json",
+      "sha256": "2c667bd56f2e3565780345bbb88c6e0e87d68f78c39651d770d62680a95da9ca",
+      "exit_code": 0,
+      "passed": null,
+      "failed": null,
+      "stats": null,
+      "node_passed": null,
+      "node_failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-05/node-final/node-tests.json",
+      "sha256": "d10a16aed883d06b466397159104b85ea019fa2ac8e7869da66cca4d01b771af",
+      "exit_code": null,
+      "passed": null,
+      "failed": null,
+      "stats": null,
+      "node_passed": 17,
+      "node_failed": 0
+    }
+  ],
+  "step05_executed_source_hashes_match": true,
+  "secret_presence": {
+    "DATA_GO_KR_SERVICE_KEY": false,
+    "SUPABASE_URL": false,
+    "SUPABASE_SECRET_KEY": false,
+    "DATABASE_URL": false
+  },
+  "selected": "STEP-06",
+  "live_api": "BLOCKED, no unchanged catalog retry",
+  "network_calls_to_public_api": 0
+}

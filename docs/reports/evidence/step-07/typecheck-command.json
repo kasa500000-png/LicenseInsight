@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "typecheck"
+  ],
+  "started_at": "2026-10-20T22:01:22.467705+00:00",
+  "finished_at": "2026-10-20T22:01:25.464611+00:00",
+  "elapsed_seconds": 2.997,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "$ tsc --noEmit\n"
+}

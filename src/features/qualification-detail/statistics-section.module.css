@@ -1,0 +1,106 @@
+.stack {
+  display: grid;
+  gap: var(--space-4);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.stack > * { min-width: 0; }
+
+.note,
+.coverage,
+.legend {
+  margin: 0;
+  color: var(--color-secondary);
+  font-size: var(--font-small);
+  line-height: var(--line-body);
+  overflow-wrap: anywhere;
+}
+
+.coverage {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: var(--color-background);
+}
+
+.coverage p { margin: 0; }
+
+.cellStack {
+  display: grid;
+  justify-items: end;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.count,
+.originalRate {
+  display: inline-block;
+  min-width: 0;
+  max-width: 14rem;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart {
+  min-width: 0;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+}
+
+.legend { display: flex; align-items: center; gap: var(--space-2); }
+
+.legendSwatch,
+.bar {
+  background-color: var(--color-primary-hover);
+  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 6px, var(--color-surface) 6px, var(--color-surface) 8px);
+}
+
+.legendSwatch {
+  flex: 0 0 var(--space-6);
+  height: var(--space-3);
+  border: 1px solid var(--color-primary-hover);
+}
+
+.bars {
+  display: grid;
+  gap: var(--space-4);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: minmax(0, 5rem) minmax(0, 1fr) minmax(0, 5rem);
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+  color: var(--color-text);
+  font-size: var(--font-small);
+  font-variant-numeric: tabular-nums;
+}
+
+.roundLabel,
+.rate { overflow-wrap: anywhere; }
+.rate { text-align: right; }
+
+.track {
+  display: block;
+  min-width: 0;
+  height: var(--space-6);
+  border: 1px solid var(--color-control-border);
+  border-radius: var(--radius-control);
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+.bar { display: block; height: 100%; }
+
+@media (max-width: 480px) {
+  .barRow { grid-template-columns: minmax(0, 4rem) minmax(0, 1fr) minmax(0, 4rem); gap: var(--space-2); }
+}

@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-20T09:18:01.622968+00:00",
+  "cli": [
+    {
+      "command": [
+        "pnpm",
+        "--package=supabase@2.121.0",
+        "dlx",
+        "--allow-build=supabase",
+        "supabase",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "2.121.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pnpm",
+        "--package=supabase@2.121.0",
+        "dlx",
+        "--allow-build=supabase",
+        "supabase",
+        "migration",
+        "new",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "DESCRIPTION\n  Create an empty migration script.\n\nUSAGE\n  supabase migration new [flags] <migration name>\n\nARGUMENTS\n  migration name string    Name for the new migration file.\n\nGLOBAL FLAGS\n  --help, -h                                                          Show help information\n  --version, -v                                                       Show version information\n  --wizard                                                            Start wizard mode for a command\n  --completions <bash|zsh|fish|sh>                                    Print shell completion script (choices: bash, zsh, fish, sh)\n  --log-level <all|trace|debug|info|warn|warning|error|fatal|none>    Sets the minimum log level (choices: all, trace, debug, info, warn, warning, error, fatal, none)\n  --output-format choice                                              Output format: text (default), json, or stream-json (NDJSON) (choices: text, json, stream-json)\n  --output, -o choice                                                 output format of status variables (choices: env, pretty, json, toml, yaml, table, csv)\n  --profile string                                                    use a specific profile for connecting to Supabase API\n  --debug                                                             output debug logs to stderr\n  --workdir string                                                    path to the directory containing your supabase/ folder; used exactly as given, with no ancestor directory search (defaults to searching upward from the current directory)\n  --experimental                                                      enable experimental features\n  --network-id string                                                 use the specified docker network instead of a generated one\n  --yes                                                               answer yes to all prompts\n  --dns-resolver choice                                               lookup domain names using the specified resolver (choices: native, https)\n  --create-ticket                                                     create a support ticket for any CLI error\n  --agent choice                                                      Override agent detection: yes, no, or auto (default auto) (choices: auto, yes, no)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pnpm",
+        "--package=supabase@2.121.0",
+        "dlx",
+        "--allow-build=supabase",
+        "supabase",
+        "gen",
+        "types",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "DESCRIPTION\n  Generate types from Postgres schema.\n\nUSAGE\n  supabase gen types [flags] [<language>]\n\nARGUMENTS\n  language string     (optional)\n\nFLAGS\n  --local                          Generate types from the local dev database.\n  --linked                         Generate types from the linked project.\n  --db-url string                  Generate types from a database url.\n  --project-id string              Generate types from a project ID.\n  --lang choice                    Output language of the generated types. (default typescript) (choices: typescript, go, python, swift, dart)\n  --schema, -s string              Comma separated list of schema to include.\n  --query-timeout string           Maximum timeout allowed for the database query. (default 15s)\n  --swift-access-control choice    Access control for Swift generated types. (default internal) (choices: internal, public, private, package)\n\nGLOBAL FLAGS\n  --help, -h                                                          Show help information\n  --version, -v                                                       Show version information\n  --wizard                                                            Start wizard mode for a command\n  --completions <bash|zsh|fish|sh>                                    Print shell completion script (choices: bash, zsh, fish, sh)\n  --log-level <all|trace|debug|info|warn|warning|error|fatal|none>    Sets the minimum log level (choices: all, trace, debug, info, warn, warning, error, fatal, none)\n  --output-format choice                                              Output format: text (default), json, or stream-json (NDJSON) (choices: text, json, stream-json)\n  --output, -o choice                                                 output format of status variables (choices: env, pretty, json, toml, yaml, table, csv)\n  --profile string                                                    use a specific profile for connecting to Supabase API\n  --debug                                                             output debug logs to stderr\n  --workdir string                                                    path to the directory containing your supabase/ folder; used exactly as given, with no ancestor directory search (defaults to searching upward from the current directory)\n  --experimental                                                      enable experimental features\n  --network-id string                                                 use the specified docker network instead of a generated one\n  --yes                                                               answer yes to all prompts\n  --dns-resolver choice                                               lookup domain names using the specified resolver (choices: native, https)\n  --create-ticket                                                     create a support ticket for any CLI error\n  --agent choice                                                      Override agent detection: yes, no, or auto (default auto) (choices: auto, yes, no)\n\nEXAMPLES\n  # Generate types from the local dev database\n  supabase gen types --local\n\n  # Generate Go types from the linked project\n  supabase gen types --linked --lang=go\n\n  # Generate types from a project ID with specific schemas\n  supabase gen types --project-id abc-def-123 --schema public --schema private\n\n  # Generate types from a database URL\n  supabase gen types --db-url 'postgresql://...' --schema public --schema auth\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pnpm",
+        "--package=supabase@2.121.0",
+        "dlx",
+        "--allow-build=supabase",
+        "supabase",
+        "init",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "DESCRIPTION\n  Initialize a local project.\n\nUSAGE\n  supabase init [flags]\n\nFLAGS\n  --interactive, -i    Enables interactive mode to configure IDE settings.\n  --use-orioledb       Use OrioleDB storage engine for Postgres.\n  --force              Overwrite existing supabase/config.toml.\n\nGLOBAL FLAGS\n  --help, -h                                                          Show help information\n  --version, -v                                                       Show version information\n  --wizard                                                            Start wizard mode for a command\n  --completions <bash|zsh|fish|sh>                                    Print shell completion script (choices: bash, zsh, fish, sh)\n  --log-level <all|trace|debug|info|warn|warning|error|fatal|none>    Sets the minimum log level (choices: all, trace, debug, info, warn, warning, error, fatal, none)\n  --output-format choice                                              Output format: text (default), json, or stream-json (NDJSON) (choices: text, json, stream-json)\n  --output, -o choice                                                 output format of status variables (choices: env, pretty, json, toml, yaml, table, csv)\n  --profile string                                                    use a specific profile for connecting to Supabase API\n  --debug                                                             output debug logs to stderr\n  --workdir string                                                    path to the directory containing your supabase/ folder; used exactly as given, with no ancestor directory search (defaults to searching upward from the current directory)\n  --experimental                                                      enable experimental features\n  --network-id string                                                 use the specified docker network instead of a generated one\n  --yes                                                               answer yes to all prompts\n  --dns-resolver choice                                               lookup domain names using the specified resolver (choices: native, https)\n  --create-ticket                                                     create a support ticket for any CLI error\n  --agent choice                                                      Override agent detection: yes, no, or auto (default auto) (choices: auto, yes, no)\n",
+      "stderr": ""
+    }
+  ],
+  "changelog": {
+    "url": "https://supabase.com/changelog.md",
+    "http_status": 200,
+    "sha256": "15b3d0d1a7dc3b3f2c0af4788e49acfdf2d2edbd2613f22de0705fa43b1cf58b",
+    "relevant_changes": [
+      "2026-04-28 Data API: explicit GRANT; all-project change scheduled 2026-10-30",
+      "2026-05-18 self-hosted PostgreSQL default 17",
+      "2026-07-22 extension VERSION ignored; no extensions used",
+      "2026-10-12 TLS subset deprecation scheduled 2026-11-10; no TLS disabled"
+    ]
+  },
+  "docs": [
+    {
+      "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+      "method": "Supabase search_docs; reviewed RLS, security_invoker, JWT metadata restrictions"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api/securing-your-api",
+      "method": "independent agent official review; explicit grants and future defaults"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/deployment/managing-environments",
+      "method": "independent agent official review; manual migration new supported"
+    }
+  ]
+}

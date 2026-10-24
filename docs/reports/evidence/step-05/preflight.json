@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-20T10:38:54.838152+00:00",
+  "step04_database_checks": 328,
+  "step04_database_exit": 0,
+  "step04_validation": {
+    "passed": 19,
+    "failed": 0
+  },
+  "source_hashes_match": true,
+  "secret_presence": {
+    "DATA_GO_KR_SERVICE_KEY": false,
+    "SUPABASE_URL": false,
+    "SUPABASE_SECRET_KEY": false,
+    "DATABASE_URL": false
+  },
+  "previous_additional_evidence": [
+    {
+      "file": "docs/reports/evidence/step-04/tests.json",
+      "sha256": "c5c48db2f9194ce12c9c4eb7110f141c677482daac55fe945f46e700d3005d37",
+      "exit_code": 0,
+      "stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-04/browser-tests.json",
+      "sha256": "8221fb009febb9ea1d7715de2d1acffdc75fa1bb583dd7abfe761027eb5aaef7",
+      "exit_code": 0,
+      "stats": {
+        "startTime": "2026-10-20T09:20:00.848Z",
+        "duration": 4208.45,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "docs/reports/evidence/step-04/lint.json",
+      "sha256": "d3ca91cd84c4bed98664284d9fbb4eef9065319e537ce0ee995010c3f97ef357",
+      "exit_code": 0,
+      "stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-04/typecheck.json",
+      "sha256": "87e9db11ea4446a18f58d5e79a578fb3d4f54712e90414ce5fbdd9663bac0564",
+      "exit_code": 0,
+      "stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-04/types-check.json",
+      "sha256": "9dc883c51e6f9c484af760d8c40dbb929b61d07887cbc059401b031ade41dd7b",
+      "exit_code": 0,
+      "stats": null
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE response [<!ENTITY synthetic SYSTEM "file:///SYNTHETIC_NOT_A_REAL_FILE">]>
+<response><header><resultCode>00</resultCode></header><body><items><item><jmfldnm>&synthetic;</jmfldnm></item></items><totalCount>1</totalCount><pageNo>1</pageNo><numOfRows>10</numOfRows></body></response>

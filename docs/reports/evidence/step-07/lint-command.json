@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "lint"
+  ],
+  "started_at": "2026-10-20T22:01:22.455309+00:00",
+  "finished_at": "2026-10-20T22:01:24.939972+00:00",
+  "elapsed_seconds": 2.485,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "$ eslint . --max-warnings=0\n"
+}

@@ -1,0 +1,267 @@
+{
+  "validated_at": "2026-10-20T11:07:46.111455+00:00",
+  "checks": [
+    {
+      "name": "baseline files preserved with expected edits",
+      "result": "PASS",
+      "details": {
+        "baseline": 201,
+        "unchanged": 188,
+        "modified": [
+          "pnpm-lock.yaml",
+          "package.json",
+          "README.md",
+          "vitest.config.mts",
+          "docs/DATABASE.md",
+          "scripts/test-database.py",
+          "supabase/README.md",
+          "state/BLOCKERS.md",
+          "state/PROJECT_STATUS.md",
+          "state/EVIDENCE_INDEX.md",
+          "tests/database/cases.py",
+          ".github/workflows/ci.yml",
+          "src/data/database.types.ts"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "name": "prior report evidence files unchanged",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "STEP04 prerequisites actually reviewed",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "reviewed prior extra evidence hashes stable",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "SQL final real tests410",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "two new schema reproductions match",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "SQL tested current source hashes",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "actual Node driver tests17",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "Node tested current source hashes",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "install exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "types-check exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "lint exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "typecheck exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "tests exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "build exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "client-boundary exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "browser-tests exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "unit/CLI202 actually executed",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "browser8 actually executed",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "four screenshots directly reviewed",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "all new JSON parses",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "real API sources and3 codes remain unknown",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "production server modules retain guard",
+      "result": "PASS",
+      "details": [
+        [
+          "transport.ts",
+          true
+        ],
+        [
+          "postgres-store.ts",
+          true
+        ],
+        [
+          "service.ts",
+          true
+        ],
+        [
+          "safety.ts",
+          true
+        ],
+        [
+          "normalize.ts",
+          true
+        ]
+      ]
+    },
+    {
+      "name": "changed Markdown local links valid",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "name": "known sensitive patterns in new files",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "name": "session STEP05 DB containers all removed",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "session bind socket directories removed",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "name": "STEP06 not implemented",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "unborn branch with no commit preserved",
+      "result": "PASS",
+      "details": null
+    }
+  ],
+  "passed": 29,
+  "failed": 0,
+  "changed_existing_files": [
+    "pnpm-lock.yaml",
+    "package.json",
+    "README.md",
+    "vitest.config.mts",
+    "docs/DATABASE.md",
+    "scripts/test-database.py",
+    "supabase/README.md",
+    "state/BLOCKERS.md",
+    "state/PROJECT_STATUS.md",
+    "state/EVIDENCE_INDEX.md",
+    "tests/database/cases.py",
+    ".github/workflows/ci.yml",
+    "src/data/database.types.ts"
+  ],
+  "new_files": [
+    "docs/reports/STEP-05.md",
+    "docs/reports/evidence/step-05/browser-tests.json",
+    "docs/reports/evidence/step-05/build.json",
+    "docs/reports/evidence/step-05/client-boundary.json",
+    "docs/reports/evidence/step-05/install.json",
+    "docs/reports/evidence/step-05/lint.json",
+    "docs/reports/evidence/step-05/node-final/ingestion-db.json",
+    "docs/reports/evidence/step-05/node-final/metadata.json",
+    "docs/reports/evidence/step-05/node-final/node-tests.json",
+    "docs/reports/evidence/step-05/node-first/metadata.json",
+    "docs/reports/evidence/step-05/node-first/node-tests.json",
+    "docs/reports/evidence/step-05/node-first/runner-first.json",
+    "docs/reports/evidence/step-05/official-review.json",
+    "docs/reports/evidence/step-05/preflight.json",
+    "docs/reports/evidence/step-05/prior-work-baseline.json",
+    "docs/reports/evidence/step-05/probe-cleanup.json",
+    "docs/reports/evidence/step-05/screen-review.json",
+    "docs/reports/evidence/step-05/screenshots/foundation-home-1440.png",
+    "docs/reports/evidence/step-05/screenshots/foundation-home-360.png",
+    "docs/reports/evidence/step-05/screenshots/foundation-home-390.png",
+    "docs/reports/evidence/step-05/screenshots/foundation-home-768.png",
+    "docs/reports/evidence/step-05/sql-agent-independent.json",
+    "docs/reports/evidence/step-05/sql-final/database-tests.json",
+    "docs/reports/evidence/step-05/sql-final/qi_first-metadata.json",
+    "docs/reports/evidence/step-05/sql-final/qi_replay-metadata.json",
+    "docs/reports/evidence/step-05/tests.json",
+    "docs/reports/evidence/step-05/typecheck.json",
+    "docs/reports/evidence/step-05/types-check.json",
+    "scripts/test-ingestion-db.py",
+    "src/data/adapters/source-registry.ts",
+    "src/data/repositories/public-repository.ts",
+    "src/server/ingestion/README.md",
+    "src/server/ingestion/contracts.ts",
+    "src/server/ingestion/normalize.ts",
+    "src/server/ingestion/postgres-store.ts",
+    "src/server/ingestion/safety.ts",
+    "src/server/ingestion/service.ts",
+    "src/server/ingestion/transport.ts",
+    "supabase/migrations/20261020104213_ingestion_publication.sql",
+    "tests/database/node/ingestion.test.ts",
+    "tests/database/node/public-repository.test.ts",
+    "tests/database/step05/cases.py",
+    "tests/database/step05/setup.sql",
+    "tests/support/server-only.ts",
+    "tests/unit/ingestion-normalize.test.ts",
+    "tests/unit/ingestion-service.test.ts",
+    "tests/unit/ingestion-transport.test.ts",
+    "tests/unit/public-repository.test.ts",
+    "vitest.database.config.mts"
+  ],
+  "git": {
+    "branch": "audit/m0-task-001",
+    "commit": null,
+    "push_pr": "NOT_RUN"
+  },
+  "limitations": [
+    "no arbitrary secret absence guarantee",
+    "no publicAPI/Auth/PostgREST/remoteDB/CI/deployment proof"
+  ]
+}

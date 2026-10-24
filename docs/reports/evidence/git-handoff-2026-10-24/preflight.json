@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-24T19:11:18.208480+09:00",
+  "scope": "Current cumulative snapshot and local Codex handoff only; not STEP-09 implementation",
+  "repository": "kasa500000-png/LicenseInsight",
+  "repository_id": 1426366727,
+  "remote_before": {
+    "default_branch": "main",
+    "refs": [],
+    "visibility": "public",
+    "push_permission": true
+  },
+  "local_branch": "main",
+  "source_hashes_checked": 119,
+  "mismatches": [],
+  "candidate_files_before_this_record": 491,
+  "candidate_bytes": 9881565,
+  "previous_tests": {
+    "unit_integration": 539,
+    "browser": 48,
+    "isolation": 40,
+    "validation": 29,
+    "rerun_this_task": false
+  },
+  "checks": {
+    "new_docs_local_links": "PASS",
+    "candidate_json_parse": "PASS",
+    "independent_candidate_secret_paths_and_known_patterns": "PASS per read-only reviewer; pattern-limited"
+  },
+  "excluded": [
+    "actual .env files",
+    "auth/credentials",
+    "node_modules",
+    ".next",
+    "test-results",
+    "local database"
+  ],
+  "approval": "Explicit user instruction 2026-10-24; recorded in state/APPROVALS.md",
+  "api_db_deployment": "NOT_RUN"
+}

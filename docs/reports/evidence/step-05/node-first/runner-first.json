@@ -1,0 +1,11 @@
+{
+  "result": "FAIL",
+  "node_tests": {
+    "passed": 16,
+    "failed": 1
+  },
+  "failure": "repository DateStyle assertion and bind socket ownership cleanup; report failed before JSON finalization",
+  "container_cleanup": "PASS",
+  "socket_cleanup_recovered": "PASS",
+  "recovery": "exact session-created socket directory owner restored with isolated one-shot image; removed"
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "build"
+  ],
+  "started_at": "2026-10-20T10:59:49.500272+00:00",
+  "finished_at": "2026-10-20T10:59:55.909385+00:00",
+  "exit_code": 0,
+  "stdout": "\u25b2 Next.js 16.4.2 (Turbopack)\n\u2713 Running next.config.ts took 23ms\n\n  Creating an optimized production build ...\n\u2713 Compiled successfully in 173ms\n  Running TypeScript ...\n  Finished TypeScript in 2.0s ...\n  Collecting page data using 4 workers ...\n  Generating static pages using 4 workers (0/2) ...\n\u2713 Generating static pages using 4 workers (2/2) in 116ms\n  Finalizing page optimization ...\n\nRoute (app)\n\u250c \u0192 /\n\u251c \u25cb /_not-found\n\u2514 \u0192 /foundation-check/error\n\n\n\u0192 Proxy (Middleware)\n\n\u25cb  (Static)   prerendered as static content\n\u0192  (Dynamic)  server-rendered on demand\n\n",
+  "stderr": "$ next build\n"
+}

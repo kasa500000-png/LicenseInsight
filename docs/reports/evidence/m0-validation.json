@@ -1,0 +1,136 @@
+{
+  "checked_at_utc": "2026-10-20T01:42:09.639981+00:00",
+  "artifact_kind": "offline_document_audit_only",
+  "checks": [
+    {
+      "check": "secret_files_absent_from_audit_input",
+      "result": "PASS",
+      "detail": {
+        "excluded_file_names": []
+      }
+    },
+    {
+      "check": "utf8_no_replacement_characters",
+      "result": "PASS",
+      "detail": []
+    },
+    {
+      "check": "package_baseline_preserved",
+      "result": "PASS",
+      "detail": {
+        "baseline_hash_count": 64,
+        "unchanged_hashed_files": 58,
+        "intentional_changes": [
+          "README.md",
+          "state/APPROVALS.md",
+          "state/BLOCKERS.md",
+          "state/DECISIONS.md",
+          "state/EVIDENCE_INDEX.md",
+          "state/PROJECT_STATUS.md"
+        ],
+        "missing": [],
+        "unexpected_changes": [],
+        "note": "CHECKSUMS.md excludes itself; ZIP byte comparison is recorded separately."
+      }
+    },
+    {
+      "check": "relative_markdown_links",
+      "result": "PASS",
+      "detail": {
+        "markdown_files_checked": 71,
+        "broken": []
+      }
+    },
+    {
+      "check": "evidence_json_syntax",
+      "result": "PASS",
+      "detail": {
+        "checked": [
+          "api-catalog.json",
+          "environment-audit.json",
+          "package-import-validation.json",
+          "three-qualification-readiness.json"
+        ],
+        "invalid": []
+      }
+    },
+    {
+      "check": "three_targets_keep_unknowns",
+      "result": "PASS",
+      "detail": {
+        "targets": [
+          "전기기능사",
+          "전기기사",
+          "전기산업기사"
+        ],
+        "official_codes": "null",
+        "api_tests": "NOT_RUN"
+      }
+    },
+    {
+      "check": "catalog_approval_authenticated_call_separation",
+      "result": "PASS",
+      "detail": {
+        "catalog": "BLOCKED_HTTP503",
+        "account_approval": "UNKNOWN",
+        "api_requests": 0
+      }
+    },
+    {
+      "check": "catalog_failure_body_hash",
+      "result": "PASS",
+      "detail": {
+        "kind": "network failure diagnostic, not official spec or API fixture"
+      }
+    },
+    {
+      "check": "limited_secret_pattern_scan",
+      "result": "PASS",
+      "detail": {
+        "files_checked": 79,
+        "findings_without_values": [],
+        "limitation": "Known patterns only; not proof that arbitrary secrets cannot exist."
+      }
+    },
+    {
+      "check": "template_key_blank_ads_off",
+      "result": "PASS",
+      "detail": {
+        "template_only": true,
+        "runtime_guard_implemented": false
+      }
+    },
+    {
+      "check": "secret_file_gitignore",
+      "result": "PASS",
+      "detail": {
+        "secret_paths_ignored": 4,
+        "example_not_ignored": true
+      }
+    },
+    {
+      "check": "git_scope",
+      "result": "PASS",
+      "detail": {
+        "branch": "audit/m0-task-001",
+        "commit": null,
+        "all_files_untracked": true,
+        "file_count": 80,
+        "note": "Empty baseline: git diff cannot show untracked content; checksum and content checks supplement it."
+      }
+    },
+    {
+      "check": "m0_has_no_application_scaffold",
+      "result": "PASS",
+      "detail": {
+        "product_tests": "NOT_RUN",
+        "build": "NOT_RUN",
+        "ui": "NOT_RUN",
+        "db": "NOT_RUN"
+      }
+    }
+  ],
+  "passed": 13,
+  "failed": 0,
+  "application_or_live_tests_executed": false
+}

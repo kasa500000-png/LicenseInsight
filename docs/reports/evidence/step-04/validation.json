@@ -1,0 +1,164 @@
+{
+  "validated_at": "2026-10-20T09:24:04.222759+00:00",
+  "scope": "STEP04 final documentation, source provenance and local evidence checks",
+  "checks": [
+    {
+      "name": "previous files preserved; only expected edits",
+      "result": "PASS",
+      "details": {
+        "baseline_files": 169,
+        "unchanged": 162,
+        "modified": [
+          "package.json",
+          "README.md",
+          "docs/DATABASE.md",
+          "state/BLOCKERS.md",
+          "state/PROJECT_STATUS.md",
+          "state/EVIDENCE_INDEX.md",
+          ".github/workflows/ci.yml"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "name": "prior evidence hashes unchanged",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "real local DB validation",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "two fresh DB schema dumps match",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "DB executed source hashes match current files",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "types-check final exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "lint final exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "typecheck final exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "tests final exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "browser-tests final exit0",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "six real browser cases",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "four screenshots visually reviewed",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "development DB cleaned up",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "JSON evidence parse",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "modified documentation local links",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "name": "new text files known sensitive patterns",
+      "result": "PASS",
+      "details": []
+    },
+    {
+      "name": "original uncommitted branch preserved",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "no STEP04 test containers remain",
+      "result": "PASS",
+      "details": null
+    },
+    {
+      "name": "STEP05 not implemented",
+      "result": "PASS",
+      "details": null
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "changed_existing_files": [
+    "package.json",
+    "README.md",
+    "docs/DATABASE.md",
+    "state/BLOCKERS.md",
+    "state/PROJECT_STATUS.md",
+    "state/EVIDENCE_INDEX.md",
+    ".github/workflows/ci.yml"
+  ],
+  "new_files": [
+    "docs/reports/STEP-04.md",
+    "docs/reports/evidence/step-04/browser-discovery-first.json",
+    "docs/reports/evidence/step-04/browser-tests.json",
+    "docs/reports/evidence/step-04/database-tests.json",
+    "docs/reports/evidence/step-04/development-db-cleanup.json",
+    "docs/reports/evidence/step-04/lint-first.json",
+    "docs/reports/evidence/step-04/lint.json",
+    "docs/reports/evidence/step-04/official-review.json",
+    "docs/reports/evidence/step-04/prior-proof-review.json",
+    "docs/reports/evidence/step-04/prior-work-baseline.json",
+    "docs/reports/evidence/step-04/qi_first-metadata.json",
+    "docs/reports/evidence/step-04/qi_replay-metadata.json",
+    "docs/reports/evidence/step-04/screen-review.json",
+    "docs/reports/evidence/step-04/screenshots/foundation-home-1440.png",
+    "docs/reports/evidence/step-04/screenshots/foundation-home-360.png",
+    "docs/reports/evidence/step-04/screenshots/foundation-home-390.png",
+    "docs/reports/evidence/step-04/screenshots/foundation-home-768.png",
+    "docs/reports/evidence/step-04/tests.json",
+    "docs/reports/evidence/step-04/typecheck.json",
+    "docs/reports/evidence/step-04/types-check.json",
+    "scripts/generate-db-types.py",
+    "scripts/test-database.py",
+    "src/data/database.types.ts",
+    "supabase/.gitignore",
+    "supabase/.temp/cli-latest",
+    "supabase/README.md",
+    "supabase/config.toml",
+    "supabase/migrations/20261020090856_foundation_schema_rls.sql",
+    "tests/database/cases.py",
+    "tests/database/setup.sql",
+    "tests/types/database-contract.ts"
+  ],
+  "git": {
+    "branch": "audit/m0-task-001",
+    "commit": null,
+    "push_pr": "NOT_RUN"
+  },
+  "limitations": "No arbitrary secret absence guarantee; no live Supabase/API/deployment proof"
+}

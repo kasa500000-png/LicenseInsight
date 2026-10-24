@@ -1,0 +1,85 @@
+{
+  "artifact_kind": "validation_preparation_only",
+  "created_on_seoul": "2026-10-20",
+  "scope": "M0/TASK-001 (v2 STEP-01)",
+  "publication_allowed": false,
+  "is_official_data": false,
+  "authenticated_api_requests_executed": 0,
+  "timezone": "Asia/Seoul",
+  "candidate_schedule_years": [
+    2026,
+    2027
+  ],
+  "candidate_completed_statistic_years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "year_range_status": "UNVERIFIED_CANDIDATES_RECOMPUTE_AT_EXECUTION",
+  "credential_variable_name": "DATA_GO_KR_SERVICE_KEY",
+  "credential_presence_from_session_audit": "ABSENT",
+  "public_catalog_recheck": "BLOCKED_HTTP_503_OBSERVED",
+  "source_approval_status": {
+    "DS-01": {
+      "development": "UNKNOWN",
+      "production": "UNKNOWN",
+      "account_quota": null
+    },
+    "DS-02": {
+      "development": "UNKNOWN",
+      "production": "UNKNOWN",
+      "account_quota": null
+    },
+    "DS-03": {
+      "development": "UNKNOWN",
+      "production": "UNKNOWN",
+      "account_quota": null
+    }
+  },
+  "targets": [
+    {
+      "requested_name": "전기기사",
+      "verified_official_name": null,
+      "official_source_code": null,
+      "source_grade_code": null,
+      "statistics_grade_crosswalk": null,
+      "code_verification": "NOT_RUN",
+      "schedule_verification": "NOT_RUN",
+      "statistics_verification": "NOT_RUN",
+      "official_comparison": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "requested_name": "전기산업기사",
+      "verified_official_name": null,
+      "official_source_code": null,
+      "source_grade_code": null,
+      "statistics_grade_crosswalk": null,
+      "code_verification": "NOT_RUN",
+      "schedule_verification": "NOT_RUN",
+      "statistics_verification": "NOT_RUN",
+      "official_comparison": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "requested_name": "전기기능사",
+      "verified_official_name": null,
+      "official_source_code": null,
+      "source_grade_code": null,
+      "statistics_grade_crosswalk": null,
+      "code_verification": "NOT_RUN",
+      "schedule_verification": "NOT_RUN",
+      "statistics_verification": "NOT_RUN",
+      "official_comparison": "NOT_RUN",
+      "evidence": null
+    }
+  ],
+  "test_preparation": {
+    "status": "PLANNED",
+    "implemented": false,
+    "executed": false
+  },
+  "G0": "BLOCKED"
+}

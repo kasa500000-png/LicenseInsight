@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-20T09:19:17.285370+00:00",
+  "selected_step": "STEP-04",
+  "reason": "STEP03 local foundation PASS; STEP02 internal data contract reviewed, live remains BLOCKED perROADMAP",
+  "previous_evidence": [
+    {
+      "file": "docs/reports/evidence/step-03/validation.json",
+      "sha256": "3ad9b7b0d2b1ad52cb9bfa4d3f1c106a67b6439a4882111e68823612faf61723",
+      "exit_code": null,
+      "summary": null,
+      "stats": null,
+      "reviewed": true
+    },
+    {
+      "file": "docs/reports/evidence/step-03/tests-final.json",
+      "sha256": "7fa60528498558370f01c428738dcb382c27f40dfd535712803958c74cadbdbc",
+      "exit_code": 0,
+      "summary": null,
+      "stats": null,
+      "reviewed": true
+    },
+    {
+      "file": "docs/reports/evidence/step-03/browser-tests.json",
+      "sha256": "1ec4fb579a0baa5bf29148604f1acbd52f959c310a4a2cf178d0977681380da6",
+      "exit_code": 0,
+      "summary": null,
+      "stats": {
+        "startTime": "2026-10-20T07:45:18.466Z",
+        "duration": 5009.473,
+        "expected": 8,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "reviewed": true
+    },
+    {
+      "file": "docs/reports/evidence/step-03/build.json",
+      "sha256": "e07da0332a617c137899f1b6ff2e80e58e0b9f743b9547f09d6eebeda0f41da8",
+      "exit_code": 0,
+      "summary": null,
+      "stats": null,
+      "reviewed": true
+    }
+  ],
+  "app_runtime_sources_unchanged": true,
+  "runtime_files_checked": 12,
+  "remote_secret_presence": {
+    "DATA_GO_KR_SERVICE_KEY": false,
+    "SUPABASE_URL": false,
+    "SUPABASE_SECRET_KEY": false,
+    "DATABASE_URL": false
+  }
+}

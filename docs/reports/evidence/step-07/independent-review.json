@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-20T22:01:24.022957+00:00",
+  "evidence_kind": "independent reviewer agent report; primary executions are separate command/JSON evidence",
+  "reviewer": "/root/step07_contract_review",
+  "scope": [
+    "STEP07 contract",
+    "prerequisite source SHA85",
+    "input validity propagation",
+    "chart client render boundary/table alternative",
+    "modal focus trap",
+    "runtime isolation and final JSON results"
+  ],
+  "unresolved_p0_p1": [],
+  "reported_native_probe": "Chromium memory native-dialog microprobe reproduced Shift+Tab focus BODY escape before explicit trap; no external requests in that probe",
+  "verified_final_summary": {
+    "checked_at": "2026-10-20T22:01:24.022670+00:00",
+    "unit_passed": 484,
+    "unit_failed": 0,
+    "browser": {
+      "startTime": "2026-10-20T21:59:09.194Z",
+      "duration": 20268.003,
+      "expected": 34,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "isolation_checks": 22,
+    "contrast_combinations": 15,
+    "min_text_contrast": 5.168555560022562,
+    "captured": 38,
+    "manual_reviewed": 25,
+    "source_ref": "unborn; all local changes"
+  },
+  "limits": [
+    "No SSR chart error guarantee",
+    "No screen-reader, Safari/Firefox or physical mobile verification",
+    "No full WCAG assessment",
+    "No actual API/DB/storage workflow verification"
+  ]
+}

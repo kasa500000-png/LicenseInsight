@@ -1,0 +1,260 @@
+{
+  "validated_at": "2026-10-20T10:55:05.127918+00:00",
+  "postgres": "17.11",
+  "target": "own isolated container networknone/nohostports",
+  "checks": [
+    {
+      "name": "step05.anon.start_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.anon.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.anon.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.authenticated.start_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.authenticated.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.authenticated.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.worker.publish_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.worker.review_approval_denied",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.review_preserves_last_good",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.publish_requires_review",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.date_correction_updates_stable_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.return_to_published_content_clears_superseded_pending_change",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.failed_run_actual_calls_are_distinct_from_reserved_budget",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.active_scope_override_blocks_prepare",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.expired_logical_override_blocks_prepare",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.active_logical_override_after_approval_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.expired_scope_override_after_approval_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.current_qualification_track_must_match_publish_scope",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.unrelated_override_does_not_block_other_records",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.different_scope_cannot_claim_existing_event",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.statistic_logical_key_cannot_change_natural_identity",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.source_daily_budget_is_shared_and_bounded",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.expired_worker_is_fenced_after_new_lease",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.source_approval_revocation_blocks_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.same_response_rerun_is_idempotent",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.stale_expected_revision_preserves_public",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.unknown_actor_cannot_approve",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.review_optimistic_version_checked",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.revoked_publisher_cannot_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.same_scope_second_run_rejected",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.failed_collection_preserves_old_projection",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.empty_collection_never_deletes_last_good",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.ambiguous_mapping_quarantined",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.unreviewed_mapping_quarantined",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.source_code_zero_not_coerced_in_mapping",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.migration_no_browser_executable_functions",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.quarantined_run_cannot_review_or_publish",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.reviewed_staging_payload_tamper_is_rejected",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    },
+    {
+      "name": "step05.worker_cannot_rewrite_staged_records",
+      "result": "PASS",
+      "exit_code": 3,
+      "sqlstate": "42501"
+    },
+    {
+      "name": "step05.publication_failure_rolls_back_projection_status_and_audit",
+      "result": "PASS",
+      "exit_code": 0,
+      "sqlstate": null
+    }
+  ],
+  "passed": 40,
+  "failed": 0,
+  "sources": {
+    "supabase/migrations/20261020104213_ingestion_publication.sql": "d51b449a086585c4bb996acde2758b8a2ac7a9f7a56ee2b471eb1bcd0d120e7a",
+    "supabase/migrations/20261020090856_foundation_schema_rls.sql": "6793f5d89e687abaec827597946a3d73b24cf892a08848761839dd7a9b7c004c",
+    "tests/database/step05/setup.sql": "cdade810f79c7252fd2ff5422c19f65692b38497cc88376cbd4f23e44aa30256",
+    "tests/database/step05/cases.py": "0e41b39fcb3e299466b4daa1cfc74e13df61ec71785814cd0dd04510002e9821"
+  },
+  "cleanup": {
+    "result": "PASS",
+    "removed_at": "2026-10-20T10:55:36.553489+00:00",
+    "scope": "own exact-name container after labelmatch"
+  }
+}

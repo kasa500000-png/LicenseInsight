@@ -1,0 +1,13 @@
+{
+  "command": [
+    "pnpm",
+    "lint"
+  ],
+  "non_secret_configuration": {},
+  "started_at": "2026-10-20T21:53:37.018783+00:00",
+  "finished_at": "2026-10-20T21:53:39.883062+00:00",
+  "elapsed_seconds": 2.864,
+  "exit_code": 1,
+  "stdout": "\n/workspace/licenseinsight/scripts/check-ui-gallery-isolation.mjs\n  30:24  error  'fetch' is not defined        no-undef\n  30:48  error  'AbortSignal' is not defined  no-undef\n  36:30  error  'fetch' is not defined        no-undef\n  36:65  error  'AbortSignal' is not defined  no-undef\n\n✖ 4 problems (4 errors, 0 warnings)\n\n[ELIFECYCLE] Command failed with exit code 1.\n",
+  "stderr": "$ eslint . --max-warnings=0\n"
+}

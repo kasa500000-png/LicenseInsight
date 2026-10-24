@@ -1,0 +1,78 @@
+name: Foundation checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: foundation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  database:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source without persisted credentials
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Verify isolated PostgreSQL migrations and permissions
+        run: python3 scripts/test-database.py
+      - name: Verify SQL type contract matches catalog
+        run: python3 scripts/generate-db-types.py test-results/database/qi_first-metadata.json --check
+      - name: Set up Node for PostgreSQL driver integration
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24.19.0
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+          run_install: false
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Verify actual ingestion and public repository through node-postgres
+        run: pnpm test:ingestion-db
+  foundation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      APP_ENV: test
+      DATA_MODE: live
+      PUBLIC_SITE_URL: http://127.0.0.1:3103
+      ADS_ENABLED: "false"
+      ANALYTICS_ENABLED: "false"
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - name: Check out source without persisted credentials
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24.19.0
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+          run_install: false
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Lint
+        run: pnpm lint
+      - name: Typecheck
+        run: pnpm typecheck
+      - name: Run offline tests
+        run: pnpm test
+      - name: Build local test application
+        run: pnpm build
+      - name: Install Chromium for browser checks
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Run browser checks
+        run: pnpm test:e2e

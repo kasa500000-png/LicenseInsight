@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-20T07:52:33.604522+00:00",
+  "change_origin": "Installed Next.js16.4.2 next dev generator",
+  "generator_path": "node_modules/next/dist/server/lib/generate-agent-files.js",
+  "generator_sha256": "cbadef898783a63df6973f40d6dd6a34e85308d3841825357a0f84aa2a34590a",
+  "original_prefix_sha256": "950309a0a7b2d51ae4eeb45bc42a7f5fe16d9df31a7ff2c1a9d475ac178f3b13",
+  "original_rules_byte_preserved": true,
+  "appended_block_exact_generator_match": true,
+  "agent_feedback_enabled": false,
+  "bundled_guides_read": [
+    "01-app/01-getting-started/01-installation.md",
+    "01-app/03-api-reference/03-file-conventions/proxy.md",
+    "01-app/01-getting-started/10-error-handling.md",
+    "01-app/02-guides/environment-variables.md"
+  ]
+}

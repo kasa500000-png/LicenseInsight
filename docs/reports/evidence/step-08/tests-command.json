@@ -1,0 +1,14 @@
+{
+  "command": [
+    "pnpm",
+    "test",
+    "--reporter=json",
+    "--outputFile=docs/reports/evidence/step-08/tests.json"
+  ],
+  "started_at": "2026-10-21T00:47:51.435321+00:00",
+  "finished_at": "2026-10-21T00:47:53.901244+00:00",
+  "elapsed_seconds": 2.466,
+  "exit_code": 0,
+  "stdout": "JSON report written to /workspace/licenseinsight/docs/reports/evidence/step-08/tests.json\n",
+  "stderr": "$ vitest run --reporter=json --outputFile=docs/reports/evidence/step-08/tests.json\n"
+}

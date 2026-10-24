@@ -1,0 +1,114 @@
+{
+  "started_at": "2026-10-20T10:59:41.500712+00:00",
+  "image": "postgres@sha256:3645570cccdfa447589da9f57dd740faa29b30938e861289a5574b6ca6b03826",
+  "data": "synthetic-only",
+  "network": "none",
+  "host_ports": [],
+  "connection": "node-postgres through newly created bind-mounted local Unix socket",
+  "checks": [
+    {
+      "name": "fresh schema, restricted test logins and Unix socket",
+      "result": "PASS"
+    },
+    {
+      "name": "actual node-postgres ingestion/public repository tests",
+      "result": "PASS"
+    }
+  ],
+  "cleanup": "PASS",
+  "source_hashes": [
+    {
+      "file": "package.json",
+      "sha256": "652cfe64d292872d4a105a0bb259f0c23af75e19f6a67f6079c6c5fbb961c725"
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "sha256": "bed1817206bbe6a921268605da32dd2f7103eca83824a08f5e18e2bc7541d8f8"
+    },
+    {
+      "file": "scripts/test-ingestion-db.py",
+      "sha256": "d4d434c6768d240fa09500a0cabd9ad0ae75b5937f955403a0ddeffcd89af06d"
+    },
+    {
+      "file": "src/data/adapters/source-registry.ts",
+      "sha256": "61dca42e7d0b964dbb090c2a589c19064f0d56251659c7bd5b5c16fa4ed3a30e"
+    },
+    {
+      "file": "src/data/repositories/public-repository.ts",
+      "sha256": "e5e8f6c20f19afb40884eb8adcfa22e9c7de951ad6791cb1bb7085d3f2d5454f"
+    },
+    {
+      "file": "src/server/ingestion/contracts.ts",
+      "sha256": "faf96407fed240a348e5bf5398e6580f56dde7fca0a4d277736636945607c483"
+    },
+    {
+      "file": "src/server/ingestion/normalize.ts",
+      "sha256": "dbf02a3b7d2a94ba82f5a37b32fe3becb59688e9909592de3c7330ac4ffc45db"
+    },
+    {
+      "file": "src/server/ingestion/postgres-store.ts",
+      "sha256": "21002df79235d6d06251fb4c1ae601fea3cc31bdab5654e01289c56d0050ecf0"
+    },
+    {
+      "file": "src/server/ingestion/safety.ts",
+      "sha256": "3112eeed7eabc54f962df12e1acf6a3e5df715ee3b3063ef0ca6f264aca14168"
+    },
+    {
+      "file": "src/server/ingestion/service.ts",
+      "sha256": "eb6a17f38ea159a309d0e24f89ba86f7ea1bdd9607bbab89a9923567e0e85677"
+    },
+    {
+      "file": "src/server/ingestion/transport.ts",
+      "sha256": "f7428f8e9842578780358b356970d2c7e90d220ffc7ddd2411ced77d4181a3ce"
+    },
+    {
+      "file": "tests/database/node/ingestion.test.ts",
+      "sha256": "32f2a951816ff6e1ab29aae819b126a75d51874bd6616422826eef04926aea33"
+    },
+    {
+      "file": "tests/database/node/public-repository.test.ts",
+      "sha256": "0806541abfae8942a77019e56db23a04f378c7e241f376bc85ad61c6cdc86956"
+    },
+    {
+      "file": "tests/database/setup.sql",
+      "sha256": "0ce4009338cd7f8d8b303d3fdc5ebed22a84b600197ee01b32bd0505fad689a2"
+    },
+    {
+      "file": "tests/database/step05/setup.sql",
+      "sha256": "cdade810f79c7252fd2ff5422c19f65692b38497cc88376cbd4f23e44aa30256"
+    },
+    {
+      "file": "vitest.database.config.mts",
+      "sha256": "f00eeb0f44dc2466bb96c31f35a48de51a9081d4ad86288cd074cb778f77cbdc"
+    }
+  ],
+  "migrations": [
+    {
+      "file": "supabase/migrations/20261020090856_foundation_schema_rls.sql",
+      "sha256": "6793f5d89e687abaec827597946a3d73b24cf892a08848761839dd7a9b7c004c"
+    },
+    {
+      "file": "supabase/migrations/20261020104213_ingestion_publication.sql",
+      "sha256": "d51b449a086585c4bb996acde2758b8a2ac7a9f7a56ee2b471eb1bcd0d120e7a"
+    }
+  ],
+  "postgres_version": "PostgreSQL 17.11 (Debian 17.11-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+  "command": [
+    "pnpm",
+    "exec",
+    "vitest",
+    "run",
+    "--config",
+    "vitest.database.config.mts",
+    "--reporter=json",
+    "--outputFile",
+    "/workspace/licenseinsight/docs/reports/evidence/step-05/node-final/node-tests.json"
+  ],
+  "node_exit_code": 0,
+  "node_stdout": "JSON report written to /workspace/licenseinsight/docs/reports/evidence/step-05/node-final/node-tests.json\n",
+  "node_stderr": "",
+  "socket_owner_restored": true,
+  "socket_cleanup": "PASS",
+  "finished_at": "2026-10-20T10:59:49.263194+00:00",
+  "exit_code": 0
+}

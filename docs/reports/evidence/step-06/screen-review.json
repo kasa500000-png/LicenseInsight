@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-10-20T11:58:45.604187+00:00",
+  "method": "all eight original screenshots opened with view_image by primary agent",
+  "browser": "system Chromium via Playwright",
+  "product_url": "http://127.0.0.1:3103/",
+  "harness_url": "about:blank / page.setContent only; not an app route",
+  "widths": [
+    360,
+    390,
+    768,
+    1440
+  ],
+  "screenshots": [
+    {
+      "file": "screenshots/domain-oracle-1440.png",
+      "width": 1440,
+      "height": 960,
+      "sha256": "3c353a5b22225d0b5a75c53da550f39e36ceedcf494b1e3645ad5fd1967fc4ca",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/domain-oracle-360.png",
+      "width": 360,
+      "height": 1201,
+      "sha256": "c059d99a22bbc51d59f30499532a585293a35a250919408b7a8abc43eae43041",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/domain-oracle-390.png",
+      "width": 390,
+      "height": 1201,
+      "sha256": "8854b8d80e8a586404f16a61143ce2287d419e3ef9661857461ff6a4ceb2f6ea",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/domain-oracle-768.png",
+      "width": 768,
+      "height": 960,
+      "sha256": "6147e3ca622b791b29f8740603a4034493915e44ab5068d89b556f31d33d9d54",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/foundation-home-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "fb5bc6c1f62ae05c70c569c4dad22a209c49b09a6f28a9e308d68f9882de9840",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/foundation-home-360.png",
+      "width": 360,
+      "height": 1000,
+      "sha256": "619864713662c5e2285590dad83228e8c87820db56767cdcd8f2d8845d18702f",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/foundation-home-390.png",
+      "width": 390,
+      "height": 1000,
+      "sha256": "b775798be453bc0a9bd5bded6ad0813acdefbc9d0d9b2ea540fd5993c410e4d4",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    },
+    {
+      "file": "screenshots/foundation-home-768.png",
+      "width": 768,
+      "height": 1000,
+      "sha256": "be427a0522e00296e9247ec1ba52340c2e640eb9dbdf472b7e391bf298609bf9",
+      "visual_review": "PASS: legible Korean, no overlap/clipped text/horizontal overflow; synthetic label visible in harness; product homepage empty"
+    }
+  ],
+  "external_http_attempts": 0,
+  "data": "SYNTHETIC in ephemeral memory harness; DATA_MODE=live empty product app",
+  "limits": [
+    "No product schedule/statistics/planner UI implemented",
+    "No DB or live API connection proven",
+    "Not a full accessibility or performance audit"
+  ]
+}

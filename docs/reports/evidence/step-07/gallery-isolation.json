@@ -1,0 +1,184 @@
+{
+  "modes": [
+    {
+      "mode": "local",
+      "requests": [
+        {
+          "path": "/ui-gallery",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": true,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery?mode=fixture&APP_ENV=test",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": true,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": true,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/nested",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/foundation-check/error",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        }
+      ],
+      "server_stopped": true
+    },
+    {
+      "mode": "test",
+      "requests": [
+        {
+          "path": "/ui-gallery",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": true,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery?mode=fixture&APP_ENV=test",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": true,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": true,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/nested",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/foundation-check/error",
+          "expected": 200,
+          "status": 200,
+          "synthetic_payload": false,
+          "noindex": true
+        }
+      ],
+      "server_stopped": true
+    },
+    {
+      "mode": "preview",
+      "requests": [
+        {
+          "path": "/ui-gallery",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery?mode=fixture&APP_ENV=test",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/nested",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/foundation-check/error",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/%75i-gallery",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        }
+      ],
+      "server_stopped": true
+    },
+    {
+      "mode": "production",
+      "requests": [
+        {
+          "path": "/ui-gallery",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery?mode=fixture&APP_ENV=test",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/ui-gallery/nested",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/foundation-check/error",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        },
+        {
+          "path": "/%75i-gallery",
+          "expected": 404,
+          "status": 404,
+          "synthetic_payload": false,
+          "noindex": true
+        }
+      ],
+      "server_stopped": true
+    }
+  ],
+  "request_scope": "loopback destinations only; not an outbound traffic monitor",
+  "domain_ownership_verified": false
+}

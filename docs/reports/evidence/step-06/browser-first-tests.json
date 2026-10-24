@@ -1,0 +1,139 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/licenseinsight/node_modules/.pnpm/@playwright+test@1.64.1/node_modules/@playwright/test/cli.js",
+      "test"
+    ],
+    "configFile": "/workspace/licenseinsight/playwright.config.ts",
+    "rootDir": "/workspace/licenseinsight/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/licenseinsight/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/licenseinsight/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/licenseinsight/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "chromium",
+        "testDir": "/workspace/licenseinsight/tests/e2e",
+        "snapshotDir": "/workspace/licenseinsight/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3103",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--no-sandbox"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "pnpm start --hostname 127.0.0.1 --port 3103",
+      "url": "http://127.0.0.1:3103",
+      "reuseExistingServer": false,
+      "timeout": 60000,
+      "env": {
+        "APP_ENV": "test",
+        "DATA_MODE": "live",
+        "PUBLIC_SITE_URL": "http://127.0.0.1:3103",
+        "ADS_ENABLED": "false",
+        "ANALYTICS_ENABLED": "false",
+        "NEXT_TELEMETRY_DISABLED": "1"
+      }
+    }
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "SyntaxError: Cannot use 'import.meta' outside a module",
+      "stack": "SyntaxError: Cannot use 'import.meta' outside a module\n    at Object.<anonymous> (/workspace/licenseinsight/tests/e2e/domain.spec.ts:4:1)",
+      "location": {
+        "file": "/workspace/licenseinsight/tests/e2e/domain.spec.ts",
+        "column": 1,
+        "line": 4
+      },
+      "snippet": "\u001b[90m   at \u001b[39mdomain.spec.ts:4\n\n  2 | import path from \"node:path\";\n  3 | import { expect, test, type Page } from \"@playwright/test\";\n> 4 | import { domainBrowserBundle } from \"../../scripts/domain-browser-bundle.mjs\";\n    | ^\n  5 | import { domainOracleExpected } from \"../support/domain-oracle\";\n  6 |\n  7 | declare global {"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-20T11:57:00.072Z",
+    "duration": 1266.806,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

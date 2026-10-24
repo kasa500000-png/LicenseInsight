@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-20T22:01:24.022670+00:00",
+  "unit_passed": 484,
+  "unit_failed": 0,
+  "browser": {
+    "startTime": "2026-10-20T21:59:09.194Z",
+    "duration": 20268.003,
+    "expected": 34,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "isolation_checks": 22,
+  "contrast_combinations": 15,
+  "min_text_contrast": 5.168555560022562,
+  "captured": 38,
+  "manual_reviewed": 25,
+  "source_ref": "unborn; all local changes"
+}

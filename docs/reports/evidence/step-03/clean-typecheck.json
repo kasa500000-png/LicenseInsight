@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "typecheck"
+  ],
+  "checked_at_utc": "2026-10-20T07:47:04.240538+00:00",
+  "next_generated_directory_absent_during_check": true,
+  "generated_artifacts_restored": true,
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "$ tsc --noEmit\n"
+}

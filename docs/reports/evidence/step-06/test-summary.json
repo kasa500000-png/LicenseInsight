@@ -1,0 +1,33 @@
+{
+  "passed": 468,
+  "failed": 0,
+  "pending": 0,
+  "domain_files": [
+    {
+      "file": "tests/unit/domain-boundary.test.ts",
+      "passed": 1,
+      "failed": 0
+    },
+    {
+      "file": "tests/unit/domain-date.test.ts",
+      "passed": 111,
+      "failed": 0
+    },
+    {
+      "file": "tests/unit/domain-oracles.test.ts",
+      "passed": 29,
+      "failed": 0
+    },
+    {
+      "file": "tests/unit/domain-planner.test.ts",
+      "passed": 54,
+      "failed": 0
+    },
+    {
+      "file": "tests/unit/domain-statistics.test.ts",
+      "passed": 71,
+      "failed": 0
+    }
+  ],
+  "data": "synthetic only"
+}

@@ -1,0 +1,16 @@
+# Server secrets and local authentication state
+.env*
+!.env.example
+.auth/
+*.log
+
+# Future application/tool output; no app has been scaffolded in M0
+node_modules/
+.next/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+.DS_Store

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "pnpm",
+    "dev",
+    "--port",
+    "3104"
+  ],
+  "app_env": "local",
+  "data_mode": "live",
+  "started_at_utc": "2026-10-20T07:39:32.911122+00:00",
+  "is_deployment": false,
+  "home_status": 200,
+  "server_rendered_text": true,
+  "test_only_route_status": 200,
+  "finished_at_utc": "2026-10-20T07:39:38.251082+00:00",
+  "stdout": "$ next dev --hostname 127.0.0.1 --port 3104\n▲ Next.js 16.4.2 (Turbopack)\n- Local:         http://127.0.0.1:3104\n- Network:       http://127.0.0.1:3104\n✓ Ready in 410ms\n✓ Running next.config.ts took 38ms\n\n✓ Generated AGENTS.md for AI agents. Set `agentRules: false` in next.config to disable.\n GET / 200 in 473ms (next.js: 212ms, application-code: 260ms)\n GET /foundation-check/error 200 in 82ms (next.js: 11ms, application-code: 72ms)\n[ELIFECYCLE] Command failed.\n\u001b[?25h\n",
+  "passed": false
+}

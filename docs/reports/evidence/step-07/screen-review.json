@@ -1,0 +1,296 @@
+{
+  "checked_at": "2026-10-20T22:01:24.019104+00:00",
+  "method": "primary agent opened selected original PNGs using view_image",
+  "captured": 38,
+  "manually_opened": 25,
+  "screenshots": [
+    {
+      "file": "screenshots/domain-oracle-1440.png",
+      "width": 1440,
+      "height": 960,
+      "sha256": "3c353a5b22225d0b5a75c53da550f39e36ceedcf494b1e3645ad5fd1967fc4ca",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/domain-oracle-360.png",
+      "width": 360,
+      "height": 1201,
+      "sha256": "c059d99a22bbc51d59f30499532a585293a35a250919408b7a8abc43eae43041",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/domain-oracle-390.png",
+      "width": 390,
+      "height": 1201,
+      "sha256": "8854b8d80e8a586404f16a61143ce2287d419e3ef9661857461ff6a4ceb2f6ea",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/domain-oracle-768.png",
+      "width": 768,
+      "height": 960,
+      "sha256": "6147e3ca622b791b29f8740603a4034493915e44ab5068d89b556f31d33d9d54",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/foundation-home-1440.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "7061a5fba89d434073cc69dae01e1bdcf5ce96aee89e0da367f4e86b6b654ad6",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/foundation-home-360.png",
+      "width": 360,
+      "height": 1016,
+      "sha256": "b5bdbfc8b7d5f416de062bad078522d6e02bf4aee802526b4dd2cca7e02e7d67",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/foundation-home-390.png",
+      "width": 390,
+      "height": 1016,
+      "sha256": "022f12029a7fd60ad4334935dbab1c66742a52fcfd15ddd470b5174d31c597d3",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/foundation-home-768.png",
+      "width": 768,
+      "height": 1000,
+      "sha256": "a8b726c36347e19f598deb9ec6cace37570e0e71d313c1156ef5de3f25b62cd1",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-chart-fallback-unborn.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "9360857681130963fce4166681d068b9751a97f83bae8a5f26346d22869cf14d",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-dialog-390-unborn.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "91376d29b859cb549f88341a9484303ca44f67dd0493e5a950971edca38a72f6",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-css-zoom-200-unborn.png",
+      "width": 720,
+      "height": 1000,
+      "sha256": "42f24d82a32f93b6e7795085cfe19c6461a9a9f99307733654a9007162d21ee9",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-overview-1440-unborn.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "c673ea1941a23115bb46070b164aa714112f5f8e776a84c7ce28dc0d14c20057",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-overview-360-unborn.png",
+      "width": 360,
+      "height": 1000,
+      "sha256": "b073c2d9f0d2bdd0c02435982ad6f29b3e6eb208864d2b67a3624d36b17731e3",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-overview-390-unborn.png",
+      "width": 390,
+      "height": 1000,
+      "sha256": "079d056c1e154e08100964244bc0ad6507aeddee3b9b208c278f790254cf49c2",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-overview-768-unborn.png",
+      "width": 768,
+      "height": 1000,
+      "sha256": "ed7ed685c88bc8cbe424d1b6479b30e179c6a5cc38b42332d05e820453cdf903",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-text-200-1440-unborn.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "42e0a26b9984807252d482e85cd6b116ea3589cb92ec054701cede566e6e0c4f",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-gallery-text-200-390-unborn.png",
+      "width": 390,
+      "height": 1000,
+      "sha256": "088425f5c6b5f435f7d33c524d98daea5845e1348357722e476537d17693634c",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-gallery-text-200-768-unborn.png",
+      "width": 768,
+      "height": 1000,
+      "sha256": "46cf7607fa4b129835e3200a13c7badbd11a5699c9e96ed5e42141bacb8d1dae",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-gallery-text-200-unborn.png",
+      "width": 360,
+      "height": 1000,
+      "sha256": "1ffbbcdf389aeab43e617c9a84747123617053d4c106d39258edc86e7522df43",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-home-footer-390-unborn.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "587bef1361b962cb03de2dead565a7bf126507e0907aa1481e5f9e150d4bab2c",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-large-number-1440-unborn.png",
+      "width": 548,
+      "height": 254,
+      "sha256": "85ecdb7dba48140fdf48d74994e96a043daa38765e7696b06393e6fc19a20399",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-large-number-390-unborn.png",
+      "width": 358,
+      "height": 238,
+      "sha256": "33ef34eb4b36952f5e9f3ac409ec3d22ebc0d675084d687c482e916022f28562",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-long-name-1440-unborn.png",
+      "width": 548,
+      "height": 227,
+      "sha256": "99b0f72dc6299f447957effd30fd524b69a5f1469c952397e21221f5a671ab7b",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-long-name-360-unborn.png",
+      "width": 328,
+      "height": 234,
+      "sha256": "857bcee4e673314169d2c27619ac034d5f8851a0db1d125aac3f1262a2196f88",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-long-name-390-unborn.png",
+      "width": 358,
+      "height": 234,
+      "sha256": "9d058839601253936fcf0afe2e2139a26be235a2c882e09d3e9fb4f72e80dad2",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-long-name-768-unborn.png",
+      "width": 356,
+      "height": 250,
+      "sha256": "0fbaebd65c3bedfb559ce597bf369946c7c934ecded0bd37960770f7a2a12a88",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-state-demo-1440-unborn.png",
+      "width": 548,
+      "height": 240,
+      "sha256": "3207d75919098c701612edcc88e033f5c228c56ba746f80d9b8be709f0e23850",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-state-demo-390-unborn.png",
+      "width": 358,
+      "height": 285,
+      "sha256": "bccf4de575a7afbc41d0b83033578b6bee5c4acab245f4019756357b8aea2a2c",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-state-empty-1440-unborn.png",
+      "width": 548,
+      "height": 269,
+      "sha256": "4e4d154cbe55279b3b11466745fdacd68e1cb00c33483aa9943682047b17a7fb",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-state-empty-390-unborn.png",
+      "width": 358,
+      "height": 269,
+      "sha256": "00056987544c0f57635a3cbfdd0a057ed681b1e9c8128a63e1644485fb379940",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-state-error-1440-unborn.png",
+      "width": 548,
+      "height": 221,
+      "sha256": "301c3d62d84ee267fdaf0cd0bff9b559da64e8dd7f94f91f28dd5967a32fabd6",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-state-error-390-unborn.png",
+      "width": 358,
+      "height": 247,
+      "sha256": "4b49ece1dcb0bda10675899ea7f1944e3e07335525ab40438125dc8b38613fab",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-state-loading-1440-unborn.png",
+      "width": 548,
+      "height": 287,
+      "sha256": "fc95169a6444dc1f39ee1e68cce1a40c770a0cfa7c10ec44ba6ccf28feecb8a0",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-state-loading-390-unborn.png",
+      "width": 358,
+      "height": 287,
+      "sha256": "bc4bc48a14f127263d6b7b3e49f57b89fc92ad03d81ffa1c39dd37f00ec869f0",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-state-stale-1440-unborn.png",
+      "width": 548,
+      "height": 210,
+      "sha256": "b591f717a8139a4177a888c5248d3da22becd451b1dcf65478dab8a79c50ed9b",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-state-stale-390-unborn.png",
+      "width": 358,
+      "height": 232,
+      "sha256": "a204606d51fd9160f2d34c104b844791336d7a2f3c54482ee31ad575e5ea71c8",
+      "manual_review": "PASS"
+    },
+    {
+      "file": "screenshots/ui-state-storage-1440-unborn.png",
+      "width": 548,
+      "height": 150,
+      "sha256": "396c8c9fe64458063fc25466eccd203df0196873f089464c144d55264fd3a3aa",
+      "manual_review": "NOT_RUN (automatic capture/regression only)"
+    },
+    {
+      "file": "screenshots/ui-state-storage-390-unborn.png",
+      "width": 358,
+      "height": 173,
+      "sha256": "d500ad28c4f490c6c9a47be7a82a3b5608e5c509585f75424385e403725dd461",
+      "manual_review": "PASS"
+    }
+  ],
+  "normal_widths": [
+    360,
+    390,
+    768,
+    1440
+  ],
+  "zoom_methods": [
+    "CSS zoom2 at720px (effective360px reflow)",
+    "root font-size200% at360/390/768/1440px"
+  ],
+  "findings": [
+    "Korean wrapping and long names readable",
+    "large counts preserve digits; null is not zero",
+    "loading/empty/error/stale/demo/storage-failure distinct by text/icons",
+    "modal focus visible and footer reachable above bottom menu",
+    "no page-wide horizontal overflow in automated geometry checks"
+  ],
+  "limits": [
+    "Chromium desktop automation; no physical mobile device or screen reader",
+    "38captures does not mean38manual reviews",
+    "gallery synthetic, actual app remains honest empty/shell states"
+  ]
+}

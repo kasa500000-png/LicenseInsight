@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-20T11:57:14.593309+00:00",
+  "evidence_kind": "independent agent review report; primary runner results are tests.json",
+  "reviewer": "/root/step06_contract_review",
+  "scope": [
+    "src/domain/date.ts",
+    "src/domain/statistics.ts",
+    "src/domain/planner.ts",
+    "tests/unit/domain-*.test.ts"
+  ],
+  "unresolved_p0_p1": [],
+  "reported_checks": [
+    "Seven corrupted statistic summaries rejected as INVALID_COMPARISON; valid comparison +5.0%p",
+    "Completed30 minutes: Wednesday preserve570, Thursday recalculate510, Wednesday reset540",
+    "KST midnight boundary: 630 before,570 after; past incomplete minutes never reassigned",
+    "Past weekday capacity change preserves history; past exclusion conflicts; target today/past rejected",
+    "Determinism, input immutability, exact count/rate/allocation conservation, microsecond half-open intervals reviewed"
+  ],
+  "limits": [
+    "No live API or official data evidence",
+    "Continuity, expected rounds and source rounding assertions require external verified evidence",
+    "No authentication, remote DB or deployment verification"
+  ]
+}

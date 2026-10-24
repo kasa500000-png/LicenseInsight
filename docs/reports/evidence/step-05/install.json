@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "install",
+    "--frozen-lockfile"
+  ],
+  "started_at": "2026-10-20T10:59:43.067273+00:00",
+  "finished_at": "2026-10-20T10:59:43.504235+00:00",
+  "exit_code": 0,
+  "stdout": "Already up to date\nDone in 397ms using pnpm v11.25.0\n",
+  "stderr": ""
+}

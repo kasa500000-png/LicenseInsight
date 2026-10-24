@@ -1,0 +1,232 @@
+{
+  "method": "WCAG relative luminance of rendered foreground and nearest opaque background",
+  "combinations": [
+    {
+      "kind": "text",
+      "foreground": [
+        29,
+        78,
+        216
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 6.701618401398807,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "background": [
+        29,
+        78,
+        216
+      ],
+      "ratio": 6.701618401398807,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        15,
+        23,
+        42
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 17.85253496299567,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        71,
+        85,
+        105
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 7.577663953533317,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        146,
+        64,
+        14
+      ],
+      "background": [
+        255,
+        251,
+        235
+      ],
+      "ratio": 6.837002380367332,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        15,
+        23,
+        42
+      ],
+      "background": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 17.062933971317335,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        71,
+        85,
+        105
+      ],
+      "background": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 7.242510935504382,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        29,
+        78,
+        216
+      ],
+      "background": [
+        248,
+        250,
+        252
+      ],
+      "ratio": 6.405212062099509,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "background": [
+        37,
+        99,
+        235
+      ],
+      "ratio": 5.168555560022562,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        29,
+        78,
+        216
+      ],
+      "background": [
+        239,
+        246,
+        255
+      ],
+      "ratio": 6.157973971775643,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        185,
+        28,
+        28
+      ],
+      "background": [
+        254,
+        242,
+        242
+      ],
+      "ratio": 5.914600426850339,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        22,
+        101,
+        52
+      ],
+      "background": [
+        240,
+        253,
+        244
+      ],
+      "ratio": 6.811651629293788,
+      "minimum": 4.5
+    },
+    {
+      "kind": "text",
+      "foreground": [
+        255,
+        255,
+        255
+      ],
+      "background": [
+        185,
+        28,
+        28
+      ],
+      "ratio": 6.4700447145121895,
+      "minimum": 4.5
+    },
+    {
+      "kind": "control-border",
+      "foreground": [
+        100,
+        116,
+        139
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 4.758842787868666,
+      "minimum": 3
+    },
+    {
+      "kind": "focus",
+      "foreground": [
+        29,
+        78,
+        216
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "ratio": 6.701618401398807,
+      "minimum": 3
+    }
+  ],
+  "status": "PASS",
+  "limits": "Computed color checks; not a full WCAG audit"
+}

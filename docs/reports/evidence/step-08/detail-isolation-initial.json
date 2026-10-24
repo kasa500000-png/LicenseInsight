@@ -1,0 +1,664 @@
+{
+  "status": "PASS",
+  "request_scope": "owned loopback origins only; not an outbound traffic monitor",
+  "data_mode": "live",
+  "ads_enabled": false,
+  "analytics_enabled": false,
+  "domain_ownership_verified": false,
+  "modes": [
+    {
+      "mode": "local",
+      "status": "PASS",
+      "requests": [
+        {
+          "name": "baseline",
+          "path": "/detail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "query-tamper",
+          "path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "redirects": [],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "trailing-slash",
+          "path": "/detail-demo/synthetic-electrical/",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [
+            {
+              "status": 308,
+              "from": "/detail-demo/synthetic-electrical/"
+            }
+          ],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "private-error",
+          "path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "redirects": [],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "unknown-slug",
+          "path": "/detail-demo/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "nested",
+          "path": "/detail-demo/synthetic-electrical/nested",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical/nested",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-prefix",
+          "path": "/%64etail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            200,
+            404
+          ],
+          "status": 404,
+          "final_path": "/%64etail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-slug",
+          "path": "/detail-demo/%73ynthetic-electrical",
+          "accepted_statuses": [
+            200,
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/%73ynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-separator",
+          "path": "/detail-demo%2Fsynthetic-electrical",
+          "accepted_statuses": [
+            200,
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo%2Fsynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "public-unknown-slug",
+          "path": "/qualifications/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/qualifications/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        }
+      ],
+      "server_stopped": true
+    },
+    {
+      "mode": "test",
+      "status": "PASS",
+      "requests": [
+        {
+          "name": "baseline",
+          "path": "/detail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "query-tamper",
+          "path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "redirects": [],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "trailing-slash",
+          "path": "/detail-demo/synthetic-electrical/",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [
+            {
+              "status": 308,
+              "from": "/detail-demo/synthetic-electrical/"
+            }
+          ],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "private-error",
+          "path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "accepted_statuses": [
+            200
+          ],
+          "status": 200,
+          "final_path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "redirects": [],
+          "synthetic_payload": true,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "unknown-slug",
+          "path": "/detail-demo/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "nested",
+          "path": "/detail-demo/synthetic-electrical/nested",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical/nested",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-prefix",
+          "path": "/%64etail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            200,
+            404
+          ],
+          "status": 404,
+          "final_path": "/%64etail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        },
+        {
+          "name": "encoded-slug",
+          "path": "/detail-demo/%73ynthetic-electrical",
+          "accepted_statuses": [
+            200,
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/%73ynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-separator",
+          "path": "/detail-demo%2Fsynthetic-electrical",
+          "accepted_statuses": [
+            200,
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo%2Fsynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "public-unknown-slug",
+          "path": "/qualifications/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/qualifications/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        }
+      ],
+      "server_stopped": true
+    },
+    {
+      "mode": "preview",
+      "status": "PASS",
+      "requests": [
+        {
+          "name": "baseline",
+          "path": "/detail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "query-tamper",
+          "path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "trailing-slash",
+          "path": "/detail-demo/synthetic-electrical/",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [
+            {
+              "status": 308,
+              "from": "/detail-demo/synthetic-electrical/"
+            }
+          ],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "private-error",
+          "path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "unknown-slug",
+          "path": "/detail-demo/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "nested",
+          "path": "/detail-demo/synthetic-electrical/nested",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical/nested",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-prefix",
+          "path": "/%64etail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/%64etail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-slug",
+          "path": "/detail-demo/%73ynthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/%73ynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-separator",
+          "path": "/detail-demo%2Fsynthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo%2Fsynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "public-unknown-slug",
+          "path": "/qualifications/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/qualifications/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        }
+      ],
+      "server_stopped": true
+    },
+    {
+      "mode": "production",
+      "status": "PASS",
+      "requests": [
+        {
+          "name": "baseline",
+          "path": "/detail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "query-tamper",
+          "path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical?APP_ENV=test&DATA_MODE=fixture&ADS_ENABLED=true&ANALYTICS_ENABLED=true&scenario=normal",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "trailing-slash",
+          "path": "/detail-demo/synthetic-electrical/",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical",
+          "redirects": [
+            {
+              "status": 308,
+              "from": "/detail-demo/synthetic-electrical/"
+            }
+          ],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "private-error",
+          "path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical?scenario=stats-error",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "unknown-slug",
+          "path": "/detail-demo/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "nested",
+          "path": "/detail-demo/synthetic-electrical/nested",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/synthetic-electrical/nested",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-prefix",
+          "path": "/%64etail-demo/synthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/%64etail-demo/synthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-slug",
+          "path": "/detail-demo/%73ynthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo/%73ynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "encoded-separator",
+          "path": "/detail-demo%2Fsynthetic-electrical",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/detail-demo%2Fsynthetic-electrical",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": false,
+          "passed": true
+        },
+        {
+          "name": "public-unknown-slug",
+          "path": "/qualifications/unknown",
+          "accepted_statuses": [
+            404
+          ],
+          "status": 404,
+          "final_path": "/qualifications/unknown",
+          "redirects": [],
+          "synthetic_payload": false,
+          "private_error_exposed": false,
+          "noindex": true,
+          "no_store": true,
+          "passed": true
+        }
+      ],
+      "server_stopped": true
+    }
+  ]
+}

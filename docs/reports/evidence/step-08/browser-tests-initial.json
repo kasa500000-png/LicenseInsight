@@ -1,0 +1,1890 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/licenseinsight/node_modules/.pnpm/@playwright+test@1.64.1/node_modules/@playwright/test/cli.js",
+      "test"
+    ],
+    "configFile": "/workspace/licenseinsight/playwright.config.ts",
+    "rootDir": "/workspace/licenseinsight/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/licenseinsight/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/workspace/licenseinsight/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/licenseinsight/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "chromium",
+        "testDir": "/workspace/licenseinsight/tests/e2e",
+        "snapshotDir": "/workspace/licenseinsight/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3103",
+          "trace": "off",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium",
+            "args": [
+              "--no-sandbox"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "pnpm start --hostname 127.0.0.1 --port 3103",
+      "url": "http://127.0.0.1:3103",
+      "reuseExistingServer": false,
+      "timeout": 60000,
+      "env": {
+        "APP_ENV": "test",
+        "DATA_MODE": "live",
+        "PUBLIC_SITE_URL": "http://127.0.0.1:3103",
+        "ADS_ENABLED": "false",
+        "ANALYTICS_ENABLED": "false",
+        "NEXT_TELEMETRY_DISABLED": "1"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "design-system.spec.ts",
+      "file": "design-system.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "gallery and long Korean/large-number content reflow at 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1266,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:49.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-5e7404ca069893779b58",
+          "file": "design-system.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "gallery and long Korean/large-number content reflow at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:49.225Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-b2efc7503204f3f54338",
+          "file": "design-system.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "gallery and long Korean/large-number content reflow at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:50.756Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-31d1400eab315accc795",
+          "file": "design-system.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "gallery and long Korean/large-number content reflow at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2178,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:51.729Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-41062fb069a76b2054bb",
+          "file": "design-system.spec.ts",
+          "line": 34,
+          "column": 7
+        },
+        {
+          "title": "mobile navigation reaches only honest shell destinations and reserves footer space",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:51.746Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-fe8939cd42cd94495497",
+          "file": "design-system.spec.ts",
+          "line": 66,
+          "column": 5
+        },
+        {
+          "title": "desktop navigation, active location, keyboard skip link and visible focus work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 727,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:53.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-7483a6df4143a232412e",
+          "file": "design-system.spec.ts",
+          "line": 87,
+          "column": 5
+        },
+        {
+          "title": "search Enter and button submit the same trimmed text without external calls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1004,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:53.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-57a331eff7738a23c7d5",
+          "file": "design-system.spec.ts",
+          "line": 100,
+          "column": 5
+        },
+        {
+          "title": "date/input errors are described, focus first error, and invalid duration cannot pass validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1285,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:53.982Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-a955ca8f2e758f1174a7",
+          "file": "design-system.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "tabs implement roving focus, arrow activation, Home/End, and disabled skipping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 862,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:54.950Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-c2b213da994c69b0ef58",
+          "file": "design-system.spec.ts",
+          "line": 136,
+          "column": 5
+        },
+        {
+          "title": "dialog traps focus, closes on Escape and button, and returns focus to each trigger",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1219,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:55.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-50ebabb093a011746070",
+          "file": "design-system.spec.ts",
+          "line": 148,
+          "column": 5
+        },
+        {
+          "title": "chart rendering failure stays inside chart and keeps the semantic data table",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 918,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:55.824Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-ffb90bdab3faba6623c0",
+          "file": "design-system.spec.ts",
+          "line": 172,
+          "column": 5
+        },
+        {
+          "title": "loading disables repeat submissions and checkbox retains native keyboard semantics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 949,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:56.530Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-3f1037c736ffa67e92b3",
+          "file": "design-system.spec.ts",
+          "line": 189,
+          "column": 5
+        },
+        {
+          "title": "source stamps distinguish timestamps, preserve unknown review, and do not write local storage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 766,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:56.775Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-6057e0bc4a5e21ff3710",
+          "file": "design-system.spec.ts",
+          "line": 201,
+          "column": 5
+        },
+        {
+          "title": "200% css-zoom-200 reflows without clipping or bottom navigation obstruction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 977,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:57.495Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-0a825a5200e1d39a1b83",
+          "file": "design-system.spec.ts",
+          "line": 212,
+          "column": 7
+        },
+        {
+          "title": "200% text-200 reflows without clipping or bottom navigation obstruction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 997,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:57.560Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-c05aa5f226cbd5ae9dcf",
+          "file": "design-system.spec.ts",
+          "line": 212,
+          "column": 7
+        },
+        {
+          "title": "200% text at 390px preserves header and gallery layout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 996,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:58.492Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-685d6f65293e006c241c",
+          "file": "design-system.spec.ts",
+          "line": 233,
+          "column": 7
+        },
+        {
+          "title": "200% text at 768px preserves header and gallery layout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:58.584Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-9230456fe61f4995ad1c",
+          "file": "design-system.spec.ts",
+          "line": 233,
+          "column": 7
+        },
+        {
+          "title": "200% text at 1440px preserves header and gallery layout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:59.502Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-3c45cec6cd8a70111cfc",
+          "file": "design-system.spec.ts",
+          "line": 233,
+          "column": 7
+        },
+        {
+          "title": "reduced motion stops the loading spinner animation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 951,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:48:59.810Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-702aa31dbb1e9b2e4aea",
+          "file": "design-system.spec.ts",
+          "line": 244,
+          "column": 5
+        },
+        {
+          "title": "actual text, control borders and keyboard focus colors meet contrast thresholds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1126,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:00.547Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cb9959aea8a42eda7d1c-0a29ae12f29ea98ffaef",
+          "file": "design-system.spec.ts",
+          "line": 251,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "domain.spec.ts",
+      "file": "domain.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "pure domain engine renders fixed oracles at 360px in Seoul",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:00.856Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e9a6815fce29ff22b2-9794d68eca89665a0b36",
+          "file": "domain.spec.ts",
+          "line": 45,
+          "column": 7
+        },
+        {
+          "title": "pure domain engine renders fixed oracles at 390px in Seoul",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:01.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e9a6815fce29ff22b2-b998bd7486799872fcbc",
+          "file": "domain.spec.ts",
+          "line": 45,
+          "column": 7
+        },
+        {
+          "title": "pure domain engine renders fixed oracles at 768px in Seoul",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:01.761Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e9a6815fce29ff22b2-628a08810422027b2aa8",
+          "file": "domain.spec.ts",
+          "line": 45,
+          "column": 7
+        },
+        {
+          "title": "pure domain engine renders fixed oracles at 1440px in Seoul",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:02.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e9a6815fce29ff22b2-1481fbfc5a65734d1a46",
+          "file": "domain.spec.ts",
+          "line": 45,
+          "column": 7
+        },
+        {
+          "title": "browser timezone America/Los_Angeles preserves the complete domain oracle",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:02.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e9a6815fce29ff22b2-85d4b586c07c24d9f969",
+          "file": "domain.spec.ts",
+          "line": 62,
+          "column": 7
+        },
+        {
+          "title": "browser timezone Pacific/Honolulu preserves the complete domain oracle",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 643,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:02.990Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e9a6815fce29ff22b2-a3aa4bd5a2678a3fe0f5",
+          "file": "domain.spec.ts",
+          "line": 62,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "foundation.spec.ts",
+      "file": "foundation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "home provides an honest empty state, official link and keyboard entry without external requests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:03.010Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-4f4a80883e95b368024b",
+          "file": "foundation.spec.ts",
+          "line": 23,
+          "column": 5
+        },
+        {
+          "title": "home content is available with JavaScript disabled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 462,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:03.660Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-83d3293d147d1c3e7c32",
+          "file": "foundation.spec.ts",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "home is readable without page overflow at 360px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 903,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:04.152Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-3ea7c323f3819120b51b",
+          "file": "foundation.spec.ts",
+          "line": 60,
+          "column": 7
+        },
+        {
+          "title": "home is readable without page overflow at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:04.205Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-b315773d10c650430b8c",
+          "file": "foundation.spec.ts",
+          "line": 60,
+          "column": 7
+        },
+        {
+          "title": "home is readable without page overflow at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:05.067Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-ae40c453d05311c6b6f2",
+          "file": "foundation.spec.ts",
+          "line": 60,
+          "column": 7
+        },
+        {
+          "title": "home is readable without page overflow at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:05.200Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-12b1cee9ecf4f0334baa",
+          "file": "foundation.spec.ts",
+          "line": 60,
+          "column": 7
+        },
+        {
+          "title": "a synthetic render failure reaches the error boundary",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 807,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:05.876Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-c1620f670677550a302d",
+          "file": "foundation.spec.ts",
+          "line": 80,
+          "column": 5
+        },
+        {
+          "title": "an unknown route returns a real 404 page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 718,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:05.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b60d0cacd30be8ae473-eb490652c9311c9b0c12",
+          "file": "foundation.spec.ts",
+          "line": 90,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "qualification-detail.spec.ts",
+      "file": "qualification-detail.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "detail repository/domain values, source and chart/table agree at 390px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 8888,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#next-events')\nExpected substring: \u001b[32m\"D-Day\"\u001b[39m\nReceived string:    \u001b[31m\"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[39m\nTimeout: 8000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#next-events') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for locator('#next-events')\u001b[22m\n\u001b[2m    20 × locator resolved to <section id=\"next-events\" class=\"YZ1LFa_section\" aria-labelledby=\"next-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#next-events')\nExpected substring: \u001b[32m\"D-Day\"\u001b[39m\nReceived string:    \u001b[31m\"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[39m\nTimeout: 8000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#next-events') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for locator('#next-events')\u001b[22m\n\u001b[2m    20 × locator resolved to <section id=\"next-events\" class=\"YZ1LFa_section\" aria-labelledby=\"next-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[22m\n\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:43:48",
+                    "location": {
+                      "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                      "column": 48,
+                      "line": 43
+                    },
+                    "snippet": "  41 |     await expect(page.getByText(\"실제 공공 데이터 검증은 완료되지 않았습니다.\", { exact: false })).toBeVisible();\n  42 |     await expect(page.getByTestId(\"detail-event\")).toHaveCount(9);\n> 43 |     await expect(page.locator(\"#next-events\")).toContainText(\"D-Day\");\n     |                                                ^\n  44 |     await fits(page); await screen(page, `overview-${width}`);\n  45 |     await screen(page, `schedules-${width}`, \"#detail-schedules\");\n  46 |     const summary = page.getByTestId(\"derived-statistics-summary\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                        "column": 48,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#next-events')\nExpected substring: \u001b[32m\"D-Day\"\u001b[39m\nReceived string:    \u001b[31m\"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[39m\nTimeout: 8000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#next-events') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for locator('#next-events')\u001b[22m\n\u001b[2m    20 × locator resolved to <section id=\"next-events\" class=\"YZ1LFa_section\" aria-labelledby=\"next-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[22m\n\n\n  41 |     await expect(page.getByText(\"실제 공공 데이터 검증은 완료되지 않았습니다.\", { exact: false })).toBeVisible();\n  42 |     await expect(page.getByTestId(\"detail-event\")).toHaveCount(9);\n> 43 |     await expect(page.locator(\"#next-events\")).toContainText(\"D-Day\");\n     |                                                ^\n  44 |     await fits(page); await screen(page, `overview-${width}`);\n  45 |     await screen(page, `schedules-${width}`, \"#detail-schedules\");\n  46 |     const summary = page.getByTestId(\"derived-statistics-summary\");\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:43:48"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:06.664Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-detai-13f95--chart-table-agree-at-390px-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-detai-13f95--chart-table-agree-at-390px-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                    "column": 48,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-e83bed0c6462998cbf2d",
+          "file": "qualification-detail.spec.ts",
+          "line": 33,
+          "column": 7
+        },
+        {
+          "title": "detail repository/domain values, source and chart/table agree at 1440px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8926,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#next-events')\nExpected substring: \u001b[32m\"D-Day\"\u001b[39m\nReceived string:    \u001b[31m\"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[39m\nTimeout: 8000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#next-events') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for locator('#next-events')\u001b[22m\n\u001b[2m    20 × locator resolved to <section id=\"next-events\" class=\"YZ1LFa_section\" aria-labelledby=\"next-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#next-events')\nExpected substring: \u001b[32m\"D-Day\"\u001b[39m\nReceived string:    \u001b[31m\"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[39m\nTimeout: 8000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#next-events') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for locator('#next-events')\u001b[22m\n\u001b[2m    20 × locator resolved to <section id=\"next-events\" class=\"YZ1LFa_section\" aria-labelledby=\"next-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[22m\n\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:43:48",
+                    "location": {
+                      "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                      "column": 48,
+                      "line": 43
+                    },
+                    "snippet": "  41 |     await expect(page.getByText(\"실제 공공 데이터 검증은 완료되지 않았습니다.\", { exact: false })).toBeVisible();\n  42 |     await expect(page.getByTestId(\"detail-event\")).toHaveCount(9);\n> 43 |     await expect(page.locator(\"#next-events\")).toContainText(\"D-Day\");\n     |                                                ^\n  44 |     await fits(page); await screen(page, `overview-${width}`);\n  45 |     await screen(page, `schedules-${width}`, \"#detail-schedules\");\n  46 |     const summary = page.getByTestId(\"derived-statistics-summary\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                        "column": 48,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#next-events')\nExpected substring: \u001b[32m\"D-Day\"\u001b[39m\nReceived string:    \u001b[31m\"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[39m\nTimeout: 8000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('#next-events') with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for locator('#next-events')\u001b[22m\n\u001b[2m    20 × locator resolved to <section id=\"next-events\" class=\"YZ1LFa_section\" aria-labelledby=\"next-title\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"01 · 다음 확인할 일접수와 시험을 차례로 확인하세요다음 확인할 일필기 · 일반 접수2026-10-21 – 2026-10-23 · 시각 미제공시작일 · 시각 미확인접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗다음 확인할 일실기 · 일반 접수2026. 11. 02. 09:00 – 2026. 11. 02. 18:00 (한국시간)D-12 · 예정접수 가능·잔여 좌석을 뜻하지 않습니다.Q-Net 공식 안내 확인 ↗\"\u001b[22m\n\n\n  41 |     await expect(page.getByText(\"실제 공공 데이터 검증은 완료되지 않았습니다.\", { exact: false })).toBeVisible();\n  42 |     await expect(page.getByTestId(\"detail-event\")).toHaveCount(9);\n> 43 |     await expect(page.locator(\"#next-events\")).toContainText(\"D-Day\");\n     |                                                ^\n  44 |     await fits(page); await screen(page, `overview-${width}`);\n  45 |     await screen(page, `schedules-${width}`, \"#detail-schedules\");\n  46 |     const summary = page.getByTestId(\"derived-statistics-summary\");\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:43:48"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:06.703Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-detai-0bd48-chart-table-agree-at-1440px-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-detai-0bd48-chart-table-agree-at-1440px-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                    "column": 48,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-c7496603256642ff4fc2",
+          "file": "qualification-detail.spec.ts",
+          "line": 33,
+          "column": 7
+        },
+        {
+          "title": "JS disabled HTML contains core values, provenance and native selectors",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 8505,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: \u001b[32m\"합성 전기설비 자격\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('heading', { level: 1 }) with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: \u001b[32m\"합성 전기설비 자격\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('heading', { level: 1 }) with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:73:59",
+                    "location": {
+                      "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                      "column": 59,
+                      "line": 73
+                    },
+                    "snippet": "  71 |     const html = await response!.text();\n  72 |     await mkdir(evidenceDir, { recursive: true }); await writeFile(path.join(evidenceDir, \"detail-ssr.html\"), html);\n> 73 |     await expect(page.getByRole(\"heading\", { level: 1 })).toHaveText(\"합성 전기설비 자격\");\n     |                                                           ^\n  74 |     await expect(page.getByTestId(\"derived-statistics-summary\")).toHaveAttribute(\"data-rate\", \"47.0\");\n  75 |     expect(html).toContain(\"마지막 자동 검증\"); expect(html).toContain(\"운영자 대조\");\n  76 |     expect(html).not.toContain(\"SYNTHETIC_PRIVATE_ERROR_DO_NOT_RENDER\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                        "column": 59,
+                        "line": 73
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: \u001b[32m\"합성 전기설비 자격\"\u001b[39m\nTimeout: 8000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('heading', { level: 1 }) with timeout 8000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n  71 |     const html = await response!.text();\n  72 |     await mkdir(evidenceDir, { recursive: true }); await writeFile(path.join(evidenceDir, \"detail-ssr.html\"), html);\n> 73 |     await expect(page.getByRole(\"heading\", { level: 1 })).toHaveText(\"합성 전기설비 자격\");\n     |                                                           ^\n  74 |     await expect(page.getByTestId(\"derived-statistics-summary\")).toHaveAttribute(\"data-rate\", \"47.0\");\n  75 |     expect(html).toContain(\"마지막 자동 검증\"); expect(html).toContain(\"운영자 대조\");\n  76 |     expect(html).not.toContain(\"SYNTHETIC_PRIVATE_ERROR_DO_NOT_RENDER\");\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:73:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:16.021Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-JS-di-816e8-enance-and-native-selectors-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-JS-di-816e8-enance-and-native-selectors-chromium/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                    "column": 59,
+                    "line": 73
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-81887dab34237d042c7f",
+          "file": "qualification-detail.spec.ts",
+          "line": 66,
+          "column": 5
+        },
+        {
+          "title": "year and stage selection keeps partial/null statistics explicit",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30105,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                        "column": 48,
+                        "line": 88
+                      },
+                      "message": "Error: locator.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('연도', { exact: true })\u001b[22m\n\n\n  86 | test(\"year and stage selection keeps partial/null statistics explicit\", async ({ page }) => {\n  87 |   await page.goto(demo);\n> 88 |   await page.getByLabel(\"연도\", { exact: true }).selectOption(\"2026\");\n     |                                                ^\n  89 |   await page.getByRole(\"button\", { name: \"통계 보기\" }).click();\n  90 |   await expect(page.getByTestId(\"derived-statistics-summary\")).toHaveAttribute(\"data-rate\", \"unavailable\");\n  91 |   await expect(page.locator(\"#detail-statistics\")).toContainText(\"진행 중인 연도\");\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:88:48"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:16.117Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-year--04fd1-al-null-statistics-explicit-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-year--04fd1-al-null-statistics-explicit-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-f0b72e7495421f963c38",
+          "file": "qualification-detail.spec.ts",
+          "line": 86,
+          "column": 5
+        },
+        {
+          "title": "stats-error is isolated without exposing private errors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:25.189Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-b01bcb4c9daa230141fb",
+          "file": "qualification-detail.spec.ts",
+          "line": 99,
+          "column": 7
+        },
+        {
+          "title": "events-error is isolated without exposing private errors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 556,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:26.191Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-c714f4b2436eab685717",
+          "file": "qualification-detail.spec.ts",
+          "line": 99,
+          "column": 7
+        },
+        {
+          "title": "details-error is isolated without exposing private errors",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:26.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-ba925e1a7601ec3b4f6a",
+          "file": "qualification-detail.spec.ts",
+          "line": 99,
+          "column": 7
+        },
+        {
+          "title": "stale withholds next action and aggregate claims",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:27.486Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-efdf5be2cb5d09b56a64",
+          "file": "qualification-detail.spec.ts",
+          "line": 116,
+          "column": 7
+        },
+        {
+          "title": "pending withholds next action and aggregate claims",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 650,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:28.017Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-8d3d5a6ccd9236a0fd1a",
+          "file": "qualification-detail.spec.ts",
+          "line": 116,
+          "column": 7
+        },
+        {
+          "title": "range exam and unknown registration time never invent a personal day or hours",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30082,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts",
+                        "column": 46,
+                        "line": 25
+                      },
+                      "message": "Error: locator.screenshot: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid=\"detail-event\"]:first-child')\u001b[22m\n\n\n  23 |   await mkdir(screenshotDir, { recursive: true });\n  24 |   const filename = path.join(screenshotDir, `detail-${name}-${screenshotRef}.png`);\n> 25 |   if (selector) await page.locator(selector).screenshot({ path: filename, animations: \"disabled\" });\n     |                                              ^\n  26 |   else await page.screenshot({ path: filename, animations: \"disabled\", fullPage: false });\n  27 | }\n  28 | async function fits(page: Page) {\n    at screen (/workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:25:46)\n    at /workspace/licenseinsight/tests/e2e/qualification-detail.spec.ts:136:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:28.697Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-range-fbaeb-ent-a-personal-day-or-hours-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/licenseinsight/test-results/artifacts/qualification-detail-range-fbaeb-ent-a-personal-day-or-hours-chromium/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-f3814e46f87cce93ff16",
+          "file": "qualification-detail.spec.ts",
+          "line": 127,
+          "column": 5
+        },
+        {
+          "title": "unsupported/empty/unconfirmed population stay distinct from zero",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 938,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:46.998Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-458dc7fa4d2f161c0092",
+          "file": "qualification-detail.spec.ts",
+          "line": 139,
+          "column": 5
+        },
+        {
+          "title": "unknown slug is HTTP404 and official links stay on the allowlist",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 780,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-21T00:49:48.172Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3cdf7fe4c0559a9cfbc9-ee60fa55d53307463a89",
+          "file": "qualification-detail.spec.ts",
+          "line": 152,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-21T00:48:47.656Z",
+    "duration": 71242.47099999999,
+    "expected": 41,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-21T00:39:49.115053+00:00",
+  "selected": "STEP-08",
+  "previous_evidence": [
+    {
+      "file": "docs/reports/evidence/step-07/tests.json",
+      "sha256": "4db011614909985fd32895544f7e6ce97d71789da6529436b9303016c6201490",
+      "exit_code": null,
+      "tests_passed": 484,
+      "stats": null,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-07/browser-tests.json",
+      "sha256": "4e8c2f73540fcdd7d511b81f952675cf9eb278a3fcef7f79b6043233c7cff64c",
+      "exit_code": null,
+      "tests_passed": null,
+      "stats": {
+        "startTime": "2026-10-20T21:59:09.194Z",
+        "duration": 20268.003,
+        "expected": 34,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "passed": null,
+      "failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-07/validation.json",
+      "sha256": "258db757faca84c567410eb7dc47c7146a40ec831e921cd249368eaabd4fd2c4",
+      "exit_code": null,
+      "tests_passed": null,
+      "stats": null,
+      "passed": 30,
+      "failed": 0
+    },
+    {
+      "file": "docs/reports/evidence/step-07/gallery-isolation.json",
+      "sha256": "af20f1636980d2e7d01675b65e611c5c09837b1ce7e8c8d640ec187f137d25cd",
+      "exit_code": null,
+      "tests_passed": null,
+      "stats": null,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-07/contrast.json",
+      "sha256": "2c91b0acacbb9c199615fa83f7da76934ce2aad40bec2f0a621c0c996007056e",
+      "exit_code": null,
+      "tests_passed": null,
+      "stats": null,
+      "passed": null,
+      "failed": null
+    },
+    {
+      "file": "docs/reports/evidence/step-07/build-command.json",
+      "sha256": "118f5fcf039eff1aa0443a74c5c818f9b31d8a7872fbbfc56527144b55f4b37e",
+      "exit_code": 0,
+      "tests_passed": null,
+      "stats": null,
+      "passed": null,
+      "failed": null
+    }
+  ],
+  "source_hashes_checked": 106,
+  "source_hash_mismatch": [],
+  "secret_presence": {
+    "DATA_GO_KR_SERVICE_KEY": false,
+    "SUPABASE_URL": false,
+    "SUPABASE_SECRET_KEY": false,
+    "DATABASE_URL": false
+  },
+  "public_api_calls": 0,
+  "live_status": "BLOCKED G0/source specification, approval/quota, credentials and verified qualification unavailable",
+  "independent_scope": "local/test synthetic detail route, repository contract/domain/SSR/UI tests",
+  "git_branch": "audit/m0-task-001",
+  "commit": null
+}

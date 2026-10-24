@@ -1,0 +1,193 @@
+{
+  "audit_scope": "M0 / TASK-001 public-catalog read-only recheck",
+  "generated_at_utc": "2026-10-20T01:34:53.366708+00:00",
+  "network_policy": "unrestricted; inherited HTTPS proxy and TLS verification preserved",
+  "datasets": [
+    {
+      "source_id": "DS-01",
+      "dataset_id": "15003024",
+      "url": "https://www.data.go.kr/data/15003024/openapi.do",
+      "fetched_at_utc": "2026-10-20T01:33:42.350847+00:00",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 503: Service Unavailable",
+      "http_status": 503,
+      "public_catalog_status": "BLOCKED",
+      "public_spec_reconfirmed": false,
+      "public_catalog_sha256": null,
+      "public_catalog_raw_path": null,
+      "observed_operation": null,
+      "observed_request_fields": [],
+      "observed_response_fields": [],
+      "account_development_approval": "UNKNOWN",
+      "account_production_approval": "UNKNOWN",
+      "authenticated_call_status": "NOT_RUN",
+      "authenticated_calls_performed": 0,
+      "https_api_connectivity": "NOT_RUN",
+      "inherited_unverified": {
+        "basis": [
+          "docs/DATA_CONTRACT.md",
+          "docs/SOURCES.md",
+          "docs/API_VALIDATION.md"
+        ],
+        "title": "한국산업인력공단_국가자격 종목 목록 정보",
+        "purpose": "공식 종목코드·등급·분야",
+        "operation": null,
+        "request_fields": [],
+        "response_fields": [
+          "qualgbcd",
+          "seriescd",
+          "seriesnm",
+          "jmcd",
+          "jmfldnm",
+          "obligfldcd",
+          "obligfldnm",
+          "mdobligfldcd",
+          "mdobligfldnm"
+        ],
+        "approval_policy": "실제 개발/운영 승인 미확인",
+        "quota": "무료 안내만 계승; 단위/주기/계정한도 미확인"
+      }
+    },
+    {
+      "source_id": "DS-02",
+      "dataset_id": "15074408",
+      "url": "https://www.data.go.kr/data/15074408/openapi.do",
+      "fetched_at_utc": "2026-10-20T01:33:42.351626+00:00",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 503: Service Unavailable",
+      "http_status": 503,
+      "public_catalog_status": "BLOCKED",
+      "public_spec_reconfirmed": false,
+      "public_catalog_sha256": null,
+      "public_catalog_raw_path": null,
+      "observed_operation": null,
+      "observed_request_fields": [],
+      "observed_response_fields": [],
+      "account_development_approval": "UNKNOWN",
+      "account_production_approval": "UNKNOWN",
+      "authenticated_call_status": "NOT_RUN",
+      "authenticated_calls_performed": 0,
+      "https_api_connectivity": "NOT_RUN",
+      "inherited_unverified": {
+        "basis": [
+          "docs/DATA_CONTRACT.md",
+          "docs/SOURCES.md",
+          "docs/API_VALIDATION.md"
+        ],
+        "title": "한국산업인력공단_국가자격 시험일정 조회 서비스",
+        "purpose": "연도·종목별 접수·시험·발표 일정",
+        "operation": "getQualExamSchdList",
+        "endpoint": "https://apis.data.go.kr/B490007/qualExamSchd/getQualExamSchdList",
+        "request_fields": [
+          "serviceKey",
+          "numOfRows",
+          "pageNo",
+          "dataFormat",
+          "implYy",
+          "qualgbCd",
+          "jmCd"
+        ],
+        "response_fields": [],
+        "approval_policy": "패키지에 운영단계 심의승인 안내 기재; 실제 계정승인 미확인",
+        "quota": "무료 안내만 계승; 단위/주기/계정한도 미확인"
+      }
+    },
+    {
+      "source_id": "DS-03",
+      "dataset_id": "15089380",
+      "url": "https://www.data.go.kr/data/15089380/openapi.do",
+      "fetched_at_utc": "2026-10-20T01:33:42.353192+00:00",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 503: Service Unavailable",
+      "http_status": 503,
+      "public_catalog_status": "BLOCKED",
+      "public_spec_reconfirmed": false,
+      "public_catalog_sha256": null,
+      "public_catalog_raw_path": null,
+      "observed_operation": null,
+      "observed_request_fields": [],
+      "observed_response_fields": [],
+      "account_development_approval": "UNKNOWN",
+      "account_production_approval": "UNKNOWN",
+      "authenticated_call_status": "NOT_RUN",
+      "authenticated_calls_performed": 0,
+      "https_api_connectivity": "NOT_RUN",
+      "inherited_unverified": {
+        "basis": [
+          "docs/DATA_CONTRACT.md",
+          "docs/SOURCES.md",
+          "docs/API_VALIDATION.md"
+        ],
+        "title": "한국산업인력공단_연도별 회별 국가기술자격 합격률",
+        "purpose": "등급·연도·회차·단계별 응시/합격 통계",
+        "operation": null,
+        "request_fields": [
+          "serviceKey",
+          "grdCd",
+          "baseYY",
+          "pageNo",
+          "numOfRows"
+        ],
+        "response_fields": [
+          "examPassCnt",
+          "examTypCcd",
+          "grdNm",
+          "implSeq",
+          "implYy",
+          "jmFldNm",
+          "passRate",
+          "recptNoCnt"
+        ],
+        "approval_policy": "패키지에 운영단계 심의승인 안내 기재; 실제 계정승인 미확인",
+        "quota": "무료 안내만 계승; 단위/주기/계정한도 미확인"
+      }
+    }
+  ],
+  "diagnostic": {
+    "source_id": "DS-02",
+    "method": "curl GET of same HTTPS public catalog after Python urllib HTTP503",
+    "http_status": 503,
+    "proxy_connect_status": 200,
+    "server": "envoy",
+    "content_type": "text/plain",
+    "body_utf8": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout",
+    "body_sha256": "2f85832e31ca57711e6107af6b142363351ae516adb71c69afc643fac26be7f6",
+    "raw_path": "docs/reports/evidence/catalog-503.txt",
+    "conclusion": "upstream connection timeout reported; source outage versus intermediary connectivity cannot be distinguished"
+  },
+  "three_qualifications": [
+    {
+      "name": "전기기사",
+      "official_code": null,
+      "code_status": "NOT_RUN",
+      "crosswalk_status": "NOT_RUN",
+      "schedule_status": "NOT_RUN",
+      "statistics_status": "NOT_RUN"
+    },
+    {
+      "name": "전기산업기사",
+      "official_code": null,
+      "code_status": "NOT_RUN",
+      "crosswalk_status": "NOT_RUN",
+      "schedule_status": "NOT_RUN",
+      "statistics_status": "NOT_RUN"
+    },
+    {
+      "name": "전기기능사",
+      "official_code": null,
+      "code_status": "NOT_RUN",
+      "crosswalk_status": "NOT_RUN",
+      "schedule_status": "NOT_RUN",
+      "statistics_status": "NOT_RUN"
+    }
+  ],
+  "limitations": [
+    "No logged-in portal approval inspection",
+    "No API service key used or read",
+    "No authenticated API request",
+    "No operation or field newly confirmed from official catalog",
+    "No DOCX/PDF reference downloaded",
+    "No HTTP downgrade",
+    "No public-source values treated as runtime qualification data"
+  ]
+}

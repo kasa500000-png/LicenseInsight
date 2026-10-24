@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-20T21:42:56.405975+00:00",
+  "selected": "STEP-07",
+  "previous_evidence": [
+    {
+      "file": "docs/reports/evidence/step-06/validation.json",
+      "sha256": "4942e1a52bc261d65dc308747913f91ebf4826b7fdaf10c1d8c47eb848599d95",
+      "exit_code": null,
+      "tests_passed": null,
+      "failed": 0,
+      "browser_stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-06/tests.json",
+      "sha256": "f758af722958ae7ae07107bb292fe93fe4166f8a0b274eedffddc9ef2fb63d6c",
+      "exit_code": null,
+      "tests_passed": 468,
+      "failed": 0,
+      "browser_stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-06/build-command.json",
+      "sha256": "f04b6927b7acb7ec14c3b72e59457d5abc60ae245a763232c6ba81989c91ebd3",
+      "exit_code": 0,
+      "tests_passed": null,
+      "failed": null,
+      "browser_stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-06/browser-tests.json",
+      "sha256": "189250ff1dd8530c70877af2efa41de7d5a35edc91cc7fc6d59d53c4d8c788b0",
+      "exit_code": null,
+      "tests_passed": null,
+      "failed": null,
+      "browser_stats": {
+        "startTime": "2026-10-20T11:57:52.634Z",
+        "duration": 7448.1359999999995,
+        "expected": 14,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "docs/reports/evidence/step-06/timezones.json",
+      "sha256": "ed08b8ce972f187719e711162c31c06ab478a8182a3010a8f458c0b0ab1a0a81",
+      "exit_code": null,
+      "tests_passed": null,
+      "failed": null,
+      "browser_stats": null
+    },
+    {
+      "file": "docs/reports/evidence/step-06/screen-review.json",
+      "sha256": "21aeb87ca747f8de41e820f19b1f748d714420198d8aaf1e81e3b0c1518101fc",
+      "exit_code": null,
+      "tests_passed": null,
+      "failed": null,
+      "browser_stats": null
+    }
+  ],
+  "step06_source_hash_files": 85,
+  "step06_hash_mismatch": [],
+  "secret_presence": {
+    "DATA_GO_KR_SERVICE_KEY": false,
+    "SUPABASE_URL": false,
+    "SUPABASE_SECRET_KEY": false,
+    "DATABASE_URL": false
+  },
+  "public_api_calls": 0,
+  "live_status": "STEP-02/G0 BLOCKED unchanged; independent UI permitted",
+  "branch": "audit/m0-task-001",
+  "commit": null
+}
